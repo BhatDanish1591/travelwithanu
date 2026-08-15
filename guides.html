@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashmir Travel Guides & Blog – Planning Tips, Itineraries & Destination Info | KashmirSafar</title>
+  <meta name="description" content="Read expert travel guides on Kashmir. Planning tips, budgeting advice, local secrets, and complete guides on when and where to travel in paradise." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    /* Featured Guide Card */
+    .featured-guide-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 0;
+      margin-bottom: 56px;
+    }
+    .featured-guide-img { height: 100%; min-height: 380px; }
+    .featured-guide-img img { width: 100%; height: 100%; object-fit: cover; }
+    .featured-guide-body { padding: 48px; display: flex; flex-direction: column; justify-content: center; }
+
+    /* Tag Cloud */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .tag-pill {
+      background: var(--white);
+      border: 1.5px solid var(--neutral-200);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--neutral-600);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .tag-pill:hover {
+      border-color: var(--green-500);
+      color: var(--green-700);
+      background: var(--green-50);
+    }
+
+    @media (max-width:900px) {
+      .featured-guide-card { grid-template-columns: 1fr; }
+      .featured-guide-img { min-height: 250px; }
+      .featured-guide-body { padding: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header></header>
+
+<main>
+  <!-- Page Hero -->
+  <section class="page-hero" aria-label="Guides Hero">
+    <div class="page-hero-bg">
+      <img src="images/dest_pahalgam.jpg" alt="Beautiful Pahalgam road" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Travel Guides</span>
+      </nav>
+      <span class="page-hero-eyebrow">Local Secrets & Logs</span>
+      <h1 class="page-hero-title">Kashmir Travel <em>Guides</em></h1>
+      <p class="page-hero-desc">Expert articles and complete logs covering best times, budget plans, hotel selections, and valley routes written by local guides.</p>
+    </div>
+  </section>
+
+  <!-- Blog/Guides Section -->
+  <section class="section-py" aria-label="Blog Articles">
+    <div class="container">
+      
+      <!-- Featured Guide Card -->
+      <article class="featured-guide-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="featured-guide-img">
+          <img src="images/dest_srinagar.jpg" alt="Srinagar Dal Lake Houseboats sunrise" itemprop="image" />
+        </div>
+        <div class="featured-guide-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat" itemprop="articleSection">Destinations</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">8 min read</span>
+          </div>
+          <h2 style="font-family:var(--font-serif); font-size:2rem; color:var(--neutral-900); margin-bottom:14px; line-height:1.2;" itemprop="headline">
+            Best Places to Visit in Kashmir in 2025
+          </h2>
+          <p style="color:var(--neutral-500); font-size:0.95rem; line-height:1.7; margin-bottom:24px;" itemprop="description">
+            A comprehensive, seasonal guide detailing the top 8 absolute must-visit locations across Kashmir. From classical spots like Srinagar, Gulmarg, and Pahalgam to remote valleys like Gurez and hidden waterfall picnics like Aharbal.
+          </p>
+          <a href="guide-detail.html" class="btn btn-primary" style="align-self:flex-start;">Read Guide →</a>
+        </div>
+      </article>
+
+      <!-- Category Filter Tabs -->
+      <div class="packages-filter reveal" role="group" aria-label="Article category filters" style="justify-content: center; margin-bottom: 48px;">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">📑 All Articles</button>
+        <button class="filter-btn" data-filter="destinations" aria-pressed="false">🏔️ Destinations</button>
+        <button class="filter-btn" data-filter="planning" aria-pressed="false">📅 Planning</button>
+        <button class="filter-btn" data-filter="seasonal" aria-pressed="false">❄️ Seasonal</button>
+        <button class="filter-btn" data-filter="honeymoon" aria-pressed="false">💑 Honeymoon</button>
+        <button class="filter-btn" data-filter="family" aria-pressed="false">👨‍👩‍👧 Family</button>
+        <button class="filter-btn" data-filter="adventure" aria-pressed="false">🏔️ Adventure</button>
+        <button class="filter-btn" data-filter="budget" aria-pressed="false">💰 Budget</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="guides-grid" id="blog-grid">
+        
+        <!-- Guide 1 -->
+        <article class="guide-card reveal" data-category="destinations">
+          <div class="guide-card-img"><img src="images/dest_srinagar.jpg" alt="Srinagar Dal Lake" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Destinations</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">8 min read</span>
+            </div>
+            <h3 class="guide-card-title">Best Places to Visit in Kashmir in 2025</h3>
+            <p class="guide-card-desc">A complete guide to Kashmir's most stunning destinations — from Dal Lake houseboats to Gurez valley.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 2 -->
+        <article class="guide-card reveal" data-category="planning">
+          <div class="guide-card-img"><img src="images/dest_gulmarg.jpg" alt="Gulmarg winter" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Planning</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">6 min read</span>
+            </div>
+            <h3 class="guide-card-title">Best Time to Visit Kashmir — Month by Month</h3>
+            <p class="guide-card-desc">Tulip blooms in spring, cool summer meadows, red Chinar leaves in autumn, or ski snows in winter.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 3 -->
+        <article class="guide-card reveal" data-category="honeymoon">
+          <div class="guide-card-img"><img src="images/package_honeymoon.jpg" alt="Kashmir honeymoon houseboats" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Honeymoon</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">10 min read</span>
+            </div>
+            <h3 class="guide-card-title">The Complete Kashmir Honeymoon Guide</h3>
+            <p class="guide-card-desc">Romantic Shikara rides, candlelit dinners in meadows, cozy houseboats, and planning details.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 4 -->
+        <article class="guide-card reveal" data-category="seasonal">
+          <div class="guide-card-img"><img src="images/dest_doodhpathri.jpg" alt="Kashmir winter snow" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Seasonal</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">7 min read</span>
+            </div>
+            <h3 class="guide-card-title">Kashmir in Winter — A Snow Lover's Guide</h3>
+            <p class="guide-card-desc">Gulmarg skiing, Pahalgam winter trails, freezing temperatures care, and warm woolens check list.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 5 -->
+        <article class="guide-card reveal" data-category="family">
+          <div class="guide-card-img"><img src="images/dest_pahalgam.jpg" alt="Pahalgam family holiday" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Family</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">9 min read</span>
+            </div>
+            <h3 class="guide-card-title">Kashmir Family Trip Guide — Tips & Routes</h3>
+            <p class="guide-card-desc">Safe travel routes, child-friendly sightseeing spots, hotel bookings, and custom travel layouts.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 6 -->
+        <article class="guide-card reveal" data-category="budget">
+          <div class="guide-card-img"><img src="images/dest_sonamarg.jpg" alt="Sonamarg budget trip" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Budget</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">12 min read</span>
+            </div>
+            <h3 class="guide-card-title">Kashmir Trip Budget — Full Cost Breakdown</h3>
+            <p class="guide-card-desc">Cost analysis of flights, hotels, local cab rentals, food bills, activity passes, and shopping.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 7 -->
+        <article class="guide-card reveal" data-category="destinations">
+          <div class="guide-card-img"><img src="images/dest_gulmarg.jpg" alt="Gulmarg travel details" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Destinations</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">8 min read</span>
+            </div>
+            <h3 class="guide-card-title">Gulmarg Travel Guide – Gondola & Ski slopes</h3>
+            <p class="guide-card-desc">Explore ticket bookings, phases breakdown, ski training centers, and best hotels near cable cars.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 8 -->
+        <article class="guide-card reveal" data-category="destinations">
+          <div class="guide-card-img"><img src="images/dest_pahalgam.jpg" alt="Pahalgam travel details" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Destinations</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">7 min read</span>
+            </div>
+            <h3 class="guide-card-title">Pahalgam Travel Guide – Pine Valley Sightseeing</h3>
+            <p class="guide-card-desc">Complete walkthrough of local taxis, pony union rates, Betaab Valley tickets, and Lidder river hikes.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+        <!-- Guide 9 -->
+        <article class="guide-card reveal" data-category="adventure">
+          <div class="guide-card-img"><img src="images/package_adventure.jpg" alt="Kashmir adventure trekking guide" /></div>
+          <div class="guide-card-body">
+            <div class="guide-card-meta">
+              <span class="guide-card-cat">Adventure</span>
+              <span class="guide-card-dot">•</span>
+              <span class="guide-card-read">11 min read</span>
+            </div>
+            <h3 class="guide-card-title">Kashmir Adventure Guide – Trekking & Trails</h3>
+            <p class="guide-card-desc">Plan alpine lake treks, mountain climbing routes, rafting spots, and winter ski slopes in Kashmir.</p>
+            <a href="guide-detail.html" class="guide-read-btn">Read Guide →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Topics Tag Cloud -->
+  <section class="section-py bg-alt" aria-label="Explore Topics">
+    <div class="container text-center">
+      <span class="section-label">Find by tag</span>
+      <h2 class="section-title gradient-title" style="margin-bottom:12px;">Popular Guide Topics</h2>
+      <p class="section-subtitle">Select any keyword tag to filter and browse related helpful guide articles.</p>
+      
+      <div class="tag-cloud reveal">
+        <span class="tag-pill">#HouseboatStays</span>
+        <span class="tag-pill">#GondolaTickets</span>
+        <span class="tag-pill">#TulipFestival</span>
+        <span class="tag-pill">#BetaabValley</span>
+        <span class="tag-pill">#WazwanCuisine</span>
+        <span class="tag-pill">#LocalShopping</span>
+        <span class="tag-pill">#PonyUnionRates</span>
+        <span class="tag-pill">#WinterSkiing</span>
+        <span class="tag-pill">#GurezPermits</span>
+        <span class="tag-pill">#KashmiriKahwa</span>
+        <span class="tag-pill">#LidderRafting</span>
+        <span class="tag-pill">#HouseboatBooking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter section -->
+  <section class="section-py" style="background: linear-gradient(135deg, var(--green-900) 0%, var(--blue-900) 100%); color:var(--white);" aria-label="Newsletter Newsletter">
+    <div class="container" style="max-width: 640px; text-align: center;">
+      <span class="section-label" style="color:var(--green-300)">Stay Updated</span>
+      <h2 class="section-title" style="color:var(--white); margin-bottom:12px;">Get Kashmir Travel Inspiration</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.7); margin-bottom:32px;">Travel updates, seasonal guidelines, and special limited tour deals delivered to your inbox.</p>
+      <form class="newsletter-form" id="newsletter-guides" novalidate style="display:flex; gap:12px;">
+        <label for="guide-email-input" style="position:absolute; left:-9999px;">Email</label>
+        <input type="email" id="guide-email-input" class="newsletter-input" placeholder="Your email address" required style="flex:1;" />
+        <button type="submit" class="btn btn-gold">Subscribe ✉️</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="components.js"></script>
+<script src="app.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.guide-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+
+        const filterVal = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category') || '';
+          if (filterVal === 'all' || cat === filterVal) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    document.getElementById('newsletter-guides')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('guide-email-input').value;
+      if (email.includes('@')) {
+        showToast('Thank you for subscribing!');
+        document.getElementById('newsletter-guides').reset();
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KashmirSafar – Kashmir Tour Packages, Travel Guide & Itineraries | Your Journey Through Paradise</title>
+  <meta name="description" content="Explore Kashmir with KashmirSafar – India's premium Kashmir travel platform. Discover handcrafted tour packages, honeymoon trips, adventure tours, and travel guides for Srinagar, Gulmarg, Pahalgam, Sonamarg and more." />
+  <meta name="keywords" content="Kashmir tour packages, Kashmir travel, Kashmir holiday packages, Kashmir honeymoon packages, Gulmarg tour, Pahalgam tour, Sonamarg tour, Kashmir family trip, Kashmir itinerary, places to visit in Kashmir" />
+  <meta property="og:title" content="KashmirSafar – Your Journey Through Paradise" />
+  <meta property="og:description" content="Premium Kashmir travel packages. Book expertly curated tours to Srinagar, Gulmarg, Pahalgam & Sonamarg." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://kashmirsafar.com/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "KashmirSafar",
+    "description": "Premium Kashmir travel agency offering curated tour packages, honeymoon trips, family holidays and adventure travel in Kashmir.",
+    "url": "https://kashmirsafar.com",
+    "telephone": "+91-9419-000-000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dal Lake Boulevard, Nehru Park",
+      "addressLocality": "Srinagar",
+      "addressRegion": "Jammu & Kashmir",
+      "postalCode": "190001",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Kashmir, India",
+    "priceRange": "₹₹₹",
+    "openingHours": "Mo-Su 09:00-20:00"
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    /* ---- Extra polish on top of styles.css ---- */
+
+    /* Hero parallax feel */
+    .hero-bg img { filter: brightness(.88) saturate(1.15); }
+
+    /* Destination cards – taller image */
+    .dest-card-img { height: 240px; }
+
+    /* Gradient text on section titles */
+    .gradient-title {
+      background: linear-gradient(135deg, var(--green-700) 0%, var(--blue-600) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xl);
+      padding: 36px 60px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 0;
+      position: relative;
+      z-index: 10;
+      margin-top: -60px;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 0 24px;
+      border-right: 1px solid var(--neutral-100);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--green-700);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label { font-size: .85rem; color: var(--neutral-500); font-weight: 500; }
+
+    /* Package cards image taller */
+    .pkg-card-img { height: 230px; }
+
+    /* Gallery grid upgrade */
+    .gallery-masonry { columns: 4; column-gap: 14px; }
+    .gallery-item { margin-bottom: 14px; border-radius: var(--radius-lg); }
+
+    /* Testimonials upgrade - avatar colored rings */
+    .testi-card { border-top: 3px solid var(--green-200); }
+
+    /* Guide card images taller */
+    .guide-card-img { height: 220px; }
+
+    /* Map container upgraded */
+    .map-container {
+      background: linear-gradient(160deg, #e8f5ee 0%, #dceef8 100%);
+      border: none;
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Section alternating bg */
+    .bg-alt { background: #f7faf8; }
+
+    /* Experience section enriched */
+    .exp-card { width: 195px; }
+
+    /* Newsletter upgraded */
+    #newsletter {
+      background: linear-gradient(135deg, #0d2818 0%, #133057 60%, #0d1f3c 100%);
+    }
+
+    /* Floating whatsapp pulse */
+    .fab-whatsapp { animation: whatsappPulse 2.5s ease-in-out infinite; }
+    @keyframes whatsappPulse {
+      0%,100% { box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+      50% { box-shadow: 0 6px 40px rgba(37,211,102,.85), 0 0 0 12px rgba(37,211,102,.1); }
+    }
+
+    /* Stagger reveal delays */
+    .reveal-d1 { transition-delay: .05s !important; }
+    .reveal-d2 { transition-delay: .12s !important; }
+    .reveal-d3 { transition-delay: .19s !important; }
+    .reveal-d4 { transition-delay: .26s !important; }
+    .reveal-d5 { transition-delay: .33s !important; }
+    .reveal-d6 { transition-delay: .40s !important; }
+    .reveal-d7 { transition-delay: .47s !important; }
+    .reveal-d8 { transition-delay: .54s !important; }
+
+    /* Responsive stats */
+    @media(max-width:900px){
+      .stats-bar { grid-template-columns: repeat(2,1fr); padding: 28px 24px; margin-top: -30px; }
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3) { border-top: 1px solid var(--neutral-100); }
+      .stat-item:nth-child(4) { border-top: 1px solid var(--neutral-100); border-right: none; }
+    }
+    @media(max-width:600px){
+      .stats-bar { grid-template-columns: repeat(2,1fr); padding:20px 16px; }
+      .gallery-masonry { columns: 2; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="KashmirSafar home">
+        <div class="nav-logo-mark" aria-hidden="true">🏔️</div>
+        <div class="nav-logo-text">
+          <div class="nav-logo-name">KashmirSafar</div>
+          <div class="nav-logo-tagline">Your Journey Through Paradise</div>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="guides.html">Travel Guides</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/919419000000?text=Hello%2C%20I%20want%20to%20plan%20my%20Kashmir%20trip!" class="nav-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp enquiry">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.549 4.095 1.509 5.823L0 24l6.335-1.483A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.016-1.376l-.36-.214-3.72.87.94-3.63-.235-.373A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+          WhatsApp
+        </a>
+        <a href="contact.html" class="nav-book-btn">Book Trip ✈️</a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav class="nav-mobile" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="destinations.html" class="mobile-link">🏔️ Destinations</a>
+    <a href="packages.html" class="mobile-link">📦 Kashmir Packages</a>
+    <a href="experiences.html" class="mobile-link">✨ Experiences</a>
+    <a href="contact.html" class="mobile-link">🗺️ Plan My Trip</a>
+    <a href="guides.html" class="mobile-link">📖 Travel Guides</a>
+    <a href="about.html" class="mobile-link">👥 About Us</a>
+    <a href="contact.html" class="mobile-link">📞 Contact Us</a>
+    <a href="https://wa.me/919419000000" style="color:#25D366;margin-top:12px;" target="_blank" rel="noopener">💬 WhatsApp Enquiry</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<main>
+<section id="hero" aria-label="Hero section">
+  <div class="hero-bg">
+    <!-- Stunning Dal Lake hero image from generated AI photo -->
+    <img src="images/hero_dal_lake.jpg"
+         alt="Dal Lake Kashmir at sunrise with traditional Shikara boat and snow-capped Himalayan mountains"
+         loading="eager" fetchpriority="high" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      <span>🏆</span> India's #1 Kashmir Travel Platform &nbsp;·&nbsp; <span>10,000+ Happy Travelers</span>
+    </div>
+
+    <h1 class="hero-headline">
+      Discover the<br /><em>Soul of Kashmir</em>
+    </h1>
+
+    <p class="hero-subtitle">
+      Explore breathtaking valleys, snow-covered mountains, peaceful lakes and unforgettable experiences — crafted just for you by local Kashmir experts.
+    </p>
+
+    <!-- Search Panel -->
+    <div class="hero-search" role="search" aria-label="Trip search">
+      <div class="hero-search-title">🔍 Where do you want to go?</div>
+      <div class="hero-search-grid">
+        <div class="hero-search-field">
+          <label for="search-destination">Destination</label>
+          <select id="search-destination">
+            <option value="">All Destinations</option>
+            <option>Srinagar</option><option>Gulmarg</option><option>Pahalgam</option>
+            <option>Sonamarg</option><option>Doodhpathri</option><option>Yusmarg</option>
+            <option>Gurez Valley</option><option>Aharbal</option>
+          </select>
+        </div>
+        <div class="hero-search-field">
+          <label for="search-date">Travel Date</label>
+          <input type="month" id="search-date" />
+        </div>
+        <div class="hero-search-field">
+          <label for="search-travelers">Travelers</label>
+          <select id="search-travelers">
+            <option>1 Person</option><option>2 Persons</option>
+            <option>3–4 Persons</option><option>5–8 Persons</option><option>9+ Group</option>
+          </select>
+        </div>
+        <div class="hero-search-field">
+          <label for="search-budget">Budget</label>
+          <select id="search-budget">
+            <option>Any Budget</option><option>Under ₹15,000/pax</option>
+            <option>₹15k – ₹30k/pax</option><option>₹30k – ₹60k/pax</option><option>₹60k+ Premium</option>
+          </select>
+        </div>
+        <button class="hero-search-btn" id="hero-search-btn">Search Trips →</button>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#packages" class="btn btn-primary">🏔️ Explore Kashmir</a>
+      <a href="#trip-planner" class="btn btn-ghost">🗺️ Plan My Trip</a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item">100+ Experiences</div>
+      <div class="trust-item">Local Experts</div>
+      <div class="trust-item">Custom Itineraries</div>
+      <div class="trust-item">Best Price Guarantee</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<div class="container" style="position:relative;z-index:10;">
+  <div class="stats-bar reveal">
+    <div class="stat-item">
+      <div class="stat-number">10K+</div>
+      <div class="stat-label">Happy Travelers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">8+</div>
+      <div class="stat-label">Destinations Covered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years in Kashmir</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4.9★</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     POPULAR DESTINATIONS
+     ============================================================ -->
+<section id="destinations" class="section-py" style="padding-top:80px;" aria-labelledby="destinations-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Explore Kashmir</span>
+      <h2 class="section-title gradient-title" id="destinations-heading">Popular Destinations</h2>
+      <p class="section-subtitle">From the floating gardens of Dal Lake to the pristine meadows of Gulmarg — Kashmir is a world unto itself.</p>
+    </div>
+
+    <div class="destinations-grid">
+
+      <!-- Srinagar - AI generated image -->
+      <article class="dest-card reveal reveal-d1" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_srinagar.jpg" alt="Dal Lake Srinagar – houseboats at golden sunrise with mountain reflections" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">🌟 Most Popular</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Srinagar</h3>
+          <p class="dest-card-desc" itemprop="description">The crown of Kashmir — iconic Dal Lake, opulent houseboats, Mughal gardens and vibrant local bazaars in a breathtaking mountain setting.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>March – November</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Gulmarg - AI generated image -->
+      <article class="dest-card reveal reveal-d2" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_gulmarg.jpg" alt="Gulmarg Kashmir – snow-covered slopes with gondola cable car and Himalayan peaks" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">❄️ Winter Paradise</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Gulmarg</h3>
+          <p class="dest-card-desc" itemprop="description">Asia's premier ski destination — a flower meadow in summer and a snowy paradise in winter with Asia's highest gondola cable car.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>Dec–Feb (Snow) · Apr–Oct (Green)</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Pahalgam - AI generated image -->
+      <article class="dest-card reveal reveal-d3" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_pahalgam.jpg" alt="Pahalgam Kashmir – Lidder river valley with green pine forests and snow peaks" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">💚 Valley of Shepherds</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Pahalgam</h3>
+          <p class="dest-card-desc" itemprop="description">Nestled in the Lidder River valley — famous for pine-clad hills, trout fishing, Betab Valley and the gateway to the Amarnath Yatra.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>April – September</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Sonamarg - AI generated image -->
+      <article class="dest-card reveal reveal-d4" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_sonamarg.jpg" alt="Sonamarg Kashmir – golden meadow with Thajiwas glacier and snow-capped peaks" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">✨ Meadow of Gold</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Sonamarg</h3>
+          <p class="dest-card-desc" itemprop="description">The "Golden Meadow" at 2,800m — surrounded by glaciers, crystal streams, wild ponies and some of the most dramatic peaks in the Himalayas.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Doodhpathri - AI generated image -->
+      <article class="dest-card reveal reveal-d5" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">🥛 Hidden Gem</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Doodhpathri</h3>
+          <p class="dest-card-desc" itemprop="description">"Valley of Milk" — a secluded alpine meadow with milky white streams, dense fir forests, wildflowers and sweeping untouched landscapes.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Yusmarg - AI generated image -->
+      <article class="dest-card reveal reveal-d6" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">🌲 Forest Retreat</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Yusmarg</h3>
+          <p class="dest-card-desc" itemprop="description">A serene meadow surrounded by towering cedar and pine forests — the perfect off-the-beaten-path Kashmir experience for true nature lovers.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Gurez Valley - curated Unsplash -->
+      <article class="dest-card reveal reveal-d7" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">🏕️ Offbeat Escape</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Gurez Valley</h3>
+          <p class="dest-card-desc" itemprop="description">One of India's most breathtaking remote valleys — dramatic Himalayan scenery, the Kishanganga river and untouched Dard tribal culture.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      <!-- Aharbal - curated Unsplash -->
+      <article class="dest-card reveal reveal-d8" itemscope itemtype="https://schema.org/TouristAttraction">
+        <div class="dest-card-img">
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" itemprop="photo" />
+          <div class="dest-card-overlay"></div>
+          <span class="dest-card-badge">💧 Niagara of Kashmir</span>
+        </div>
+        <div class="dest-card-body">
+          <h3 class="dest-card-name" itemprop="name">Aharbal</h3>
+          <p class="dest-card-desc" itemprop="description">Often called the "Niagara of Kashmir" — a stunning waterfall cascading through dense forest, perfect for picnics and nature walks.</p>
+          <div class="dest-card-meta">📅 Best Time: <strong>April – October</strong></div>
+          <a href="#packages" class="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TOUR PACKAGES
+     ============================================================ -->
+<section id="packages" class="section-py bg-alt" aria-labelledby="packages-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:40px;">
+      <span class="section-label">Kashmir Tour Packages</span>
+      <h2 class="section-title gradient-title" id="packages-heading">Curated Kashmir Experiences</h2>
+      <p class="section-subtitle">Handcrafted itineraries for families, couples, adventurers and solo travelers — all with local expertise and best-price guarantee.</p>
+    </div>
+
+    <div class="packages-filter reveal" role="group" aria-label="Package filters">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">🌟 All Packages</button>
+      <button class="filter-btn" data-filter="family" aria-pressed="false">👨‍👩‍👧 Family</button>
+      <button class="filter-btn" data-filter="honeymoon" aria-pressed="false">💑 Honeymoon</button>
+      <button class="filter-btn" data-filter="adventure" aria-pressed="false">🏔️ Adventure</button>
+      <button class="filter-btn" data-filter="luxury" aria-pressed="false">✨ Luxury</button>
+      <button class="filter-btn" data-filter="budget" aria-pressed="false">💰 Budget</button>
+    </div>
+
+    <div class="packages-grid" id="packages-grid">
+
+      <!-- Package 1: Highlights -->
+      <article class="pkg-card reveal reveal-d1" data-type="family" itemscope itemtype="https://schema.org/TouristTrip">
+        <div class="pkg-card-img">
+          <img src="images/package_highlights.jpg" alt="Kashmir Highlights – Dal Lake Shikara ride and Mughal Gardens sightseeing" loading="lazy" />
+          <span class="pkg-card-ribbon">⭐ Most Booked</span>
+          <button class="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
+        </div>
+        <div class="pkg-card-body">
+          <div class="pkg-card-type">Kashmir Classic</div>
+          <h3 class="pkg-card-title" itemprop="name">Kashmir Highlights</h3>
+          <div class="pkg-card-destinations">
+            <span class="pkg-dest-tag">Srinagar</span>
+            <span class="pkg-dest-tag">Gulmarg</span>
+            <span class="pkg-dest-tag">Pahalgam</span>
+          </div>
+          <div class="pkg-card-meta">
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Duration</span><span class="pkg-meta-value">5D / 4N</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Type</span><span class="pkg-meta-value">Family · Couple</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Group Size</span><span class="pkg-meta-value">2 – 10</span></div>
+          </div>
+          <div class="pkg-card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="pkg-rating-score">4.9</span>
+            <span class="pkg-rating-count">(342 reviews)</span>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price">
+              <span class="pkg-price-from">Starting from</span>
+              <span class="pkg-price-amount" itemprop="offers">₹12,999</span>
+              <span class="pkg-price-per">per person</span>
+            </div>
+            <div class="pkg-card-actions">
+              <a href="#contact" class="btn btn-outline btn-sm">View</a>
+              <a href="#trip-planner" class="btn btn-primary btn-sm">Customize</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Package 2: Escape -->
+      <article class="pkg-card reveal reveal-d2" data-type="family luxury" itemscope itemtype="https://schema.org/TouristTrip">
+        <div class="pkg-card-img">
+          <img src="images/package_escape.jpg" alt="Kashmir Escape – Sonamarg glacier panorama and alpine mountain scenery" loading="lazy" />
+          <span class="pkg-card-ribbon">🌟 Editor's Pick</span>
+          <button class="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
+        </div>
+        <div class="pkg-card-body">
+          <div class="pkg-card-type">Best Value</div>
+          <h3 class="pkg-card-title" itemprop="name">Kashmir Escape</h3>
+          <div class="pkg-card-destinations">
+            <span class="pkg-dest-tag">Srinagar</span>
+            <span class="pkg-dest-tag">Gulmarg</span>
+            <span class="pkg-dest-tag">Sonamarg</span>
+            <span class="pkg-dest-tag">Pahalgam</span>
+          </div>
+          <div class="pkg-card-meta">
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Duration</span><span class="pkg-meta-value">6D / 5N</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Type</span><span class="pkg-meta-value">All Types</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Group Size</span><span class="pkg-meta-value">2 – 12</span></div>
+          </div>
+          <div class="pkg-card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="pkg-rating-score">4.8</span>
+            <span class="pkg-rating-count">(218 reviews)</span>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price">
+              <span class="pkg-price-from">Starting from</span>
+              <span class="pkg-price-amount" itemprop="offers">₹18,499</span>
+              <span class="pkg-price-per">per person</span>
+            </div>
+            <div class="pkg-card-actions">
+              <a href="#contact" class="btn btn-outline btn-sm">View</a>
+              <a href="#trip-planner" class="btn btn-primary btn-sm">Customize</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Package 3: Honeymoon -->
+      <article class="pkg-card reveal reveal-d3" data-type="honeymoon luxury" itemscope itemtype="https://schema.org/TouristTrip">
+        <div class="pkg-card-img">
+          <img src="images/package_honeymoon.jpg" alt="Kashmir Honeymoon – romantic Shikara sunset on Dal Lake for couples" loading="lazy" />
+          <span class="pkg-card-ribbon" style="background:linear-gradient(135deg,#e91e8c,#f43f5e)">💑 Honeymoon</span>
+          <button class="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
+        </div>
+        <div class="pkg-card-body">
+          <div class="pkg-card-type">Romantic Escape</div>
+          <h3 class="pkg-card-title" itemprop="name">Kashmir Honeymoon</h3>
+          <div class="pkg-card-destinations">
+            <span class="pkg-dest-tag">Houseboat Stay</span>
+            <span class="pkg-dest-tag">Shikara Ride</span>
+            <span class="pkg-dest-tag">Gulmarg</span>
+            <span class="pkg-dest-tag">Pahalgam</span>
+          </div>
+          <div class="pkg-card-meta">
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Duration</span><span class="pkg-meta-value">6D / 5N</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Type</span><span class="pkg-meta-value">Couples</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Group Size</span><span class="pkg-meta-value">2 Persons</span></div>
+          </div>
+          <div class="pkg-card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="pkg-rating-score">5.0</span>
+            <span class="pkg-rating-count">(456 reviews)</span>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price">
+              <span class="pkg-price-from">Starting from</span>
+              <span class="pkg-price-amount" itemprop="offers">₹24,999</span>
+              <span class="pkg-price-per">per couple</span>
+            </div>
+            <div class="pkg-card-actions">
+              <a href="#contact" class="btn btn-outline btn-sm">View</a>
+              <a href="#trip-planner" class="btn btn-primary btn-sm">Customize</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Package 4: Adventure -->
+      <article class="pkg-card reveal reveal-d4" data-type="adventure" itemscope itemtype="https://schema.org/TouristTrip">
+        <div class="pkg-card-img">
+          <img src="images/package_adventure.jpg" alt="Kashmir Adventure – Himalayan trekking with mountain views and alpine meadows" loading="lazy" />
+          <span class="pkg-card-ribbon" style="background:linear-gradient(135deg,#ea580c,#f59e0b)">🏔️ Adventure</span>
+          <button class="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
+        </div>
+        <div class="pkg-card-body">
+          <div class="pkg-card-type">Thrill Seeker</div>
+          <h3 class="pkg-card-title" itemprop="name">Kashmir Adventure</h3>
+          <div class="pkg-card-destinations">
+            <span class="pkg-dest-tag">Gurez</span>
+            <span class="pkg-dest-tag">Sonamarg</span>
+            <span class="pkg-dest-tag">Gulmarg</span>
+            <span class="pkg-dest-tag">Trekking</span>
+          </div>
+          <div class="pkg-card-meta">
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Duration</span><span class="pkg-meta-value">7D / 6N</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Type</span><span class="pkg-meta-value">Adventure</span></div>
+            <div class="pkg-meta-item"><span class="pkg-meta-label">Group Size</span><span class="pkg-meta-value">2 – 8</span></div>
+          </div>
+          <div class="pkg-card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="pkg-rating-score">4.9</span>
+            <span class="pkg-rating-count">(167 reviews)</span>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price">
+              <span class="pkg-price-from">Starting from</span>
+              <span class="pkg-price-amount" itemprop="offers">₹22,499</span>
+              <span class="pkg-price-per">per person</span>
+            </div>
+            <div class="pkg-card-actions">
+              <a href="#contact" class="btn btn-outline btn-sm">View</a>
+              <a href="#trip-planner" class="btn btn-primary btn-sm">Customize</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center" style="margin-top:48px;">
+      <a href="#contact" class="btn btn-outline">View All Kashmir Packages →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCES
+     ============================================================ -->
+<section id="experiences" class="section-py" aria-labelledby="experiences-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <span class="section-label" style="color:var(--green-300)">Things to Do</span>
+      <h2 class="section-title" id="experiences-heading" style="color:var(--white)">Kashmir Experiences</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.65)">Curated activities and moments that make your Kashmir journey truly unforgettable.</p>
+    </div>
+
+    <div class="experiences-scroll reveal" role="list">
+      <div class="exp-card active" role="listitem" tabindex="0">
+        <span class="exp-icon">🛶</span>
+        <div class="exp-name">Shikara Ride</div>
+        <div class="exp-count">Dal Lake & Nagin Lake</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">❄️</span>
+        <div class="exp-name">Snow Adventures</div>
+        <div class="exp-count">Skiing & Snowboarding</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">🏔️</span>
+        <div class="exp-name">Mountain Trekking</div>
+        <div class="exp-count">15+ Trek Routes</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">🏕️</span>
+        <div class="exp-name">Camping</div>
+        <div class="exp-count">Under the Stars</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">🌲</span>
+        <div class="exp-name">Valley Exploration</div>
+        <div class="exp-count">Hidden Meadows</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">🍵</span>
+        <div class="exp-name">Kashmiri Cuisine</div>
+        <div class="exp-count">Wazwan & Kahwa</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">📸</span>
+        <div class="exp-name">Photography Tours</div>
+        <div class="exp-count">Pro Guided Tours</div>
+      </div>
+      <div class="exp-card" role="listitem" tabindex="0">
+        <span class="exp-icon">🌅</span>
+        <div class="exp-name">Sunrise Experiences</div>
+        <div class="exp-count">Dal Lake Sunrise</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US
+     ============================================================ -->
+<section id="why-us" class="section-py" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title gradient-title" id="why-heading">Why Choose KashmirSafar</h2>
+      <p class="section-subtitle">We're not just a travel agency — we're Kashmiris who know every valley, every trail and every hidden gem.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-d1">
+        <div class="why-icon">🏔️</div>
+        <h3 class="why-title">Local Travel Experts</h3>
+        <p class="why-desc">Get recommendations from people who were born and raised in Kashmir. Our guides know the terrain, the seasons and the hidden spots no guidebook mentions.</p>
+      </div>
+      <div class="why-card reveal reveal-d2">
+        <div class="why-icon">🗺️</div>
+        <h3 class="why-title">Custom Itineraries</h3>
+        <p class="why-desc">Every trip is crafted according to your interests, budget and pace. Luxury houseboat or budget guesthouse — we design it around you.</p>
+      </div>
+      <div class="why-card reveal reveal-d3">
+        <div class="why-icon">✅</div>
+        <h3 class="why-title">Verified Experiences</h3>
+        <p class="why-desc">We personally inspect every hotel, activity and experience we recommend. No surprises — only quality-assured, carefully selected stays and activities.</p>
+      </div>
+      <div class="why-card reveal reveal-d4">
+        <div class="why-icon">🛡️</div>
+        <h3 class="why-title">24/7 Travel Assistance</h3>
+        <p class="why-desc">From planning to return — our local team is available round the clock to ensure your Kashmir journey is seamless and stress-free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRIP PLANNER
+     ============================================================ -->
+<section id="trip-planner" class="section-py bg-alt" aria-labelledby="planner-heading">
+  <div class="container">
+    <div class="planner-card reveal">
+      <div class="planner-left">
+        <h2 class="planner-left-title" id="planner-heading">Build Your Perfect Kashmir Trip</h2>
+        <p class="planner-left-desc">Answer a few simple questions and we'll craft a personalized Kashmir itinerary — with destinations, activities, hotels and an estimated budget.</p>
+        <div class="planner-features">
+          <div class="planner-feature"><div class="planner-feature-icon">📅</div><span>Day-by-day itinerary</span></div>
+          <div class="planner-feature"><div class="planner-feature-icon">🏨</div><span>Curated hotel recommendations</span></div>
+          <div class="planner-feature"><div class="planner-feature-icon">💰</div><span>Real-time budget estimate</span></div>
+          <div class="planner-feature"><div class="planner-feature-icon">🚗</div><span>Transport & transfer guide</span></div>
+        </div>
+      </div>
+
+      <div class="planner-right">
+        <form id="planner-form" novalidate>
+
+          <div class="planner-step">
+            <div class="planner-step-label"><span class="step-num">1</span> Where are you traveling from?</div>
+            <input type="text" class="planner-input" id="planner-from" placeholder="e.g. Delhi, Mumbai, Bangalore..." required />
+          </div>
+
+          <div class="planner-step">
+            <div class="planner-step-label"><span class="step-num">2</span> How many travelers?</div>
+            <select class="planner-select" id="planner-travelers">
+              <option value="1">Solo Traveler</option>
+              <option value="2" selected>2 Persons (Couple)</option>
+              <option value="3">3 Persons</option>
+              <option value="4">4 Persons (Family)</option>
+              <option value="5">5–8 Persons (Group)</option>
+              <option value="9">9+ Persons (Large Group)</option>
+            </select>
+          </div>
+
+          <div class="planner-step">
+            <div class="planner-step-label"><span class="step-num">3</span> Number of days?</div>
+            <select class="planner-select" id="planner-days">
+              <option>3 Days</option><option>4 Days</option><option selected>5 Days</option>
+              <option>6 Days</option><option>7 Days</option><option>8–10 Days</option><option>11+ Days</option>
+            </select>
+          </div>
+
+          <div class="planner-step">
+            <div class="planner-step-label"><span class="step-num">4</span> Travel month?</div>
+            <select class="planner-select" id="planner-month">
+              <option>January</option><option>February</option><option>March</option>
+              <option>April</option><option>May</option><option>June</option>
+              <option>July</option><option>August</option><option>September</option>
+              <option>October</option><option>November</option><option>December</option>
+            </select>
+          </div>
+
+          <div class="planner-step">
+            <div class="planner-step-label"><span class="step-num">5</span> Travel style?</div>
+            <div class="style-chips" role="group">
+              <button type="button" class="style-chip" data-style="family">👨‍👩‍👧 Family</button>
+              <button type="button" class="style-chip active" data-style="honeymoon">💑 Honeymoon</button>
+              <button type="button" class="style-chip" data-style="adventure">🏔️ Adventure</button>
+              <button type="button" class="style-chip" data-style="luxury">✨ Luxury</button>
+              <button type="button" class="style-chip" data-style="budget">💰 Budget</button>
+              <button type="button" class="style-chip" data-style="solo">🎒 Solo</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">
+            ✨ Create My Itinerary
+          </button>
+        </form>
+
+        <div class="itinerary-result" id="itinerary-result" aria-live="polite">
+          <h3 style="font-weight:700;color:var(--neutral-900);margin-bottom:16px;font-size:1.1rem;">🗺️ Your Kashmir Itinerary</h3>
+          <div id="itinerary-days"></div>
+          <div style="margin-top:20px;padding:16px;background:var(--green-50);border-radius:var(--radius-md);border:1px solid var(--green-100);">
+            <div style="font-size:.85rem;color:var(--green-700);font-weight:700;margin-bottom:8px;">💰 Estimated Budget</div>
+            <div id="itinerary-budget" style="font-size:1.1rem;font-weight:700;color:var(--neutral-900);"></div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">📞 Get Exact Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DESTINATION GUIDES / BLOG
+     ============================================================ -->
+<section id="guides" class="section-py" aria-labelledby="guides-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Kashmir Travel Blog</span>
+      <h2 class="section-title gradient-title" id="guides-heading">Explore Kashmir Travel Guides</h2>
+      <p class="section-subtitle">In-depth guides to help you plan the perfect Kashmir trip — from season tips to hidden gems.</p>
+    </div>
+
+    <div class="guides-grid">
+
+      <article class="guide-card reveal reveal-d1">
+        <div class="guide-card-img">
+          <img src="images/dest_srinagar.jpg" alt="Best places to visit in Kashmir – Srinagar Dal Lake travel guide" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Destinations</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">8 min read</span>
+          </div>
+          <h3 class="guide-card-title">Best Places to Visit in Kashmir in 2025</h3>
+          <p class="guide-card-desc">A complete guide to Kashmir's most stunning destinations — from the iconic Dal Lake to the remote Gurez Valley.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+      <article class="guide-card reveal reveal-d2">
+        <div class="guide-card-img">
+          <img src="images/dest_gulmarg.jpg" alt="Best time to visit Kashmir – Gulmarg snow winter guide" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Planning</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">6 min read</span>
+          </div>
+          <h3 class="guide-card-title">Best Time to Visit Kashmir — Month by Month</h3>
+          <p class="guide-card-desc">When to go, what to expect — spring blooms, summer meadows, autumn colors or winter snow. A complete seasonal guide.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+      <article class="guide-card reveal reveal-d3">
+        <div class="guide-card-img">
+          <img src="images/package_honeymoon.jpg" alt="Kashmir honeymoon guide – romantic trip planning for couples" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Honeymoon</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">10 min read</span>
+          </div>
+          <h3 class="guide-card-title">The Complete Kashmir Honeymoon Guide</h3>
+          <p class="guide-card-desc">Romantic Shikara rides, luxury houseboat stays, candlelit dinners in meadows — the ultimate Kashmir honeymoon plan.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+      <article class="guide-card reveal reveal-d4">
+        <div class="guide-card-img">
+          <img src="images/dest_doodhpathri.jpg" alt="Kashmir in winter – snow adventures and cold weather travel tips" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Seasonal</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">7 min read</span>
+          </div>
+          <h3 class="guide-card-title">Kashmir in Winter — A Snow Lover's Paradise</h3>
+          <p class="guide-card-desc">Everything you need to know about visiting Kashmir in December, January and February — snow activities to packing tips.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+      <article class="guide-card reveal reveal-d5">
+        <div class="guide-card-img">
+          <img src="images/dest_pahalgam.jpg" alt="Kashmir family trip guide – Pahalgam Betab Valley with kids" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Family</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">9 min read</span>
+          </div>
+          <h3 class="guide-card-title">Kashmir Family Trip Guide — Tips, Routes & Budget</h3>
+          <p class="guide-card-desc">Child-friendly activities, best family hotels, safe routes and fun things to do with kids in Kashmir. Complete planning guide.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+      <article class="guide-card reveal reveal-d6">
+        <div class="guide-card-img">
+          <img src="images/dest_sonamarg.jpg" alt="Kashmir travel budget guide – cost breakdown for trip planning" loading="lazy" />
+        </div>
+        <div class="guide-card-body">
+          <div class="guide-card-meta">
+            <span class="guide-card-cat">Budget</span>
+            <span class="guide-card-dot">•</span>
+            <span class="guide-card-read">12 min read</span>
+          </div>
+          <h3 class="guide-card-title">Kashmir Trip Budget — Full Cost Breakdown</h3>
+          <p class="guide-card-desc">A realistic breakdown of Kashmir travel costs — flights, hotels, transport, food and activities for budget to luxury travelers.</p>
+          <a href="#" class="guide-read-btn">Read Guide →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center" style="margin-top:48px;">
+      <a href="#" class="btn btn-outline">Browse All Kashmir Guides →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTERACTIVE MAP
+     ============================================================ -->
+<section id="map" class="section-py bg-alt" aria-labelledby="map-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <span class="section-label">Kashmir Route Map</span>
+      <h2 class="section-title gradient-title" id="map-heading">Explore Kashmir's Destinations</h2>
+      <p class="section-subtitle">Click any destination on the map to discover what makes it special. Plan your Kashmir route with confidence.</p>
+    </div>
+
+    <div class="map-container reveal">
+      <div class="map-visual" role="application" aria-label="Interactive Kashmir destination map">
+        <div class="map-route-line" aria-hidden="true"></div>
+
+        <div class="map-pin" style="left:8%;top:50%;" tabindex="0" role="button" aria-label="Srinagar" aria-haspopup="true">
+          <div class="map-pin-dot"></div>
+          <div class="map-pin-label">Srinagar</div>
+          <div class="map-popup" role="tooltip">
+            <div class="map-popup-name">🌸 Srinagar</div>
+            <div class="map-popup-desc">Dal Lake · Houseboats · Mughal Gardens · Shopping</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:21%;top:27%;" tabindex="0" role="button" aria-label="Gulmarg" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:var(--blue-600)"></div>
+          <div class="map-pin-label">Gulmarg</div>
+          <div class="map-popup">
+            <div class="map-popup-name">❄️ Gulmarg</div>
+            <div class="map-popup-desc">Skiing · Gondola · Snow Meadows</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:38%;top:50%;" tabindex="0" role="button" aria-label="Sonamarg" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:var(--gold-600)"></div>
+          <div class="map-pin-label">Sonamarg</div>
+          <div class="map-popup">
+            <div class="map-popup-name">✨ Sonamarg</div>
+            <div class="map-popup-desc">Thajiwas Glacier · Zero Point · Trekking</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:52%;top:73%;" tabindex="0" role="button" aria-label="Pahalgam" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:#16a34a"></div>
+          <div class="map-pin-label">Pahalgam</div>
+          <div class="map-popup">
+            <div class="map-popup-name">💚 Pahalgam</div>
+            <div class="map-popup-desc">Betab Valley · Chandanwari · Lidder River</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:64%;top:42%;" tabindex="0" role="button" aria-label="Doodhpathri" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:#64748b"></div>
+          <div class="map-pin-label">Doodhpathri</div>
+          <div class="map-popup" style="left:auto;right:0;transform:none">
+            <div class="map-popup-name">🥛 Doodhpathri</div>
+            <div class="map-popup-desc">Milky Streams · Alpine Meadows · Wildflowers</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:76%;top:61%;" tabindex="0" role="button" aria-label="Yusmarg" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:#7c3aed"></div>
+          <div class="map-pin-label">Yusmarg</div>
+          <div class="map-popup" style="left:auto;right:0;transform:none">
+            <div class="map-popup-name">🌲 Yusmarg</div>
+            <div class="map-popup-desc">Pine Forest · Doodhganga River · Ponies</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="map-pin" style="left:90%;top:34%;" tabindex="0" role="button" aria-label="Gurez Valley" aria-haspopup="true">
+          <div class="map-pin-dot" style="background:#dc2626"></div>
+          <div class="map-pin-label">Gurez</div>
+          <div class="map-popup" style="left:auto;right:0;transform:none">
+            <div class="map-popup-name">🏕️ Gurez Valley</div>
+            <div class="map-popup-desc">Remote · Tribal Culture · Kishanganga River</div>
+            <a href="#destinations" class="map-popup-link">Explore →</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <p style="font-size:.85rem;color:var(--neutral-500);">🖱️ Click any pin for destination details &nbsp;·&nbsp; Route: Srinagar → Gulmarg → Sonamarg → Pahalgam → Doodhpathri → Yusmarg → Gurez</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section id="testimonials" class="section-py" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Traveler Stories</span>
+      <h2 class="section-title gradient-title" id="testimonials-heading">Stories From Our Travelers</h2>
+      <p class="section-subtitle">Real experiences from people who trusted KashmirSafar to plan their dream Kashmir journey.</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <blockquote class="testi-card reveal reveal-d1" itemscope itemtype="https://schema.org/Review">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p class="testi-text" itemprop="reviewBody">We came for a honeymoon and left with a lifetime of memories. The houseboat on Dal Lake was beyond anything we imagined — peaceful, beautiful, and the sunrise was magical. KashmirSafar handled every detail perfectly.</p>
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5" />★★★★★
+        </div>
+        <div class="testi-footer">
+          <div class="testi-avatar" aria-hidden="true">RA</div>
+          <div>
+            <div class="testi-name" itemprop="author">Rohan & Ananya Kapoor</div>
+            <div class="testi-meta">Mumbai, Maharashtra</div>
+          </div>
+        </div>
+        <div class="testi-trip">💑 Honeymoon Trip</div>
+      </blockquote>
+
+      <blockquote class="testi-card reveal reveal-d2" itemscope itemtype="https://schema.org/Review">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p class="testi-text" itemprop="reviewBody">Took my family of four to Gulmarg and Pahalgam. My kids saw snow for the first time — their faces were priceless. Our guide Tariq was incredibly knowledgeable and made us feel safe the entire trip. Highly recommend!</p>
+        <div class="stars">★★★★★</div>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,var(--blue-600),var(--blue-400))" aria-hidden="true">PS</div>
+          <div>
+            <div class="testi-name" itemprop="author">Priya Sharma</div>
+            <div class="testi-meta">Bangalore, Karnataka</div>
+          </div>
+        </div>
+        <div class="testi-trip">👨‍👩‍👧 Family Trip</div>
+      </blockquote>
+
+      <blockquote class="testi-card reveal reveal-d3" itemscope itemtype="https://schema.org/Review">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p class="testi-text" itemprop="reviewBody">The Gurez Valley trek was one of the most raw and beautiful experiences of my life. KashmirSafar sorted everything from transport to camping gear. As a solo traveler, I never felt alone or unsafe for a single moment.</p>
+        <div class="stars">★★★★★</div>
+        <div class="testi-footer">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#ea580c,#f59e0b)" aria-hidden="true">DM</div>
+          <div>
+            <div class="testi-name" itemprop="author">Daniel Matthews</div>
+            <div class="testi-meta">London, UK</div>
+          </div>
+        </div>
+        <div class="testi-trip">🏔️ Adventure Trek</div>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY  — proper Kashmir images
+     ============================================================ -->
+<section id="gallery" class="section-py bg-alt" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Kashmir Through Our Lens</span>
+      <h2 class="section-title gradient-title" id="gallery-heading">Kashmir in Every Frame</h2>
+      <p class="section-subtitle">A visual journey through the most breathtaking landscapes, cultural moments and everyday magic of Kashmir.</p>
+    </div>
+
+    <div class="gallery-masonry reveal" role="list" aria-label="Kashmir photo gallery">
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Dal Lake houseboats at sunrise">
+        <img src="images/dest_srinagar.jpg" alt="Dal Lake Srinagar houseboats and mountains at golden sunrise" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Dal Lake, Srinagar</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Gulmarg snow landscape">
+        <img src="images/dest_gulmarg.jpg" alt="Gulmarg snow-covered winter meadow with gondola and Himalayan peaks" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Gulmarg in Winter</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Pahalgam green valley">
+        <img src="images/dest_pahalgam.jpg" alt="Pahalgam Lidder river valley lush green forest and mountains" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Pahalgam Valley</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Sonamarg golden meadow">
+        <img src="images/dest_sonamarg.jpg" alt="Sonamarg golden meadow with glacier and Himalayan peaks in evening light" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Sonamarg, Meadow of Gold</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Doodhpathri milky stream">
+        <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri milky white stream and wildflower alpine meadow" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Doodhpathri, Valley of Milk</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Yusmarg pine forest">
+        <img src="images/dest_yusmarg.jpg" alt="Yusmarg alpine meadow with pine forest and wild ponies" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Yusmarg Forest Meadow</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Kashmir Shikara ride">
+        <img src="images/package_highlights.jpg" alt="Traditional Shikara ride on Dal Lake Kashmir with flower garlands" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Shikara Ride, Dal Lake</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Kashmir honeymoon sunset">
+        <img src="images/package_honeymoon.jpg" alt="Romantic Kashmir sunset on Dal Lake – honeymoon Shikara ride" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Romantic Kashmir Sunset</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Himalayan trekking adventure">
+        <img src="images/package_adventure.jpg" alt="Himalayan mountain trekking trail in Kashmir alpine meadows" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Himalayan Trekking</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Sonamarg glacier panorama">
+        <img src="images/package_escape.jpg" alt="Sonamarg glacier panorama mountain road Kashmir" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Sonamarg Glacier View</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Kashmir mountain waterfall">
+        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&q=85&fit=crop" alt="Stunning mountain waterfall in Kashmir lush green forest" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Aharbal Waterfall</div></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Himalayan mountain peaks">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=85&fit=crop" alt="Dramatic Himalayan mountain peaks and alpine landscape" loading="lazy" />
+        <div class="gallery-item-overlay"><div class="gallery-item-caption">Himalayan Peaks</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+  <img src="" alt="" id="lightbox-img" />
+</div>
+
+<!-- ============================================================
+     NEWSLETTER
+     ============================================================ -->
+<section id="newsletter" class="section-py" aria-labelledby="newsletter-heading">
+  <div class="container">
+    <div class="newsletter-inner">
+      <span class="section-label" style="color:var(--green-300)">Stay Inspired</span>
+      <h2 class="section-title" id="newsletter-heading" style="color:var(--white)">Get Kashmir Travel Inspiration</h2>
+      <p class="section-subtitle">Travel tips, hidden destinations and exclusive Kashmir offers delivered to your inbox. No spam, ever.</p>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <label for="newsletter-email" style="position:absolute;left:-9999px">Email address</label>
+        <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email address" required autocomplete="email" />
+        <button type="submit" class="btn btn-gold" id="newsletter-submit">Subscribe ✉️</button>
+      </form>
+      <p style="margin-top:16px;font-size:.8rem;color:rgba(255,255,255,.4)">🔒 Your email is safe. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section id="faq" class="section-py" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title gradient-title" id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know before planning your Kashmir trip.</p>
+    </div>
+
+    <div class="faq-grid" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">When is the best time to visit Kashmir?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">Kashmir is beautiful year-round. March–May offers famous tulip blooms and pleasant weather. June–September has lush green valleys perfect for trekking. October–November brings stunning autumn foliage. December–February transforms Kashmir into a winter wonderland, ideal for skiing in Gulmarg.</p></div>
+      </div>
+
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">Is Kashmir safe for tourists?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">Yes, Kashmir is very welcoming to tourists. Millions of visitors travel to Kashmir safely every year. Tourist areas including Srinagar, Gulmarg, Pahalgam and Sonamarg are well-monitored and hospitable. Our local guides are with you throughout the journey, making your trip safe and comfortable.</p></div>
+      </div>
+
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">What is the Kashmir trip budget for 5 days?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">A 5-day Kashmir trip costs ₹12,000–₹18,000 per person on a budget, ₹18,000–₹35,000 for mid-range and ₹40,000+ for luxury. This typically includes accommodation, houseboat stay, Shikara ride, private transfers, guide, and most meals. Costs vary by travel dates, group size and comfort level.</p></div>
+      </div>
+
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">Do I need a special permit to visit Kashmir?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">Indian nationals don't need any special permit for most parts of Kashmir. Some areas like Gurez Valley require a Protected Area Permit (PAP) which we arrange for you. International visitors need a valid Indian visa. Our team handles all necessary permits as part of your package.</p></div>
+      </div>
+
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">Can I customize my Kashmir itinerary?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">Absolutely! Every itinerary at KashmirSafar is fully customizable. Choose your destinations, duration, accommodation type, activities, travel dates and budget. Use our Trip Planner above for instant suggestions, or reach out via WhatsApp for a fully personalized Kashmir trip design.</p></div>
+      </div>
+
+      <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false"><span itemprop="name">What is included in KashmirSafar packages?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p class="faq-answer-text">Standard packages include hotel accommodation, a houseboat stay in Srinagar, Shikara ride, all inter-destination transfers in private vehicles, a local guide, selected meals (usually breakfast and dinner), and all sightseeing per the itinerary. Flights are not included but we assist with booking.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT / BOOKING
+     ============================================================ -->
+<section id="contact" class="section-py bg-alt" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="contact-info-title" id="contact-heading">Let's Plan Your Kashmir Trip</h2>
+        <p class="contact-info-desc">Share your travel dates and preferences and our Kashmir expert will craft a personalized itinerary with exact pricing within 24 hours.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone & WhatsApp</div>
+              <div class="contact-item-value">+91-9419-000-000</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">hello@kashmirsafar.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Office</div>
+              <div class="contact-item-value">Dal Lake Boulevard, Nehru Park, Srinagar, J&K – 190001</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-item-label">Working Hours</div>
+              <div class="contact-item-value">Mon – Sun: 9:00 AM – 8:00 PM IST</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;">
+          <a href="https://wa.me/919419000000" target="_blank" rel="noopener" class="btn btn-primary">💬 WhatsApp Us</a>
+          <a href="tel:+919419000000" class="btn btn-outline">📞 Call Us</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="contact-form-card">
+          <h3 class="form-title">📋 Booking Enquiry</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone / WhatsApp *</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="+91 ..." required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="you@email.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-travel-date">Travel Date</label>
+                <input type="month" class="form-control" id="contact-travel-date" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-travelers">No. of Travelers</label>
+                <select class="form-control" id="contact-travelers">
+                  <option>1 Person</option><option selected>2 Persons</option>
+                  <option>3–4 Persons</option><option>5–8 Persons</option><option>9+ Persons</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-trip-type">Trip Type</label>
+                <select class="form-control" id="contact-trip-type">
+                  <option>Honeymoon</option><option>Family Trip</option>
+                  <option>Adventure</option><option>Luxury</option><option>Budget</option><option>Solo</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Special Requirements</label>
+              <textarea class="form-control" id="contact-message" placeholder="Tell us what you're looking for — destinations, budget, activities..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="contact-submit">
+              ✈️ Send Enquiry
+            </button>
+            <p style="text-align:center;margin-top:14px;font-size:.8rem;color:var(--neutral-400)">We respond within 2–4 hours during business hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-mark">🏔️</div>
+            <div>
+              <div class="footer-logo-name">KashmirSafar</div>
+              <div class="footer-tagline">Your Journey Through Paradise</div>
+            </div>
+          </div>
+          <p class="footer-desc">We are a Kashmir-based premium travel company dedicated to creating authentic, meaningful experiences in the valley of Kashmir. From Dal Lake to Gurez Valley — we know every path.</p>
+          <div class="footer-socials" aria-label="Social media">
+            <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="#" class="social-btn" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#packages">Kashmir Packages</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#guides">Travel Guides</a></li>
+            <li><a href="#contact">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Useful Info</h3>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Top Packages</h3>
+          <ul class="footer-links">
+            <li><a href="#packages">Kashmir Highlights (5D)</a></li>
+            <li><a href="#packages">Kashmir Escape (6D)</a></li>
+            <li><a href="#packages">Kashmir Honeymoon (6D)</a></li>
+            <li><a href="#packages">Kashmir Adventure (7D)</a></li>
+            <li><a href="#packages">Gulmarg Snow Tour</a></li>
+            <li><a href="#packages">Pahalgam Valley Tour</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 KashmirSafar. All rights reserved. Made with ❤️ in Kashmir.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="fab-container" aria-label="Quick contact">
+  <a href="https://wa.me/919419000000?text=Hello%20KashmirSafar%2C%20I%20want%20to%20plan%20a%20Kashmir%20trip!" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp enquiry">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.549 4.095 1.509 5.823L0 24l6.335-1.483A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.016-1.376l-.36-.214-3.72.87.94-3.63-.235-.373A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+  </a>
+  <a href="tel:+919419000000" class="fab-call" aria-label="Call us">📞</a>
+</div>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+<script src="app.js"></script>
+<!-- Update footer links to point to pages -->
+<script>
+  document.querySelectorAll('.footer-links a[href="#packages"]').forEach(a=>a.href='packages.html');
+  document.querySelectorAll('.footer-links a[href="#destinations"]').forEach(a=>a.href='destinations.html');
+  document.querySelectorAll('.footer-links a[href="#experiences"]').forEach(a=>a.href='experiences.html');
+  document.querySelectorAll('.footer-links a[href="#guides"]').forEach(a=>a.href='guides.html');
+  document.querySelectorAll('.footer-links a[href="#contact"]').forEach(a=>a.href='contact.html');
+</script>
+</body>
+</html>

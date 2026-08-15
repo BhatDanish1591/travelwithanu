@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashmir Destinations Guide – Srinagar, Gulmarg, Pahalgam & More | KashmirSafar</title>
+  <meta name="description" content="Discover the best places to visit in Kashmir. Comprehensive guide to Srinagar, Gulmarg, Pahalgam, Sonamarg, Gurez Valley, and other paradise destinations." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    /* Destination calendar styles */
+    .calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      font-size: 0.9rem;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .calendar-table th, .calendar-table td {
+      padding: 14px 10px;
+      text-align: center;
+      border: 1px solid var(--neutral-100);
+    }
+    .calendar-table th {
+      background: var(--green-900);
+      color: var(--white);
+      font-weight: 600;
+    }
+    .calendar-table td.dest-name-cell {
+      font-weight: 700;
+      color: var(--neutral-900);
+      text-align: left;
+      padding-left: 20px;
+      background: var(--neutral-50);
+      width: 180px;
+    }
+    .status-peak { background: #d6f0e2; color: #1a5c3a; font-weight: 600; }
+    .status-good { background: #fdf3dc; color: #c9922a; }
+    .status-off { background: #f3f4f6; color: #9ca3af; }
+    
+    .legend-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 0.85rem;
+    }
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-box { width: 16px; height: 16px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+<header></header>
+
+<main>
+  <!-- Page Hero -->
+  <section class="page-hero" aria-label="Destinations Hero">
+    <div class="page-hero-bg">
+      <img src="images/dest_srinagar.jpg" alt="Srinagar Dal Lake panoramic view" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Destinations</span>
+      </nav>
+      <span class="page-hero-eyebrow">Discover Paradise</span>
+      <h1 class="page-hero-title">Explore Kashmir <em>Destinations</em></h1>
+      <p class="page-hero-desc">From romantic houseboats on serene lakes to majestic snow-capped peaks and winding valleys, find your perfect Himalayan getaway.</p>
+    </div>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section class="section-py" aria-label="All Destinations">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 56px;">
+        <span class="section-label">All Valley Wonders</span>
+        <h2 class="section-title gradient-title">Handpicked Destinations</h2>
+        <p class="section-subtitle">A curated list of Kashmir's most remarkable travel locations, complete with key highlights and best seasons.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Srinagar -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_srinagar.jpg" alt="Houseboats in Srinagar" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">🌟 Popular Crown</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Srinagar</h3>
+            <p class="dest-card-desc" itemprop="description">The summer capital nestled along the Jhelum. Known for stunning Mughal gardens, historical wooden mosques, and iconic Shikara stays on Dal Lake.</p>
+            <div class="dest-card-meta">📅 Best Time: March – Nov</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 1,585 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Dal & Nigeen Lakes</li>
+              <li>Mughal Gardens (Shalimar, Nishat)</li>
+              <li>Shankaracharya Temple</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gulmarg -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_gulmarg.jpg" alt="Gulmarg gondola and snow slopes" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">❄️ Winter Skiing</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Gulmarg</h3>
+            <p class="dest-card-desc" itemprop="description">The meadow of flowers transforms into Asia's premier ski resort in winter. Home to the legendary Gondola lift climbing up to Mt. Apharwat.</p>
+            <div class="dest-card-meta">📅 Best Time: Dec – Feb / Apr – Sep</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,650 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Gulmarg Gondola Ride</li>
+              <li>Apharwat Peak Snowsports</li>
+              <li>Strawberry Valley Trails</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pahalgam -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_pahalgam.jpg" alt="Pahalgam Lidder valley" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">🌲 Valley of Shepherds</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Pahalgam</h3>
+            <p class="dest-card-desc" itemprop="description">A majestic valley of pine forests and the pristine Lidder River. The base camp for treks and the spiritual Amarnath Yatra pilgrimage.</p>
+            <div class="dest-card-meta">📅 Best Time: Apr – Oct</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,740 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Betaab & Aru Valleys</li>
+              <li>Baisaran Meadow (Mini Switzerland)</li>
+              <li>Lidder River Rafting</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sonamarg -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_sonamarg.jpg" alt="Sonamarg glacier meadow" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">✨ Meadow of Gold</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Sonamarg</h3>
+            <p class="dest-card-desc" itemprop="description">The gateway to Ladakh. Surrounded by glacier streams, alpine lakes, and dramatic snowy mountain ridges. Excellent for high-altitude trekking.</p>
+            <div class="dest-card-meta">📅 Best Time: May – Oct</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,730 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Thajiwas Glacier Trek</li>
+              <li>Zoji La Pass Gate</li>
+              <li>Nilagrad River Springs</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Doodhpathri -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri valley of milk" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">🥛 Milky Meadow</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Doodhpathri</h3>
+            <p class="dest-card-desc" itemprop="description">An untouched meadow where clear waters flow rapidly over pebbles, resembling milk. Offers tranquility away from usual tourist trails.</p>
+            <div class="dest-card-meta">📅 Best Time: May – Sep</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,730 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Shaliganga River Walk</li>
+              <li>Tangnar Meadows picnic</li>
+              <li>Yusmarg hiking connections</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Yusmarg -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="images/dest_yusmarg.jpg" alt="Yusmarg pine forest meadow" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">🌲 Secluded Peace</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Yusmarg</h3>
+            <p class="dest-card-desc" itemprop="description">The "Meadow of Jesus". A quiet paradise filled with pine forest trails, mountain streams, and the majestic peaks of Tatakooti and Sunset.</p>
+            <div class="dest-card-meta">📅 Best Time: May – Oct</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,396 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Doodhganga River Trek</li>
+              <li>Nilnag Lake hike</li>
+              <li>Tatakooti Peak views</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gurez Valley -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85" alt="Gurez valley remote mountains" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">🏕️ Raw Wilds</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Gurez Valley</h3>
+            <p class="dest-card-desc" itemprop="description">A high-altitude valley of absolute serenity. Famous for Habba Khatoon peak, the Kishanganga river, and unique Shina-speaking culture.</p>
+            <div class="dest-card-meta">📅 Best Time: June – Sep</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,400 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Habba Khatoon Pyramid Peak</li>
+              <li>Kishanganga River Camping</li>
+              <li>Dawar Town exploration</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Aharbal -->
+        <article class="dest-card reveal" itemscope itemtype="https://schema.org/TouristAttraction">
+          <div class="dest-card-img">
+            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85" alt="Aharbal waterfall" itemprop="photo" />
+            <div class="dest-card-overlay"></div>
+            <span class="dest-card-badge">💧 Cascading Falls</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-card-name" itemprop="name">Aharbal</h3>
+            <p class="dest-card-desc" itemprop="description">The "Niagara of Kashmir" where the Veshu River plunges 25 meters down. A pine-surrounded canyon perfect for day trips and photography.</p>
+            <div class="dest-card-meta">📅 Best Time: Apr – Oct</div>
+            <div style="font-size:0.8rem; color:var(--neutral-500); margin-bottom:12px;">📈 Altitude: 2,260 m</div>
+            <ul style="font-size:0.85rem; margin-bottom:18px; padding-left:16px; color:var(--neutral-600);">
+              <li>Aharbal Waterfall Viewpoint</li>
+              <li>Kungwattan Meadows Trek</li>
+              <li>Kausar Nag Alpine Lake trek</li>
+            </ul>
+            <div style="display:flex; gap:10px;">
+              <a href="packages.html" class="btn btn-primary btn-sm" style="flex:1; justify-content:center;">View Packages</a>
+              <a href="guide-detail.html" class="btn btn-outline btn-sm" style="flex:1; justify-content:center;">Learn More</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Time to Visit Calendar Section -->
+  <section class="section-py bg-alt" aria-label="Best Time to Visit Calendar">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 40px;">
+        <span class="section-label">Planner Tool</span>
+        <h2 class="section-title gradient-title">Best Season Guide</h2>
+        <p class="section-subtitle">Understand at a glance the optimal months to visit each destination based on weather, accessibility, and seasonal events.</p>
+      </div>
+
+      <div class="reveal" style="overflow-x: auto;">
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>Destination</th>
+              <th>Jan</th>
+              <th>Feb</th>
+              <th>Mar</th>
+              <th>Apr</th>
+              <th>May</th>
+              <th>Jun</th>
+              <th>Jul</th>
+              <th>Aug</th>
+              <th>Sep</th>
+              <th>Oct</th>
+              <th>Nov</th>
+              <th>Dec</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dest-name-cell">Srinagar</td>
+              <td class="status-off">Cold</td>
+              <td class="status-off">Cold</td>
+              <td class="status-good">Tulips</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Warm</td>
+              <td class="status-good">Warm</td>
+              <td class="status-good">Warm</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Autumn</td>
+              <td class="status-good">Chinar</td>
+              <td class="status-off">Cold</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Gulmarg</td>
+              <td class="status-peak">Ski Peak</td>
+              <td class="status-peak">Ski Peak</td>
+              <td class="status-good">Snow</td>
+              <td class="status-good">Spring</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Cool</td>
+              <td class="status-good">Cool</td>
+              <td class="status-good">Cool</td>
+              <td class="status-good">Autumn</td>
+              <td class="status-good">Autumn</td>
+              <td class="status-off">Frost</td>
+              <td class="status-peak">Snow Peak</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Pahalgam</td>
+              <td class="status-off">Snowed</td>
+              <td class="status-off">Snowed</td>
+              <td class="status-good">Spring</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Yatra</td>
+              <td class="status-good">Yatra</td>
+              <td class="status-good">Yatra</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Autumn</td>
+              <td class="status-off">Cold</td>
+              <td class="status-off">Snow</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Sonamarg</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-good">Snowy</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Yatra</td>
+              <td class="status-good">Cool</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Autumn</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Doodhpathri</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-good">Chilly</td>
+              <td class="status-good">Spring</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Green</td>
+              <td class="status-good">Green</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Cool</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Yusmarg</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-good">Chilly</td>
+              <td class="status-good">Spring</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Lush</td>
+              <td class="status-good">Lush</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Autumn</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Gurez Valley</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-good">Opens</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Last Tour</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+              <td class="status-off">Closed</td>
+            </tr>
+            <tr>
+              <td class="dest-name-cell">Aharbal</td>
+              <td class="status-off">Chilly</td>
+              <td class="status-off">Chilly</td>
+              <td class="status-good">Spring</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Warm</td>
+              <td class="status-good">Warm</td>
+              <td class="status-good">Warm</td>
+              <td class="status-peak">Peak</td>
+              <td class="status-good">Autumn</td>
+              <td class="status-off">Frost</td>
+              <td class="status-off">Cold</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="legend-container reveal">
+        <div class="legend-item"><div class="legend-box status-peak"></div><span>Peak Season (Best Experience)</span></div>
+        <div class="legend-item"><div class="legend-box status-good"></div><span>Good Season (Pleasant Trip)</span></div>
+        <div class="legend-item"><div class="legend-box status-off"></div><span>Off Season (Challenging Weather / Closed)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips Section -->
+  <section class="section-py" aria-label="Travel Tips">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 56px;">
+        <span class="section-label">Traveler Smart Care</span>
+        <h2 class="section-title gradient-title">Kashmir Travel Tips</h2>
+        <p class="section-subtitle">Important practical tips compiled by our local travel guides to keep your trip safe, hassle-free and comfortable.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">📱</div>
+          <h3 class="why-title">Prepaid SIM Cards</h3>
+          <p class="why-desc">Prepaid SIM cards from other Indian states do not work in J&K due to security regulations. Only postpaid connection roaming works. Alternatively, buy a local BSNL/Airtel prepaid SIM on arrival with identity verification.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.05s;">
+          <div class="why-icon">🧤</div>
+          <h3 class="why-title">Packing Essentials</h3>
+          <p class="why-desc">Even in summer, evenings are cool, so carry a light jacket. In winter, heavy woolens, thermal inner-wear, waterproof coats, and warm boots are essential. Shoes and coats can also be rented in Gulmarg/Srinagar.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.1s;">
+          <div class="why-icon">🚖</div>
+          <h3 class="why-title">Local Transport Restrictions</h3>
+          <p class="why-desc">Due to local union rules, Srinagar taxis are not allowed to do internal sightseeing inside Gulmarg, Pahalgam, and Sonamarg. You will need to take local union pony guides or union cabs, which we help organize.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.15s;">
+          <div class="why-icon">💳</div>
+          <h3 class="why-title">Cash is King</h3>
+          <p class="why-desc">While UPI and card payments are expanding in hotels and bigger Srinagar shops, network connectivity in valleys can be erratic. Keep sufficient cash for local vendors, pony rides, tips, and street shopping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <section class="section-py" style="background: linear-gradient(135deg, var(--green-900) 0%, var(--green-800) 100%); text-align: center; color: var(--white);" aria-label="Book Trip CTA">
+    <div class="container reveal">
+      <h2 class="section-title" style="color:var(--white); margin-bottom: 20px;">Ready to Explore Paradise?</h2>
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.7); margin-bottom: 30px; font-size:1.1rem;">Let our local experts craft the ultimate custom itinerary fitting your specific budget and style.</p>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-gold">Build My Itinerary 🗺️</a>
+        <a href="https://wa.me/919419000000" class="btn btn-ghost">Chat with Experts 💬</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="components.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashmir Adventure Activities & Experiences | KashmirSafar</title>
+  <meta name="description" content="Discover things to do in Kashmir. Book Shikara rides, Gulmarg snow skiing, hiking, alpine camping, and traditional cuisine culinary tours." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    /* Full-width image experience cards */
+    .exp-large-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .exp-large-card {
+      height: 420px;
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px;
+      color: var(--white);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .exp-large-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+    }
+    .exp-large-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .exp-large-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+    }
+    .exp-large-card:hover .exp-large-bg img {
+      transform: scale(1.05);
+    }
+    .exp-large-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,40,24,0.9) 0%, rgba(13,40,24,0.3) 60%, transparent 100%);
+      z-index: 1;
+    }
+    .exp-large-content {
+      position: relative;
+      z-index: 2;
+    }
+    .exp-large-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .exp-large-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--gold-400);
+      margin-bottom: 12px;
+    }
+    .exp-large-desc {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+    .exp-large-list {
+      display: flex;
+      gap: 16px;
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .exp-large-list span {
+      background: rgba(255,255,255,0.15);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(8px);
+    }
+    
+    /* Level Table */
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .level-table th, .level-table td {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--neutral-100);
+      text-align: left;
+    }
+    .level-table th { background: var(--green-900); color: var(--white); font-weight: 600; }
+    .level-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .level-easy { background: #d6f0e2; color: #1a5c3a; }
+    .level-mod { background: #fdf3dc; color: #c9922a; }
+    .level-hard { background: #fee2e2; color: #ef4444; }
+
+    @media(max-width:900px) {
+      .exp-large-grid { grid-template-columns: 1fr; }
+      .exp-large-card { height: 380px; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header></header>
+
+<main>
+  <!-- Page Hero -->
+  <section class="page-hero" aria-label="Experiences Hero">
+    <div class="page-hero-bg">
+      <img src="images/package_adventure.jpg" alt="Trekkers in Kashmir hills" />
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Experiences</span>
+      </nav>
+      <span class="page-hero-eyebrow">Local Sights & Sports</span>
+      <h1 class="page-hero-title">Kashmir <em>Experiences</em></h1>
+      <p class="page-hero-desc">Discover the activities that make your tour unforgettable: local cuisine tours, skiing, high-altitude trekking, and peaceful lakes.</p>
+    </div>
+  </section>
+
+  <!-- All Experiences section -->
+  <section class="section-py" aria-label="Explore All Activities">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 32px;">
+        <span class="section-label">Valleys of Fun</span>
+        <h2 class="section-title gradient-title">Handpicked Kashmir Activities</h2>
+        <p class="section-subtitle">A list of immersive activities covering every style, budget, and age group. Book them as standalone experiences or add them to your custom tour.</p>
+      </div>
+
+      <div class="exp-large-grid">
+        
+        <!-- Experience 1 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/dest_srinagar.jpg" alt="Shikara ride Dal Lake" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>🛶 Floating Serenity</span> · <span>1-2 Hours</span></div>
+            <h3 class="exp-large-title">Traditional Shikara Ride</h3>
+            <p class="exp-large-desc">Glide on the mirror-like waters of Dal Lake in a colorful hand-paddled wooden boat. Explore water lotus gardens, visit floating handicraft markets, and watch the sun dip behind the peaks.</p>
+            <div class="exp-large-list">
+              <span>Dal Lake</span>
+              <span>Local Guides</span>
+              <span>All Ages</span>
+              <span>₹500 - ₹1,500</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+        <!-- Experience 2 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/dest_gulmarg.jpg" alt="Snow activities Gulmarg" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>❄️ Snow sports</span> · <span>Full Day</span></div>
+            <h3 class="exp-large-title">Gulmarg Snow Adventures</h3>
+            <p class="exp-large-desc">Explore the heavy winter snowfields of Apharwat. Book skiing and snowboarding lessons under certified coaches, go sledding down the natural curves, or ride high on snowmobiles.</p>
+            <div class="exp-large-list">
+              <span>Gulmarg Resort</span>
+              <span>Gear Included</span>
+              <span>Training Options</span>
+              <span>₹2,000 - ₹8,000</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+        <!-- Experience 3 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/package_adventure.jpg" alt="Mountain trekking" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>🏔️ Alpine Trails</span> · <span>1 - 7 Days</span></div>
+            <h3 class="exp-large-title">Himalayan Mountain Trekking</h3>
+            <p class="exp-large-desc">Trek to legendary high-altitude alpine lakes like Great Lakes, Tarsar Marsar, or Gadsar. Walk through massive pine forests, cross glacial streams, and walk under sheer cliffs.</p>
+            <div class="exp-large-list">
+              <span>Various Valleys</span>
+              <span>Pro Guides</span>
+              <span>Active Trek</span>
+              <span>₹3,000 - ₹25,000</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+        <!-- Experience 4 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/dest_sonamarg.jpg" alt="Camping Sonamarg" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>🏕️ Glamping Stays</span> · <span>Overnight</span></div>
+            <h3 class="exp-large-title">Alpine Camping Under Stars</h3>
+            <p class="exp-large-desc">Camp on lush green meadows inside Sonamarg or Pahalgam. Fall asleep looking at a clear starry sky, enjoy traditional bonfire dinners, and wake up to cold river mists.</p>
+            <div class="exp-large-list">
+              <span>Meadows</span>
+              <span>Bonfires</span>
+              <span>Waterproof Tents</span>
+              <span>₹4,000 - ₹12,000</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+        <!-- Experience 5 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/dest_doodhpathri.jpg" alt="Jeep Safari Doodhpathri" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>🌲 Valley Sightseeing</span> · <span>Full Day</span></div>
+            <h3 class="exp-large-title">Secluded Valley Safaris</h3>
+            <p class="exp-large-desc">Take offbeat 4x4 trails to hidden meadows like Doodhpathri or Yusmarg. Walk through dense conifer forests, see nomad wooden mud-huts, and enjoy a picnic on the grass.</p>
+            <div class="exp-large-list">
+              <span>Offbeat Valleys</span>
+              <span>Jeep Included</span>
+              <span>Sightseeing</span>
+              <span>₹2,500 - ₹6,000</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+        <!-- Experience 6 -->
+        <article class="exp-large-card reveal">
+          <div class="exp-large-bg"><img src="images/package_honeymoon.jpg" alt="Kashmiri Cuisine tour" /></div>
+          <div class="exp-large-overlay"></div>
+          <div class="exp-large-content">
+            <div class="exp-large-meta"><span>🍵 Gastronomy</span> · <span>3-4 Hours</span></div>
+            <h3 class="exp-large-title">Traditional Kashmiri Culinary Tour</h3>
+            <p class="exp-large-desc">Immerse yourself in authentic Kashmiri flavors. Learn about Wazwan, a multi-course royal feast, taste traditional breads from local bakers, and sip aromatic saffron-brewed Kahwa.</p>
+            <div class="exp-large-list">
+              <span>Srinagar Old Town</span>
+              <span>Wazwan Buffet</span>
+              <span>Spices Included</span>
+              <span>₹1,500 - ₹3,000</span>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">Enquire & Book</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Level Guide -->
+  <section class="section-py bg-alt" aria-label="Activity Level Guide">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 40px;">
+        <span class="section-label">Trek & Activity levels</span>
+        <h2 class="section-title gradient-title">Activity Fitness Guide</h2>
+        <p class="section-subtitle">Review our standard guide to understand which experiences match your travel group's age and health conditions.</p>
+      </div>
+
+      <div class="reveal" style="overflow-x: auto;">
+        <table class="level-table">
+          <thead>
+            <tr>
+              <th>Experience</th>
+              <th>Suitable For</th>
+              <th>Difficulty Level</th>
+              <th>Gear Required</th>
+              <th>Age Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight:700;">Traditional Shikara Ride</td>
+              <td>Families, Couples, Seniors</td>
+              <td><span class="level-badge level-easy">Easy</span></td>
+              <td>Life-jacket (provided)</td>
+              <td>No limit</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;">Valley Exploration (Jeep + Walk)</td>
+              <td>Families, Couples, Kids</td>
+              <td><span class="level-badge level-easy">Easy</span></td>
+              <td>Sport/Walking Shoes</td>
+              <td>No limit</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;">Kashmiri Culinary Tour</td>
+              <td>Foodies, Families</td>
+              <td><span class="level-badge level-easy">Easy</span></td>
+              <td>None</td>
+              <td>No limit</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;">Alpine Camping</td>
+              <td>Families, Couples, Friends</td>
+              <td><span class="level-badge level-mod">Moderate</span></td>
+              <td>Warm jackets & flashlights</td>
+              <td>5+ years</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;">Gulmarg Skiing & Gondola</td>
+              <td>Adventure lovers, Couples, Friends</td>
+              <td><span class="level-badge level-mod">Moderate</span></td>
+              <td>Ski coat, gloves (available to rent)</td>
+              <td>4+ years</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;">Himalayan Lakes Trekking</td>
+              <td>Hikers, Backpackers, Youth</td>
+              <td><span class="level-badge level-hard">Challenging</span></td>
+              <td>Trekking boots, backpacks, sleeping bag</td>
+              <td>12 - 50 years</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Book Custom Experience -->
+  <section id="custom-experience" class="section-py" aria-label="Book Custom Activity">
+    <div class="container" style="max-width:680px;">
+      <div class="contact-form-card reveal">
+        <h2 class="form-title" style="text-align: center; margin-bottom: 24px;">📋 Request Custom Activities</h2>
+        <form id="exp-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="exp-name">Full Name *</label>
+              <input type="text" class="form-control" id="exp-name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="exp-phone">Phone / WhatsApp *</label>
+              <input type="tel" class="form-control" id="exp-phone" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="exp-date">Preferred Date</label>
+              <input type="date" class="form-control" id="exp-date" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="exp-activity">Activity of Interest</label>
+              <select class="form-control" id="exp-activity">
+                <option>Shikara Ride</option>
+                <option>Gulmarg Skiing</option>
+                <option>Himalayan Trekking</option>
+                <option>Camping Stays</option>
+                <option>Valley Jeeps</option>
+                <option>Culinary Tour</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="exp-msg">Group Size & Custom Needs</label>
+            <textarea class="form-control" id="exp-msg" placeholder="Let us know how many travelers, age group, or special needs (e.g. food allergies, pickup points)..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Enquiry ✈️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="components.js"></script>
+<script src="app.js"></script>
+<script>
+  // Simple form submit
+  document.getElementById('exp-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('exp-name').value.trim();
+    const phone = document.getElementById('exp-phone').value.trim();
+    if (!name || !phone) {
+      alert('Please fill out Name and Phone fields.');
+      return;
+    }
+    showToast('Enquiry received! Our team will contact you shortly.');
+    document.getElementById('exp-form').reset();
+  });
+</script>
+</body>
+</html>
