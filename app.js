@@ -1,5 +1,5 @@
 /* ============================================================
-   KashmirSafar — app.js
+   Travel with Anu — app.js
    Interactive features, animations & functionality
    ============================================================ */
 
@@ -442,5 +442,16 @@ window.addEventListener('touchstart', () => {}, { passive: true });
 })();
 
 // ---------- Log init ----------
-console.log('%c🏔️ KashmirSafar — Your Journey Through Paradise', 'color:#1f6b43; font-size:1.1em; font-weight:bold;');
+console.log('%c🏔️ Travel with Anu — Your Journey Through Paradise', 'color:#1f6b43; font-size:1.1em; font-weight:bold;');
 console.log('%cDesigned & built with ❤️ for Kashmir', 'color:#6b7280;');
+
+// ---------- Hero Slider ----------
+const heroImages = $$('#hero-slider img');
+if (heroImages.length > 1) {
+  let currentHeroIdx = 0;
+  setInterval(() => {
+    heroImages[currentHeroIdx].classList.remove('active');
+    currentHeroIdx = (currentHeroIdx + 1) % heroImages.length;
+    heroImages[currentHeroIdx].classList.add('active');
+  }, 20000);
+}
