@@ -1,0 +1,116 @@
+/* Experiences.css */
+/* Full-width image experience cards */
+.exp-large-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.exp-large-card {
+  height: 420px;
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: var(--white);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.exp-large-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+.exp-large-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.exp-large-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+.exp-large-card:hover .exp-large-bg img {
+  transform: scale(1.05);
+}
+.exp-large-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13,40,24,0.9) 0%, rgba(13,40,24,0.3) 60%, transparent 100%);
+  z-index: 1;
+}
+.exp-large-content {
+  position: relative;
+  z-index: 2;
+}
+.exp-large-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.exp-large-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+  margin-bottom: 12px;
+}
+.exp-large-desc {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+.exp-large-list {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.exp-large-list span {
+  background: rgba(255,255,255,0.15);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+}
+
+/* Level Table */
+.level-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.level-table th, .level-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--neutral-100);
+  text-align: left;
+}
+.level-table th { background: var(--green-900); color: var(--white); font-weight: 600; }
+.level-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.level-easy { background: #d6f0e2; color: #1a5c3a; }
+.level-mod { background: #fdf3dc; color: #c9922a; }
+.level-hard { background: #fee2e2; color: #ef4444; }
+
+@media(max-width:900px) {
+  .exp-large-grid { grid-template-columns: 1fr; }
+  .exp-large-card { height: 380px; padding: 24px; }
+}
