@@ -21,10 +21,29 @@ import BookNow from './pages/BookNow';
 import './assets/styles.css';
 import './assets/page.css';
 
+const seoMap = {
+  '/': { title: 'Travel with Anu | Premium Kashmir Tour Packages & Travel Guides', desc: 'Experience the paradise of Kashmir with Travel with Anu. We offer customized family tours, romantic honeymoon packages, Amarnath Yatra bookings, and thrilling adventure treks in Srinagar, Gulmarg, and Pahalgam.' },
+  '/packages': { title: 'Kashmir Tour Packages | Family, Honeymoon & Adventure | Travel with Anu', desc: 'Explore handcrafted Kashmir travel packages for families, couples, adventurers and solo travelers. Best price guarantee and 24/7 local support.' },
+  '/amarnath-yatra': { title: 'Amarnath Yatra 2026 Packages & Helicopter Booking | Travel with Anu', desc: 'Book your Amarnath Yatra 2026 packages via Baltal or Pahalgam. Helicopter tickets, registration assistance, and premium stays.' },
+  '/amarnath-yatra/booking': { title: 'Book Amarnath Yatra 2026 | Travel with Anu', desc: 'Secure your Amarnath Yatra 2026 booking with helicopter tickets and VIP darshan.' },
+  '/about': { title: 'About Travel with Anu | Your Trusted Kashmir Travel Experts', desc: 'Learn about Travel with Anu, a local Srinagar-based travel agency with 15+ years of experience in crafting unforgettable Kashmir holidays.' },
+  '/places-to-visit': { title: 'Best Places to Visit in Kashmir | Srinagar, Gulmarg, Pahalgam', desc: 'Discover the top tourist destinations in Kashmir. From the floating gardens of Dal Lake to the snow-capped peaks of Gulmarg and Sonamarg.' },
+  '/things-to-do': { title: 'Top Things to Do in Kashmir | Shikara Rides, Skiing & Trekking', desc: 'Curated activities in Kashmir: Shikara rides on Dal Lake, Gondola in Gulmarg, trekking in Sonamarg, and white water rafting in Pahalgam.' },
+  '/contact': { title: 'Contact Us | Plan Your Kashmir Tour | Travel with Anu', desc: 'Get in touch to plan your custom Kashmir holiday. We respond within 2-4 hours with a personalized day-by-day itinerary and quote.' },
+  '/book-now': { title: 'Book Your Kashmir Tour | Travel with Anu', desc: 'Book your customized Kashmir tour package today. Secure your dream holiday with a small advance token payment.' },
+  '/guides': { title: 'Kashmir Travel Guides & Blog | Travel with Anu', desc: 'Read expert travel tips, packing guides, and seasonal itineraries for your Kashmir trip written by local experts.' }
+};
+
 const ScrollHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Dynamic SEO
+    const seo = seoMap[location.pathname] || seoMap['/'];
+    document.title = seo.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', seo.desc);
+
     // Scroll to top on route change reliably after render
     setTimeout(() => {
       window.scrollTo(0, 0);
