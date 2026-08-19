@@ -18,6 +18,19 @@ const FORM_ENTRIES = {
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [plannerStatus, setPlannerStatus] = useState('idle');
+  const [activePackageFilter, setActivePackageFilter] = useState('all');
+
+  useEffect(() => {
+    const cards = document.querySelectorAll('.pkg-card');
+    cards.forEach(card => {
+      const types = card.dataset.type ? card.dataset.type.split(' ') : [];
+      if (activePackageFilter === 'all' || types.includes(activePackageFilter)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }, [activePackageFilter]);
 
   const handlePlannerSubmit = async (e) => {
     e.preventDefault();
@@ -150,12 +163,12 @@ const Home = () => {
     </div>
 
     <div className="packages-filter reveal" role="group" aria-label="Package filters">
-      <button className="filter-btn active" data-filter="all" aria-pressed="true">🌟 All Packages</button>
-      <button className="filter-btn" data-filter="family" aria-pressed="false">👨‍👩‍👧 Family</button>
-      <button className="filter-btn" data-filter="honeymoon" aria-pressed="false">💑 Honeymoon</button>
-      <button className="filter-btn" data-filter="adventure" aria-pressed="false">🏔️ Adventure</button>
-      <button className="filter-btn" data-filter="luxury" aria-pressed="false">✨ Luxury</button>
-      <button className="filter-btn" data-filter="budget" aria-pressed="false">💰 Budget</button>
+      <button className={`filter-btn ${activePackageFilter === 'all' ? 'active' : ''}`} onClick={() => setActivePackageFilter('all')}>🌟 All Packages</button>
+      <button className={`filter-btn ${activePackageFilter === 'family' ? 'active' : ''}`} onClick={() => setActivePackageFilter('family')}>👨‍👩‍👧 Family</button>
+      <button className={`filter-btn ${activePackageFilter === 'honeymoon' ? 'active' : ''}`} onClick={() => setActivePackageFilter('honeymoon')}>💑 Honeymoon</button>
+      <button className={`filter-btn ${activePackageFilter === 'adventure' ? 'active' : ''}`} onClick={() => setActivePackageFilter('adventure')}>🏔️ Adventure</button>
+      <button className={`filter-btn ${activePackageFilter === 'luxury' ? 'active' : ''}`} onClick={() => setActivePackageFilter('luxury')}>✨ Luxury</button>
+      <button className={`filter-btn ${activePackageFilter === 'budget' ? 'active' : ''}`} onClick={() => setActivePackageFilter('budget')}>💰 Budget</button>
     </div>
 
     <div className="packages-grid" id="packages-grid">
