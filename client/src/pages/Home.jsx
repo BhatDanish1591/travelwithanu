@@ -139,146 +139,9 @@ const Home = () => {
 </div>
 
 {/* ============================================================
-     POPULAR DESTINATIONS
-     ============================================================ */}
-<section id="destinations" className="section-py" style={{ paddingTop: '80px' }} aria-labelledby="destinations-heading">
-  <div className="container">
-    <div className="text-center reveal" style={{ marginBottom: '56px' }}>
-      <span className="section-label">Explore Kashmir</span>
-      <h2 className="section-title gradient-title" id="destinations-heading">Popular Destinations</h2>
-      <p className="section-subtitle">From the floating gardens of Dal Lake to the pristine meadows of Gulmarg — Kashmir is a world unto itself.</p>
-    </div>
-
-    <div className="destinations-grid">
-
-      {/* Srinagar - AI generated image */}
-      <article className="dest-card reveal reveal-d1" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">🌟 Most Popular</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Srinagar</h3>
-          <p className="dest-card-desc" itemProp="description">The crown of Kashmir — iconic Dal Lake, opulent houseboats, Mughal gardens and vibrant local bazaars in a breathtaking mountain setting.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>March – November</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Gulmarg - AI generated image */}
-      <article className="dest-card reveal reveal-d2" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">❄️ Winter Paradise</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Gulmarg</h3>
-          <p className="dest-card-desc" itemProp="description">Asia's premier ski destination — a flower meadow in summer and a snowy paradise in winter with Asia's highest gondola cable car.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>Dec–Feb (Snow) · Apr–Oct (Green)</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Pahalgam - AI generated image */}
-      <article className="dest-card reveal reveal-d3" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">💚 Valley of Shepherds</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Pahalgam</h3>
-          <p className="dest-card-desc" itemProp="description">Nestled in the Lidder River valley — famous for pine-clad hills, trout fishing, Betab Valley and the gateway to the Amarnath Yatra.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>April – September</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Sonamarg - AI generated image */}
-      <article className="dest-card reveal reveal-d4" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">✨ Meadow of Gold</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Sonamarg</h3>
-          <p className="dest-card-desc" itemProp="description">The "Golden Meadow" at 2,800m — surrounded by glaciers, crystal streams, wild ponies and some of the most dramatic peaks in the Himalayas.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Doodhpathri - AI generated image */}
-      <article className="dest-card reveal reveal-d5" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">🥛 Hidden Gem</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Doodhpathri</h3>
-          <p className="dest-card-desc" itemProp="description">"Valley of Milk" — a secluded alpine meadow with milky white streams, dense fir forests, wildflowers and sweeping untouched landscapes.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Yusmarg - AI generated image */}
-      <article className="dest-card reveal reveal-d6" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">🌲 Forest Retreat</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Yusmarg</h3>
-          <p className="dest-card-desc" itemProp="description">A serene meadow surrounded by towering cedar and pine forests — the perfect off-the-beaten-path Kashmir experience for true nature lovers.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Gurez Valley - curated Unsplash */}
-      <article className="dest-card reveal reveal-d7" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">🏕️ Offbeat Escape</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Gurez Valley</h3>
-          <p className="dest-card-desc" itemProp="description">One of India's most breathtaking remote valleys — dramatic Himalayan scenery, the Kishanganga river and untouched Dard tribal culture.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-      {/* Aharbal - curated Unsplash */}
-      <article className="dest-card reveal reveal-d8" itemScope itemType="https://schema.org/TouristAttraction">
-        <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" itemProp="photo" />
-          <div className="dest-card-overlay"></div>
-          <span className="dest-card-badge">💧 Niagara of Kashmir</span>
-        </div>
-        <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Aharbal</h3>
-          <p className="dest-card-desc" itemProp="description">Often called the "Niagara of Kashmir" — a stunning waterfall cascading through dense forest, perfect for picnics and nature walks.</p>
-          <div className="dest-card-meta">📅 Best Time: <strong>April – October</strong></div>
-          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-{/* ============================================================
      TOUR PACKAGES
      ============================================================ */}
-<section id="packages" className="section-py bg-alt" aria-labelledby="packages-heading">
+<section id="packages" className="section-py" style={{ paddingTop: '80px' }} aria-labelledby="packages-heading">
   <div className="container">
     <div className="text-center reveal" style={{ marginBottom: '40px' }}>
       <span className="section-label">Find Your Trip</span>
@@ -460,6 +323,143 @@ const Home = () => {
 
     <div className="text-center" style={{ marginTop: '48px' }}>
       <Link to="/packages" className="btn btn-outline">View All Kashmir Packages →</Link>
+    </div>
+  </div>
+</section>
+
+{/* ============================================================
+     POPULAR DESTINATIONS
+     ============================================================ */}
+<section id="destinations" className="section-py bg-alt" aria-labelledby="destinations-heading">
+  <div className="container">
+    <div className="text-center reveal" style={{ marginBottom: '56px' }}>
+      <span className="section-label">Explore Kashmir</span>
+      <h2 className="section-title gradient-title" id="destinations-heading">Popular Destinations</h2>
+      <p className="section-subtitle">From the floating gardens of Dal Lake to the pristine meadows of Gulmarg — Kashmir is a world unto itself.</p>
+    </div>
+
+    <div className="destinations-grid">
+
+      {/* Srinagar - AI generated image */}
+      <article className="dest-card reveal reveal-d1" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">🌟 Most Popular</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Srinagar</h3>
+          <p className="dest-card-desc" itemProp="description">The crown of Kashmir — iconic Dal Lake, opulent houseboats, Mughal gardens and vibrant local bazaars in a breathtaking mountain setting.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>March – November</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Gulmarg - AI generated image */}
+      <article className="dest-card reveal reveal-d2" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">❄️ Winter Paradise</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Gulmarg</h3>
+          <p className="dest-card-desc" itemProp="description">Asia's premier ski destination — a flower meadow in summer and a snowy paradise in winter with Asia's highest gondola cable car.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>Dec–Feb (Snow) · Apr–Oct (Green)</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Pahalgam - AI generated image */}
+      <article className="dest-card reveal reveal-d3" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">💚 Valley of Shepherds</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Pahalgam</h3>
+          <p className="dest-card-desc" itemProp="description">Nestled in the Lidder River valley — famous for pine-clad hills, trout fishing, Betab Valley and the gateway to the Amarnath Yatra.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>April – September</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Sonamarg - AI generated image */}
+      <article className="dest-card reveal reveal-d4" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">✨ Meadow of Gold</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Sonamarg</h3>
+          <p className="dest-card-desc" itemProp="description">The "Golden Meadow" at 2,800m — surrounded by glaciers, crystal streams, wild ponies and some of the most dramatic peaks in the Himalayas.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Doodhpathri - AI generated image */}
+      <article className="dest-card reveal reveal-d5" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">🥛 Hidden Gem</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Doodhpathri</h3>
+          <p className="dest-card-desc" itemProp="description">"Valley of Milk" — a secluded alpine meadow with milky white streams, dense fir forests, wildflowers and sweeping untouched landscapes.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Yusmarg - AI generated image */}
+      <article className="dest-card reveal reveal-d6" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">🌲 Forest Retreat</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Yusmarg</h3>
+          <p className="dest-card-desc" itemProp="description">A serene meadow surrounded by towering cedar and pine forests — the perfect off-the-beaten-path Kashmir experience for true nature lovers.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Gurez Valley - curated Unsplash */}
+      <article className="dest-card reveal reveal-d7" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">🏕️ Offbeat Escape</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Gurez Valley</h3>
+          <p className="dest-card-desc" itemProp="description">One of India's most breathtaking remote valleys — dramatic Himalayan scenery, the Kishanganga river and untouched Dard tribal culture.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
+      {/* Aharbal - curated Unsplash */}
+      <article className="dest-card reveal reveal-d8" itemScope itemType="https://schema.org/TouristAttraction">
+        <div className="dest-card-img">
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" itemProp="photo" />
+          <div className="dest-card-overlay"></div>
+          <span className="dest-card-badge">💧 Niagara of Kashmir</span>
+        </div>
+        <div className="dest-card-body">
+          <h3 className="dest-card-name" itemProp="name">Aharbal</h3>
+          <p className="dest-card-desc" itemProp="description">Often called the "Niagara of Kashmir" — a stunning waterfall cascading through dense forest, perfect for picnics and nature walks.</p>
+          <div className="dest-card-meta">📅 Best Time: <strong>April – October</strong></div>
+          <a href="/packages" className="dest-card-btn">Explore Destination →</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
