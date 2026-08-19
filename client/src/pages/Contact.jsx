@@ -117,7 +117,7 @@ const Contact = () => {
               </div>
 
               {/* Contact Cards */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+              <div className="contact-info-grid">
                 {[
                   { icon: '📞', title: 'Call Us', value: '+91-9419-000-000', link: { href: 'tel:+919419000000', label: 'Call now →' }, color: '#22c55e' },
                   { icon: '💬', title: 'WhatsApp', value: '+91-9419-000-000', link: { href: 'https://wa.me/919419000000?text=Hello%20Travel%20with%20Anu', label: 'Chat now →', target: '_blank' }, color: '#25D366' },
@@ -165,7 +165,7 @@ const Contact = () => {
 
             {/* ── RIGHT: Form ── */}
             <div className="reveal">
-              <div style={{ background: '#fff', borderRadius: '24px', padding: '36px', boxShadow: '0 8px 40px rgba(0,0,0,0.10)', border: '1.5px solid #f1f5f9' }}>
+              <div className="contact-form-wrapper">
                 <div style={{ marginBottom: '28px' }}>
                   <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 800, color: '#1e293b', marginBottom: '6px' }}>📋 Plan My Custom Tour</h3>
                   <p style={{ fontSize: '0.85rem', color: '#94a3b8', margin: 0 }}>Fill in your details and we'll craft a personalised Kashmir itinerary just for you.</p>
