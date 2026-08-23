@@ -173,7 +173,7 @@ const GuideDetail = () => {
                 <span className="pkg-card-ribbon">⭐ Best Seller</span>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Kashmir Classic</div>
+                <div className="pkg-card-type">Classic Kashmir Itinerary</div>
                 <h3 className="pkg-card-title">Kashmir Highlights</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
@@ -201,7 +201,7 @@ const GuideDetail = () => {
                 <span className="pkg-card-ribbon">🌟 Best Value</span>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Extended Sightseeing</div>
+                <div className="pkg-card-type">Complete Kashmir Sightseeing</div>
                 <h3 className="pkg-card-title">Kashmir Escape</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
@@ -230,7 +230,7 @@ const GuideDetail = () => {
                 <span className="pkg-card-ribbon">💖 Special Honeymoon</span>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Romantic Honeymoon</div>
+                <div className="pkg-card-type">Kashmir Honeymoon Package</div>
                 <h3 className="pkg-card-title">Kashmir Honeymoon</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar Houseboat</span>

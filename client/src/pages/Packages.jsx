@@ -58,7 +58,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Kashmir Classic</div>
+                <div className="pkg-card-type">Classic Kashmir Itinerary</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Highlights</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
@@ -97,7 +97,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Sacred Journey</div>
+                <div className="pkg-card-type">Amarnath Pilgrimage</div>
                 <h3 className="pkg-card-title" itemProp="name">Amarnath Yatra 2026</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Baltal</span>
@@ -136,7 +136,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">All-inclusive Comfort</div>
+                <div className="pkg-card-type">Premium Kashmir Tour</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Escape</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
@@ -176,7 +176,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Special Couples</div>
+                <div className="pkg-card-type">Kashmir Honeymoon Package</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Honeymoon</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Romantic Houseboat</span>
@@ -215,7 +215,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Active & Thrilling</div>
+                <div className="pkg-card-type">Kashmir Adventure Tour</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Adventure</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gurez Valley</span>
@@ -254,7 +254,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Premium Experience</div>
+                <div className="pkg-card-type">Kashmir Winter Tour</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Winter Magic</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gulmarg Snow</span>
@@ -293,7 +293,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Best Cost-saving</div>
+                <div className="pkg-card-type">Budget Kashmir Tour</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Budget Explorer</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar Stay</span>
@@ -331,7 +331,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Complete Sightseeing</div>
+                <div className="pkg-card-type">Kashmir Family Tour</div>
                 <h3 className="pkg-card-title" itemProp="name">Kashmir Family Delight</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
@@ -371,7 +371,7 @@ const Packages = () => {
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
               <div className="pkg-card-body">
-                <div className="pkg-card-type">Remote Trekking</div>
+                <div className="pkg-card-type">Offbeat Kashmir Trek</div>
                 <h3 className="pkg-card-title" itemProp="name">Gurez Offbeat Explorer</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gurez Dawar</span>
