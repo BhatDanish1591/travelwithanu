@@ -1881,6 +1881,13 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 }
 .fab-call:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(29,107,67,.6); animation: none; }
 
+/* Hide call button on desktop, as it triggers OS-level app prompts. Works seamlessly on mobile. */
+@media (min-width: 769px) {
+  .fab-call {
+    display: none;
+  }
+}
+
 /* ---------- BACK TO TOP ---------- */
 #back-to-top {
   position: fixed;
