@@ -180,7 +180,7 @@ const Home = () => {
         { id:5, types:['adventure','budget'],ribbon:'⛺ Backpacker Choice',   img:'images/trekking.webp',      imgAlt:'Gurez Offbeat Explorer',    type:'Remote Trekking',        name:'Gurez Offbeat Explorer',    tags:['Gurez Dawar','Kishanganga','Wular Lake'],                       dur:'5D / 4N', tripType:'Adventure Trek',     group:'2 – 8',    rating:4.9, reviews:54,  price:10500, per:'per person · 4N5D', link:'/packages' },
         { id:6, types:['adventure'],         ribbon:'🏔️ Adventure',          img:'images/trekking.webp',      imgAlt:'Kashmir Adventure',         type:'Thrill Seeker',          name:'Kashmir Adventure',         tags:['Gurez','Sonamarg','Gulmarg','Trekking'],                        dur:'7D / 6N', tripType:'Adventure',          group:'2 – 8',    rating:4.9, reviews:167, price:12000, per:'per person · 6N7D', link:'/packages' },
         { id:7, types:['family'],            ribbon:'👨‍👩‍👧 Family First',        img:'images/family_tour.jpg',    imgAlt:'Kashmir Family Delight',    type:'Complete Sightseeing',   name:'Kashmir Family Delight',    tags:['Srinagar','Pahalgam','Gulmarg Gondola','Shikara Ride'],         dur:'7D / 6N', tripType:'Family Sightseeing', group:'3 – 12',   rating:4.8, reviews:134, price:12000, per:'per person · 6N7D', link:'/packages' },
-        { id:8, types:['adventure','family'],ribbon:'🕉️ Pilgrimage',          img:'images/dest_pahalgam.jpg',  imgAlt:'Amarnath Yatra 2026',       type:'Sacred Journey',         name:'Amarnath Yatra 2026',       tags:['Baltal','Pahalgam','Holy Cave'],                                dur:'4D / 3N', tripType:'Trek / Helicopter',  group:'1 – 20',   rating:4.9, reviews:512, price:18500, per:'per person',        link:'/amarnath-yatra', ribbonStyle:{ background:'linear-gradient(135deg,#ea580c,#f59e0b)' } },
+        { id:8, types:['adventure','family'],ribbon:'🕉️ Pilgrimage',          img:'images/dest_pahalgam.jpg',  imgAlt:'Amarnath Yatra 2026',       type:'Sacred Journey',         name:'Amarnath Yatra 2026',       tags:['Baltal','Pahalgam','Holy Cave'],                                dur:'4D / 3N', tripType:'Trek / Helicopter',  group:'1 – 20',   rating:4.9, reviews:512, price:18500, per:'per person',        link:'/amarnath-yatra', bookLink:'/amarnath-yatra/booking', ribbonStyle:{ background:'linear-gradient(135deg,#ea580c,#f59e0b)' } },
         { id:9, types:['honeymoon','luxury'],ribbon:'💑 Honeymoon',           img:'images/offbeat.png',        imgAlt:'Kashmir Honeymoon',         type:'Romantic Escape',        name:'Kashmir Honeymoon',         tags:['Houseboat Stay','Shikara Ride','Gulmarg','Pahalgam'],           dur:'6D / 5N', tripType:'Couples Only',       group:'2 Persons',rating:5.0, reviews:456, price:25000, per:'per couple',        link:'/packages',       ribbonStyle:{ background:'linear-gradient(135deg,#e91e8c,#f43f5e)' } },
       ]
         .filter(pkg => activePackageFilter === 'all' || pkg.types.includes(activePackageFilter))
@@ -214,8 +214,8 @@ const Home = () => {
                   <span className="pkg-price-per">{pkg.per}</span>
                 </div>
                 <div className="pkg-card-actions">
-                  <Link to={pkg.link} className="btn btn-outline btn-sm">View</Link>
-                  <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
+                  <Link to={pkg.link} className="btn btn-outline btn-sm">View Package</Link>
+                  <Link to={pkg.bookLink || "/book-now"} className="btn btn-primary btn-sm">Book Now</Link>
                 </div>
               </div>
             </div>

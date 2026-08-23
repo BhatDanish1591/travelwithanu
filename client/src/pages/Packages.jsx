@@ -122,7 +122,7 @@ const Packages = () => {
                   </div>
                   <div className="pkg-card-actions">
                     <Link to="/amarnath-yatra" className="btn btn-outline btn-sm">View Package</Link>
-                    <a href="https://wa.me/919419000000" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Book Now</a>
+                    <Link to="/amarnath-yatra/booking" className="btn btn-primary btn-sm">Book Now</Link>
                   </div>
                 </div>
               </div>
