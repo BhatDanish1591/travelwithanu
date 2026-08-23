@@ -122,7 +122,7 @@ const Contact = () => {
                   { icon: '📞', title: 'Call Us', value: '+91-6005655257', link: { href: 'tel:+916005655257', label: 'Call now →' }, color: '#22c55e' },
                   { icon: '💬', title: 'WhatsApp', value: '+91-6005655257', link: { href: 'https://wa.me/916005655257?text=Hello%20Travel%20with%20Anu', label: 'Chat now →', target: '_blank' }, color: '#25D366' },
                   { icon: '✉️', title: 'Email', value: 'hello@travelwithanu.com', sub: 'Replied within 4 hours', color: '#3b82f6' },
-                  { icon: '📍', title: 'Office', value: 'Dal Lake Boulevard,', sub: 'Nehru Park, Srinagar 190001', color: '#f59e0b' },
+                  { icon: '📍', title: 'Office', value: 'Main market kunzer,', sub: 'Tangmarg 193404', color: '#f59e0b' },
                 ].map((c, i) => (
                   <div key={i} style={{ background: '#fff', borderRadius: '16px', padding: '18px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)', border: '1.5px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                     <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: c.color + '18', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem' }}>{c.icon}</div>

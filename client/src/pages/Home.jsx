@@ -1028,7 +1028,7 @@ const Home = () => {
             <div className="contact-icon">📍</div>
             <div>
               <div className="contact-item-label">Office</div>
-              <div className="contact-item-value">Dal Lake Boulevard, Nehru Park, Srinagar, J&K – 190001</div>
+              <div className="contact-item-value">Main market kunzer, Tangmarg, J&K – 193404</div>
             </div>
           </div>
           <div className="contact-item">

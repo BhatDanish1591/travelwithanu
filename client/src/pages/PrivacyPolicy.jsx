@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
               },
               {
                 title: "7. Contact Us",
-                content: "Travel with Anu, Dal Lake Boulevard, Nehru Park, Srinagar J&K 190001. Email: hello@travelwithanu.com | Phone: +91-6005655257"
+                content: "Travel with Anu, Main market kunzer, Tangmarg J&K 193404. Email: hello@travelwithanu.com | Phone: +91-6005655257"
               }
             ].map((s, i) => (
               <div key={i} style={{ marginBottom: "32px" }}>
