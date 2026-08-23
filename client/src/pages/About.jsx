@@ -186,7 +186,7 @@ const About = () => {
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1.1rem' }}>Get in touch with our founders and guides today to start planning your dream Kashmir trip.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-gold">Contact Travel Experts 📞</Link>
-            <a href="https://wa.me/919419000000" className="btn btn-ghost">Chat on WhatsApp 💬</a>
+            <a href="https://wa.me/916005655257" className="btn btn-ghost">Chat on WhatsApp 💬</a>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 
-const WHATSAPP_NUMBER = '917006291591';
+const WHATSAPP_NUMBER = '916005655257';
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScH8JUTH-eRcXFut3ZZk-Ah5mWDNdabgezpUsI8zAaeovh3vw/formResponse';
 const FORM_ENTRIES = {
   name: 'entry.377689001',
@@ -134,7 +134,7 @@ const BookNow = () => {
                 <span style={{ fontSize:'1.3rem' }}>💬</span>
                 <div>
                   <div style={{ fontWeight:800, fontSize:'0.92rem' }}>Chat on WhatsApp</div>
-                  <div style={{ fontSize:'0.75rem', opacity:0.85 }}>Instant reply · +91 7006291591</div>
+                  <div style={{ fontSize:'0.75rem', opacity:0.85 }}>Instant reply · +91 6005655257</div>
                 </div>
               </a>
             </aside>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const WHATSAPP_NUMBER = '917006291591';
+const WHATSAPP_NUMBER = '916005655257';
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSezaySRHDmMRGIvkx4jfVj7PoG0KkelgxZkM2PGvDgroFKX4A/formResponse';
 const FORM_ENTRIES = {
   name: 'entry.377689001',
@@ -1014,7 +1014,7 @@ const Home = () => {
             <div className="contact-icon">📞</div>
             <div>
               <div className="contact-item-label">Phone & WhatsApp</div>
-              <div className="contact-item-value">+91-9419-000-000</div>
+              <div className="contact-item-value">+91-6005655257</div>
             </div>
           </div>
           <div className="contact-item">
@@ -1041,8 +1041,8 @@ const Home = () => {
         </div>
 
         <div style={{ marginTop: '36px', display: 'flex', flexWrap: 'wrap', gap: '14px' }}>
-          <a href="https://wa.me/919419000000" target="_blank" rel="noopener" className="btn btn-primary">💬 WhatsApp Us</a>
-          <a href="tel:+919419000000" className="btn btn-outline">📞 Call Us</a>
+          <a href="https://wa.me/916005655257" target="_blank" rel="noopener" className="btn btn-primary">💬 WhatsApp Us</a>
+          <a href="tel:+916005655257" className="btn btn-outline">📞 Call Us</a>
         </div>
       </div>
 

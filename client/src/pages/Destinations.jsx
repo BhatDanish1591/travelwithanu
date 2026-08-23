@@ -440,7 +440,7 @@ const Destinations = () => {
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1.1rem' }}>Let our local experts craft the ultimate custom itinerary fitting your specific budget and style.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-gold">Build My Itinerary 🗺️</Link>
-            <a href="https://wa.me/919419000000" className="btn btn-ghost">Chat with Experts 💬</a>
+            <a href="https://wa.me/916005655257" className="btn btn-ghost">Chat with Experts 💬</a>
           </div>
         </div>
       </section>

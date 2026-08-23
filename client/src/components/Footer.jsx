@@ -18,7 +18,7 @@ const Footer = () => {
               <p className="footer-desc">We are a Kashmir-based premium travel company dedicated to creating authentic, meaningful experiences in the valley of Kashmir. From Dal Lake to Gurez Valley — we know every path.</p>
               <div className="footer-socials" aria-label="Social media">
                 <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/travel_with__anu?igsh=MTV5cjNxOXl2Mjg1dQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
                 <a href="#" aria-label="Twitter"><i className="fa-brands fa-x-twitter"></i></a>
                 <a href="#" aria-label="YouTube"><i className="fa-brands fa-youtube"></i></a>
               </div>

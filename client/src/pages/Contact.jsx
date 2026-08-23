@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // ─── CONFIG ─────────────────────────────────────────────────────────────────
-const WHATSAPP_NUMBER = '917006291591';
+const WHATSAPP_NUMBER = '916005655257';
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdFi_OF-UBAdvpIr8THeGgSFgJE6Zvy-PTrotvVYrTldGUkEQ/formResponse';
 const FORM_ENTRIES = {
@@ -119,8 +119,8 @@ const Contact = () => {
               {/* Contact Cards */}
               <div className="contact-info-grid">
                 {[
-                  { icon: '📞', title: 'Call Us', value: '+91-9419-000-000', link: { href: 'tel:+919419000000', label: 'Call now →' }, color: '#22c55e' },
-                  { icon: '💬', title: 'WhatsApp', value: '+91-9419-000-000', link: { href: 'https://wa.me/919419000000?text=Hello%20Travel%20with%20Anu', label: 'Chat now →', target: '_blank' }, color: '#25D366' },
+                  { icon: '📞', title: 'Call Us', value: '+91-6005655257', link: { href: 'tel:+916005655257', label: 'Call now →' }, color: '#22c55e' },
+                  { icon: '💬', title: 'WhatsApp', value: '+91-6005655257', link: { href: 'https://wa.me/916005655257?text=Hello%20Travel%20with%20Anu', label: 'Chat now →', target: '_blank' }, color: '#25D366' },
                   { icon: '✉️', title: 'Email', value: 'hello@travelwithanu.com', sub: 'Replied within 4 hours', color: '#3b82f6' },
                   { icon: '📍', title: 'Office', value: 'Dal Lake Boulevard,', sub: 'Nehru Park, Srinagar 190001', color: '#f59e0b' },
                 ].map((c, i) => (

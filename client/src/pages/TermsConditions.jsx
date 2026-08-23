@@ -63,7 +63,7 @@ const TermsConditions = () => {
               },
               {
                 title: "9. Contact",
-                content: "For any questions regarding these Terms and Conditions, please contact us at hello@travelwithanu.com or call +91-9419-000-000."
+                content: "For any questions regarding these Terms and Conditions, please contact us at hello@travelwithanu.com or call +91-6005655257."
               }
             ].map((s, i) => (
               <div key={i} style={{ marginBottom: "32px" }}>

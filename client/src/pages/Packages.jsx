@@ -447,7 +447,7 @@ const Packages = () => {
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1.1rem' }}>Mix and match destinations, extend duration, choose specific hotels, and define your own travel budget.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-gold">Design Custom Trip 🗺️</Link>
-            <a href="https://wa.me/919419000000" className="btn btn-ghost">Chat on WhatsApp 💬</a>
+            <a href="https://wa.me/916005655257" className="btn btn-ghost">Chat on WhatsApp 💬</a>
           </div>
         </div>
       </section>
