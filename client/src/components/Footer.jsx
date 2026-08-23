@@ -41,9 +41,9 @@ const Footer = () => {
             <div>
               <h3 className="footer-col-title">Useful Info</h3>
               <ul className="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Cancellation Policy</a></li>
+                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link to="/terms-conditions">Terms &amp; Conditions</Link></li>
+                <li><Link to="/cancellation-policy">Cancellation Policy</Link></li>
                 <li><Link to="/contact#faq">FAQ</Link></li>
               </ul>
             </div>
@@ -68,8 +68,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <span>© 2026 Travel with Anu. All rights reserved. Made with ❤️ in Kashmir.</span>
           <div className="footer-bottom-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+            <Link to="/privacy-policy">Privacy</Link>
+            <Link to="/terms-conditions">Terms</Link>
           </div>
         </div>
       </div>

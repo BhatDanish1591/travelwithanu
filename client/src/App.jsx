@@ -16,6 +16,9 @@ import GuideDetail from './pages/GuideDetail';
 import PackageHighlights from './pages/PackageHighlights';
 import Contact from './pages/Contact';
 import BookNow from './pages/BookNow';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import CancellationPolicy from './pages/CancellationPolicy';
 
 // Assets
 import './assets/styles.css';
@@ -92,6 +95,9 @@ function App() {
             <Route path="/guides" element={<Guides />} />
             <Route path="/guides/:guideSlug" element={<GuideDetail />} />
             <Route path="/book-now" element={<BookNow />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy />} />
           </Routes>
         </main>
 
