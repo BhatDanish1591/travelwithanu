@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const CancellationPolicy = () => {
@@ -15,9 +15,12 @@ const CancellationPolicy = () => {
 
   return (
     <main>
-      <section className="hero-sm" aria-label="Cancellation Policy">
-        <div className="hero-bg">
-          <img src="/images/dest_pahalgam.jpg" className="active" alt="Pahalgam Kashmir" fetchPriority="high" />
+      <section id="hero" className="hero-sm" aria-label="Cancellation Policy Hero">
+        <div className="hero-bg" id="hero-slider">
+          <img src="/images/dest_sonamarg.jpg" className="active" alt="Beautiful landscape of Sonamarg valleys" fetchPriority="high" />
+          <img src="/images/dest_gulmarg.jpg" alt="Gulmarg snow mountains" />
+          <img src="/images/dest_pahalgam.jpg" alt="Pahalgam valley" />
+          <img src="/images/dest_sonamarg.jpg" alt="Sonamarg mountains" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container hero-content">

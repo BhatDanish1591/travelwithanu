@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
@@ -8,9 +8,12 @@ const PrivacyPolicy = () => {
 
   return (
     <main>
-      <section className="hero-sm" aria-label="Privacy Policy">
-        <div className="hero-bg">
-          <img src="/images/hero_dal_lake.jpg" className="active" alt="Dal Lake Kashmir" fetchPriority="high" />
+      <section id="hero" className="hero-sm" aria-label="Privacy Policy Hero">
+        <div className="hero-bg" id="hero-slider">
+          <img src="/images/dest_sonamarg.jpg" className="active" alt="Beautiful landscape of Sonamarg valleys" fetchPriority="high" />
+          <img src="/images/dest_gulmarg.jpg" alt="Gulmarg snow mountains" />
+          <img src="/images/dest_pahalgam.jpg" alt="Pahalgam valley" />
+          <img src="/images/dest_sonamarg.jpg" alt="Sonamarg mountains" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container hero-content">
