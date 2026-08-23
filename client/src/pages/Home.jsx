@@ -19,6 +19,11 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [plannerStatus, setPlannerStatus] = useState('idle');
   const [activePackageFilter, setActivePackageFilter] = useState('all');
+  const [openFaq, setOpenFaq] = useState([]);
+
+  const toggleFaq = (index) => {
+    setOpenFaq(prev => prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]);
+  };
 
   useEffect(() => {
     const cards = document.querySelectorAll('.pkg-card');
@@ -965,33 +970,33 @@ const Home = () => {
     </div>
 
     <div className="faq-grid" itemScope itemType="https://schema.org/FAQPage">
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">When is the best time to visit Kashmir?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(0) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(0)} aria-expanded={openFaq.includes(0)}><span itemProp="name">When is the best time to visit Kashmir?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Kashmir is beautiful year-round. March–May offers famous tulip blooms and pleasant weather. June–September has lush green valleys perfect for trekking. October–November brings stunning autumn foliage. December–February transforms Kashmir into a winter wonderland, ideal for skiing in Gulmarg.</p></div>
       </div>
 
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">Is Kashmir safe for tourists?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(1) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(1)} aria-expanded={openFaq.includes(1)}><span itemProp="name">Is Kashmir safe for tourists?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Yes, Kashmir is very welcoming to tourists. Millions of visitors travel to Kashmir safely every year. Tourist areas including Srinagar, Gulmarg, Pahalgam and Sonamarg are well-monitored and hospitable. Our local guides are with you throughout the journey, making your trip safe and comfortable.</p></div>
       </div>
 
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">What is the Kashmir trip budget for 5 days?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(2) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(2)} aria-expanded={openFaq.includes(2)}><span itemProp="name">What is the Kashmir trip budget for 5 days?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">A 5-day Kashmir trip costs ₹12,000–₹18,000 per person on a budget, ₹18,000–₹35,000 for mid-range and ₹40,000+ for luxury. This typically includes accommodation, houseboat stay, Shikara ride, private transfers, guide, and most meals. Costs vary by travel dates, group size and comfort level.</p></div>
       </div>
 
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">Do I need a special permit to visit Kashmir?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(3) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(3)} aria-expanded={openFaq.includes(3)}><span itemProp="name">Do I need a special permit to visit Kashmir?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Indian nationals don't need any special permit for most parts of Kashmir. Some areas like Gurez Valley require a Protected Area Permit (PAP) which we arrange for you. International visitors need a valid Indian visa. Our team handles all necessary permits as part of your package.</p></div>
       </div>
 
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">Can I customize my Kashmir itinerary?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(4) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(4)} aria-expanded={openFaq.includes(4)}><span itemProp="name">Can I customize my Kashmir itinerary?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Absolutely! Every itinerary at Travel with Anu is fully customizable. Choose your destinations, duration, accommodation type, activities, travel dates and budget. Use our Trip Planner above for instant suggestions, or reach out via WhatsApp for a fully personalized Kashmir trip design.</p></div>
       </div>
 
-      <div className="faq-item" itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" aria-expanded="false"><span itemProp="name">What is included in Travel with Anu packages?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(5) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
+        <button className="faq-question" onClick={() => toggleFaq(5)} aria-expanded={openFaq.includes(5)}><span itemProp="name">What is included in Travel with Anu packages?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Standard packages include hotel accommodation, a houseboat stay in Srinagar, Shikara ride, all inter-destination transfers in private vehicles, a local guide, selected meals (usually breakfast and dinner), and all sightseeing per the itinerary. Flights are not included but we assist with booking.</p></div>
       </div>
     </div>
