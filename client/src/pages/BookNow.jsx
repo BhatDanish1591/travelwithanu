@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 
 const WHATSAPP_NUMBER = '917006291591';
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSezaySRHDmMRGIvkx4jfVj7PoG0KkelgxZkM2PGvDgroFKX4A/formResponse';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScH8JUTH-eRcXFut3ZZk-Ah5mWDNdabgezpUsI8zAaeovh3vw/formResponse';
 const FORM_ENTRIES = {
   name: 'entry.377689001',
   phone: 'entry.1075946897',
