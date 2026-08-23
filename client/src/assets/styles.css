@@ -1659,13 +1659,13 @@ input, select, textarea { font-family: inherit; }
   flex-shrink: 0;
   color: var(--neutral-600);
 }
-.faq-item.open .faq-icon { background: var(--green-100); color: var(--green-700); transform: rotate(45deg); }
+.faq-item.open .faq-icon, .faq-item:hover .faq-icon { background: var(--green-100); color: var(--green-700); transform: rotate(45deg); }
 .faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height .4s ease, padding .3s ease;
 }
-.faq-item.open .faq-answer { max-height: 300px; padding-bottom: 20px; }
+.faq-item.open .faq-answer, .faq-item:hover .faq-answer { max-height: 300px; padding-bottom: 20px; }
 .faq-answer-text {
   font-size: .9rem;
   color: var(--neutral-500);
