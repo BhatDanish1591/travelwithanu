@@ -172,166 +172,56 @@ const Home = () => {
     </div>
 
     <div className="packages-grid" id="packages-grid">
-
-      {/* Package 1: Highlights */}
-      <article className="pkg-card reveal reveal-d1" data-type="family" itemScope itemType="https://schema.org/TouristTrip">
-        <div className="pkg-card-img">
-          <img src="images/family_tour.jpg" alt="Kashmir Family Tour Package with Kashmirani" loading="lazy" />
-          <span className="pkg-card-ribbon">⭐ Most Booked</span>
-          <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
-        </div>
-        <div className="pkg-card-body">
-          <div className="pkg-card-type">Kashmir Classic</div>
-          <h3 className="pkg-card-title" itemProp="name">Kashmir Highlights</h3>
-          <div className="pkg-card-destinations">
-            <span className="pkg-dest-tag">Srinagar</span>
-            <span className="pkg-dest-tag">Gulmarg</span>
-            <span className="pkg-dest-tag">Pahalgam</span>
-          </div>
-          <div className="pkg-card-meta">
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Duration</span><span className="pkg-meta-value">5D / 4N</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Type</span><span className="pkg-meta-value">Family · Couple</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Group Size</span><span className="pkg-meta-value">2 – 10</span></div>
-          </div>
-          <div className="pkg-card-rating">
-            <span className="stars">★★★★★</span>
-            <span className="pkg-rating-score">4.9</span>
-            <span className="pkg-rating-count">(342 reviews)</span>
-          </div>
-          <div className="pkg-card-footer">
-            <div className="pkg-price">
-              <span className="pkg-price-from">Starting from</span>
-              <span className="pkg-price-amount" itemProp="offers">₹12,999</span>
-              <span className="pkg-price-per">per person</span>
+      {[
+        { id:1, types:['budget','family'],   ribbon:'💰 Pocket Friendly',    img:'images/dest_pahalgam.jpg',  imgAlt:'Kashmir Budget Explorer',   type:'Best Cost-saving',       name:'Kashmir Budget Explorer',   tags:['Srinagar Stay','Pahalgam Day-trip'],                            dur:'4D / 3N', tripType:'Budget Group',       group:'4 – 15',   rating:4.6, reviews:201, price:9500,  per:'per person · 3N4D', link:'/packages' },
+        { id:2, types:['luxury'],            ribbon:'❄️ Season Special',     img:'images/dest_gulmarg.jpg',   imgAlt:'Kashmir Winter Magic',      type:'Premium Experience',     name:'Kashmir Winter Magic',      tags:['Gulmarg Snow','Houseboat','Srinagar'],                          dur:'4D / 3N', tripType:'Luxury Stay',        group:'2 – 6',    rating:4.7, reviews:98,  price:9500,  per:'per person · 3N4D', link:'/packages' },
+        { id:3, types:['family'],            ribbon:'⭐ Most Booked',         img:'images/family_tour.jpg',    imgAlt:'Kashmir Highlights',        type:'Kashmir Classic',        name:'Kashmir Highlights',        tags:['Srinagar','Gulmarg','Pahalgam'],                                dur:'5D / 4N', tripType:'Family / Couple',    group:'2 – 10',   rating:4.9, reviews:342, price:9500,  per:'per person · 4N5D', link:'/packages' },
+        { id:4, types:['family','luxury'],   ribbon:"🌟 Editor's Pick",      img:'images/autumn.jpg',         imgAlt:'Kashmir Escape',            type:'All-inclusive Comfort',  name:'Kashmir Escape',            tags:['Srinagar','Gulmarg','Sonamarg','Pahalgam'],                     dur:'6D / 5N', tripType:'All Types',          group:'2 – 12',   rating:4.8, reviews:218, price:10500, per:'per person · 5N6D', link:'/packages' },
+        { id:5, types:['adventure','budget'],ribbon:'⛺ Backpacker Choice',   img:'images/trekking.webp',      imgAlt:'Gurez Offbeat Explorer',    type:'Remote Trekking',        name:'Gurez Offbeat Explorer',    tags:['Gurez Dawar','Kishanganga','Wular Lake'],                       dur:'5D / 4N', tripType:'Adventure Trek',     group:'2 – 8',    rating:4.9, reviews:54,  price:10500, per:'per person · 4N5D', link:'/packages' },
+        { id:6, types:['adventure'],         ribbon:'🏔️ Adventure',          img:'images/trekking.webp',      imgAlt:'Kashmir Adventure',         type:'Thrill Seeker',          name:'Kashmir Adventure',         tags:['Gurez','Sonamarg','Gulmarg','Trekking'],                        dur:'7D / 6N', tripType:'Adventure',          group:'2 – 8',    rating:4.9, reviews:167, price:12000, per:'per person · 6N7D', link:'/packages' },
+        { id:7, types:['family'],            ribbon:'👨‍👩‍👧 Family First',        img:'images/family_tour.jpg',    imgAlt:'Kashmir Family Delight',    type:'Complete Sightseeing',   name:'Kashmir Family Delight',    tags:['Srinagar','Pahalgam','Gulmarg Gondola','Shikara Ride'],         dur:'7D / 6N', tripType:'Family Sightseeing', group:'3 – 12',   rating:4.8, reviews:134, price:12000, per:'per person · 6N7D', link:'/packages' },
+        { id:8, types:['adventure','family'],ribbon:'🕉️ Pilgrimage',          img:'images/dest_pahalgam.jpg',  imgAlt:'Amarnath Yatra 2026',       type:'Sacred Journey',         name:'Amarnath Yatra 2026',       tags:['Baltal','Pahalgam','Holy Cave'],                                dur:'4D / 3N', tripType:'Trek / Helicopter',  group:'1 – 20',   rating:4.9, reviews:512, price:18500, per:'per person',        link:'/amarnath-yatra', ribbonStyle:{ background:'linear-gradient(135deg,#ea580c,#f59e0b)' } },
+        { id:9, types:['honeymoon','luxury'],ribbon:'💑 Honeymoon',           img:'images/offbeat.png',        imgAlt:'Kashmir Honeymoon',         type:'Romantic Escape',        name:'Kashmir Honeymoon',         tags:['Houseboat Stay','Shikara Ride','Gulmarg','Pahalgam'],           dur:'6D / 5N', tripType:'Couples Only',       group:'2 Persons',rating:5.0, reviews:456, price:25000, per:'per couple',        link:'/packages',       ribbonStyle:{ background:'linear-gradient(135deg,#e91e8c,#f43f5e)' } },
+      ]
+        .filter(pkg => activePackageFilter === 'all' || pkg.types.includes(activePackageFilter))
+        .map((pkg, idx) => (
+          <article key={pkg.id} className={`pkg-card reveal reveal-d${(idx % 4) + 1}`} itemScope itemType="https://schema.org/TouristTrip">
+            <div className="pkg-card-img">
+              <img src={pkg.img} alt={pkg.imgAlt} loading="lazy" />
+              <span className="pkg-card-ribbon" style={pkg.ribbonStyle || {}}>{pkg.ribbon}</span>
+              <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
             </div>
-            <div className="pkg-card-actions">
-              <Link to="/packages" className="btn btn-outline btn-sm">View</Link>
-              <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
+            <div className="pkg-card-body">
+              <div className="pkg-card-type">{pkg.type}</div>
+              <h3 className="pkg-card-title" itemProp="name">{pkg.name}</h3>
+              <div className="pkg-card-destinations">
+                {pkg.tags.map(t => <span key={t} className="pkg-dest-tag">{t}</span>)}
+              </div>
+              <div className="pkg-card-meta">
+                <div className="pkg-meta-item"><span className="pkg-meta-label">Duration</span><span className="pkg-meta-value">{pkg.dur}</span></div>
+                <div className="pkg-meta-item"><span className="pkg-meta-label">Type</span><span className="pkg-meta-value">{pkg.tripType}</span></div>
+                <div className="pkg-meta-item"><span className="pkg-meta-label">Group Size</span><span className="pkg-meta-value">{pkg.group}</span></div>
+              </div>
+              <div className="pkg-card-rating">
+                <span className="stars">★★★★★</span>
+                <span className="pkg-rating-score">{pkg.rating}</span>
+                <span className="pkg-rating-count">({pkg.reviews} reviews)</span>
+              </div>
+              <div className="pkg-card-footer">
+                <div className="pkg-price">
+                  <span className="pkg-price-from">Starting from</span>
+                  <span className="pkg-price-amount" itemProp="offers">₹{pkg.price.toLocaleString('en-IN')}</span>
+                  <span className="pkg-price-per">{pkg.per}</span>
+                </div>
+                <div className="pkg-card-actions">
+                  <Link to={pkg.link} className="btn btn-outline btn-sm">View</Link>
+                  <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </article>
-
-      {/* Package 2: Escape */}
-      <article className="pkg-card reveal reveal-d2" data-type="family luxury" itemScope itemType="https://schema.org/TouristTrip">
-        <div className="pkg-card-img">
-          <img src="images/autumn.jpg" alt="Beautiful Kashmir Valley in Autumn season foliage" loading="lazy" />
-          <span className="pkg-card-ribbon">🌟 Editor's Pick</span>
-          <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
-        </div>
-        <div className="pkg-card-body">
-          <div className="pkg-card-type">Best Value</div>
-          <h3 className="pkg-card-title" itemProp="name">Kashmir Escape</h3>
-          <div className="pkg-card-destinations">
-            <span className="pkg-dest-tag">Srinagar</span>
-            <span className="pkg-dest-tag">Gulmarg</span>
-            <span className="pkg-dest-tag">Sonamarg</span>
-            <span className="pkg-dest-tag">Pahalgam</span>
-          </div>
-          <div className="pkg-card-meta">
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Duration</span><span className="pkg-meta-value">6D / 5N</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Type</span><span className="pkg-meta-value">All Types</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Group Size</span><span className="pkg-meta-value">2 – 12</span></div>
-          </div>
-          <div className="pkg-card-rating">
-            <span className="stars">★★★★★</span>
-            <span className="pkg-rating-score">4.8</span>
-            <span className="pkg-rating-count">(218 reviews)</span>
-          </div>
-          <div className="pkg-card-footer">
-            <div className="pkg-price">
-              <span className="pkg-price-from">Starting from</span>
-              <span className="pkg-price-amount" itemProp="offers">₹18,499</span>
-              <span className="pkg-price-per">per person</span>
-            </div>
-            <div className="pkg-card-actions">
-              <Link to="/packages" className="btn btn-outline btn-sm">View</Link>
-              <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      {/* Package 3: Honeymoon */}
-      <article className="pkg-card reveal reveal-d3" data-type="honeymoon luxury" itemScope itemType="https://schema.org/TouristTrip">
-        <div className="pkg-card-img">
-          <img src="images/offbeat.png" alt="Kashmir Honeymoon Package with Kashmirani" loading="lazy" />
-          <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg,#e91e8c,#f43f5e)' }}>💑 Honeymoon</span>
-          <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
-        </div>
-        <div className="pkg-card-body">
-          <div className="pkg-card-type">Romantic Escape</div>
-          <h3 className="pkg-card-title" itemProp="name">Kashmir Honeymoon</h3>
-          <div className="pkg-card-destinations">
-            <span className="pkg-dest-tag">Houseboat Stay</span>
-            <span className="pkg-dest-tag">Shikara Ride</span>
-            <span className="pkg-dest-tag">Gulmarg</span>
-            <span className="pkg-dest-tag">Pahalgam</span>
-          </div>
-          <div className="pkg-card-meta">
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Duration</span><span className="pkg-meta-value">6D / 5N</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Type</span><span className="pkg-meta-value">Couples</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Group Size</span><span className="pkg-meta-value">2 Persons</span></div>
-          </div>
-          <div className="pkg-card-rating">
-            <span className="stars">★★★★★</span>
-            <span className="pkg-rating-score">5.0</span>
-            <span className="pkg-rating-count">(456 reviews)</span>
-          </div>
-          <div className="pkg-card-footer">
-            <div className="pkg-price">
-              <span className="pkg-price-from">Starting from</span>
-              <span className="pkg-price-amount" itemProp="offers">₹24,999</span>
-              <span className="pkg-price-per">per couple</span>
-            </div>
-            <div className="pkg-card-actions">
-              <Link to="/packages" className="btn btn-outline btn-sm">View</Link>
-              <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      {/* Package 4: Adventure */}
-      <article className="pkg-card reveal reveal-d4" data-type="adventure" itemScope itemType="https://schema.org/TouristTrip">
-        <div className="pkg-card-img">
-          <img src="images/trekking.webp" alt="Kashmir Trekking & Adventure Packages" loading="lazy" />
-          <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg,#ea580c,#f59e0b)' }}>🏔️ Adventure</span>
-          <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
-        </div>
-        <div className="pkg-card-body">
-          <div className="pkg-card-type">Thrill Seeker</div>
-          <h3 className="pkg-card-title" itemProp="name">Kashmir Adventure</h3>
-          <div className="pkg-card-destinations">
-            <span className="pkg-dest-tag">Gurez</span>
-            <span className="pkg-dest-tag">Sonamarg</span>
-            <span className="pkg-dest-tag">Gulmarg</span>
-            <span className="pkg-dest-tag">Trekking</span>
-          </div>
-          <div className="pkg-card-meta">
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Duration</span><span className="pkg-meta-value">7D / 6N</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Type</span><span className="pkg-meta-value">Adventure</span></div>
-            <div className="pkg-meta-item"><span className="pkg-meta-label">Group Size</span><span className="pkg-meta-value">2 – 8</span></div>
-          </div>
-          <div className="pkg-card-rating">
-            <span className="stars">★★★★★</span>
-            <span className="pkg-rating-score">4.9</span>
-            <span className="pkg-rating-count">(167 reviews)</span>
-          </div>
-          <div className="pkg-card-footer">
-            <div className="pkg-price">
-              <span className="pkg-price-from">Starting from</span>
-              <span className="pkg-price-amount" itemProp="offers">₹22,499</span>
-              <span className="pkg-price-per">per person</span>
-            </div>
-            <div className="pkg-card-actions">
-              <Link to="/packages" className="btn btn-outline btn-sm">View</Link>
-              <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>
-            </div>
-          </div>
-        </div>
-      </article>
-
+          </article>
+        ))
+      }
     </div>
 
     <div className="text-center" style={{ marginTop: '48px' }}>
