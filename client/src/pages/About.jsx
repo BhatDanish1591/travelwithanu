@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -139,22 +139,22 @@ const About = () => {
 
           <div className="value-grid">
             <div className="why-card reveal">
-              <div className="why-icon">ðŸ—ºï¸</div>
+              <div className="why-icon">🗺️</div>
               <h3 className="why-title">True Local Expertise</h3>
               <p className="why-desc">We never outsource tour design. Our itineraries are written from first-hand valley experience, recommending only hotels and transport links we have verified ourselves.</p>
             </div>
             <div className="why-card reveal" style={{ transitionDelay: '0.05s' }}>
-              <div className="why-icon">ðŸŒ¿</div>
+              <div className="why-icon">🌿</div>
               <h3 className="why-title">Responsible Ecotourism</h3>
               <p className="why-desc">We support family-owned guesthouses, pay guide unions fairly, and emphasize leave-no-trace principles during treks and camping in alpine meadows.</p>
             </div>
             <div className="why-card reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="why-icon">ðŸ›¡ï¸</div>
+              <div className="why-icon">🛡️</div>
               <h3 className="why-title">Safety & Security First</h3>
               <p className="why-desc">We track local weather forecasts and safety updates in real time. Our drivers are trained for snowy mountain passes and keep medical aid kits in all cabs.</p>
             </div>
             <div className="why-card reveal" style={{ transitionDelay: '0.15s' }}>
-              <div className="why-icon">ðŸ’Ž</div>
+              <div className="why-icon">💎</div>
               <h3 className="why-title">Absolute Transparency</h3>
               <p className="why-desc">No hidden expenses, agent markups, or shopping traps. Pony union rates and valley cab rentals are fully declared upfront in our bookings.</p>
             </div>
@@ -171,10 +171,10 @@ const About = () => {
           </div>
 
           <div className="awards-row reveal">
-            <div className="award-card">ðŸ›ï¸ recognized by Ministry of Tourism (J&K)</div>
-            <div className="award-card">ðŸ† TripAdvisor Choice 2024 (Local Tour Agency)</div>
-            <div className="award-card">ðŸ¤ Member of J&K Tourism Association</div>
-            <div className="award-card">â­ 4.9 Rating (Google Reviews)</div>
+            <div className="award-card">🏛️ recognized by Ministry of Tourism (J&K)</div>
+            <div className="award-card">🏆 TripAdvisor Choice 2024 (Local Tour Agency)</div>
+            <div className="award-card">🤝 Member of J&K Tourism Association</div>
+            <div className="award-card">⭐ 4.9 Rating (Google Reviews)</div>
           </div>
         </div>
       </section>
@@ -185,8 +185,8 @@ const About = () => {
           <h2 className="section-title" style={{ color: 'var(--white)', marginBottom: '20px' }}>Ready to Start Your Journey?</h2>
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1.1rem' }}>Get in touch with our founders and guides today to start planning your dream Kashmir trip.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-gold">Contact Travel Experts ðŸ“ž</Link>
-            <a href="https://wa.me/919419000000" className="btn btn-ghost">Chat on WhatsApp ðŸ’¬</a>
+            <Link to="/contact" className="btn btn-gold">Contact Travel Experts 📞</Link>
+            <a href="https://wa.me/919419000000" className="btn btn-ghost">Chat on WhatsApp 💬</a>
           </div>
         </div>
       </section>
