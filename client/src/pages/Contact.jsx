@@ -6,15 +6,13 @@ const WHATSAPP_NUMBER = '916005655257';
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdFi_OF-UBAdvpIr8THeGgSFgJE6Zvy-PTrotvVYrTldGUkEQ/formResponse';
 const FORM_ENTRIES = {
-  name: 'entry.377689001',
-  phone: 'entry.1075946897',
-  email: 'entry.456220714',
-  month: 'entry.1171905381',
-  travelers: 'entry.818741328',
-  style: 'entry.917885087',
-  destinations: 'entry.1121926050',
-  budget: 'entry.118958278',
-  message: 'entry.806400053',
+  name: 'entry.1374370582',
+  phone: 'entry.398642664',
+  email: 'entry.605254536',
+  style: 'entry.2024658045',
+  destinations: 'entry.507037177',
+  budget: 'entry.182973633',
+  message: 'entry.1997914130',
 };
 // ────────────────────────────────────────────────────────────────────────────
 
@@ -57,8 +55,6 @@ const Contact = () => {
         formData.append(FORM_ENTRIES.name,        name);
         formData.append(FORM_ENTRIES.phone,       phone);
         formData.append(FORM_ENTRIES.email,       email);
-        formData.append(FORM_ENTRIES.month,       month);
-        formData.append(FORM_ENTRIES.travelers,   travelers);
         formData.append(FORM_ENTRIES.style,       style);
         formData.append(FORM_ENTRIES.destinations, destinations);
         formData.append(FORM_ENTRIES.budget,      budget);
@@ -184,31 +180,14 @@ const Contact = () => {
                   </div>
 
                   <div className="form-row">
-                    <div className="form-group">
+                    <div className="form-group" style={{ flex: '1 1 100%' }}>
                       <label className="form-label" htmlFor="c-email">Email Address</label>
                       <input type="email" className="form-control" id="c-email" required />
-                    </div>
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="c-month">Travel Month</label>
-                      <select className="form-control" id="c-month" defaultValue="" required>
-                        <option value="" disabled>Select Month</option>
-                        {['January','February','March','April','May','June','July','August','September','October','November','December'].map(m => <option key={m}>{m}</option>)}
-                      </select>
                     </div>
                   </div>
 
                   <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="c-travelers">Total Travelers</label>
-                      <select className="form-control" id="c-travelers" defaultValue="2 Persons (Couple)" required>
-                        <option>1 Person</option>
-                        <option>2 Persons (Couple)</option>
-                        <option>3 – 4 Persons</option>
-                        <option>5 – 8 Persons</option>
-                        <option>9+ Group</option>
-                      </select>
-                    </div>
-                    <div className="form-group">
+                    <div className="form-group" style={{ flex: '1 1 100%' }}>
                       <label className="form-label" htmlFor="c-style">Travel Style</label>
                       <select className="form-control" id="c-style" defaultValue="Family Tour" required>
                         <option>💑 Honeymoon Special</option>

@@ -7,8 +7,6 @@ const FORM_ENTRIES = {
   name:         'entry.587932021',
   phone:        'entry.1233575544',
   email:        'entry.629928607',
-  month:        'entry.403656686',
-  travelers:    'entry.1650844921',
   style:        'entry.1022965917',
   destinations: 'entry.394910583',
   budget:       'entry.1600048497',
@@ -56,8 +54,6 @@ const AmarnathBooking = () => {
       fd.append(FORM_ENTRIES.name,         name);
       fd.append(FORM_ENTRIES.phone,        phone);
       fd.append(FORM_ENTRIES.email,        email);
-      fd.append(FORM_ENTRIES.month,        date);
-      fd.append(FORM_ENTRIES.travelers,    travelers);
       fd.append(FORM_ENTRIES.style,        'Amarnath Yatra');
       fd.append(FORM_ENTRIES.destinations, 'Amarnath Cave');
       fd.append(FORM_ENTRIES.budget,       selectedPkg?.price || '');

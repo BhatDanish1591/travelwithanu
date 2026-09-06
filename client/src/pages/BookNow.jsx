@@ -2,20 +2,17 @@ import React, { useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 
 const WHATSAPP_NUMBER = '916005655257';
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScH8JUTH-eRcXFut3ZZk-Ah5mWDNdabgezpUsI8zAaeovh3vw/formResponse';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdFi_OF-UBAdvpIr8THeGgSFgJE6Zvy-PTrotvVYrTldGUkEQ/formResponse';
 const FORM_ENTRIES = {
-  name: 'entry.587932021',
-  phone: 'entry.1233575544',
-  email: 'entry.629928607',
-  month: 'entry.403656686',
-  travelers: 'entry.1650844921',
-  style: 'entry.1022965917',
-  destinations: 'entry.394910583',
-  budget: 'entry.1600048497',
-  message: 'entry.867743837',
+  name: 'entry.1374370582',
+  phone: 'entry.398642664',
+  email: 'entry.605254536',
+  style: 'entry.2024658045',
+  destinations: 'entry.507037177',
+  budget: 'entry.182973633',
+  message: 'entry.1997914130',
 };
 
-const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const DEST_OPTIONS = [
   { label: 'Srinagar', emoji: '🏛️' }, { label: 'Gulmarg', emoji: '⛷️' },
   { label: 'Pahalgam', emoji: '🌿' }, { label: 'Sonamarg', emoji: '🏔️' },
@@ -30,8 +27,6 @@ const BookNow = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [month, setMonth] = useState('');
-  const [travelers, setTravelers] = useState('2 Persons (Couple)');
   const [tripStyle, setTripStyle] = useState('Family Tour');
   const [budget, setBudget] = useState('');
   const [message, setMessage] = useState('');
@@ -39,13 +34,12 @@ const BookNow = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name.trim() || !phone.trim() || !month) { alert('Please fill in Full Name, Phone / WhatsApp, and Travel Month.'); return; }
+    if (!name.trim() || !phone.trim()) { alert('Please fill in Full Name and Phone / WhatsApp.'); return; }
     setFormStatus('submitting');
     try {
       const fd = new FormData();
       fd.append(FORM_ENTRIES.name, name); fd.append(FORM_ENTRIES.phone, phone);
-      fd.append(FORM_ENTRIES.email, email); fd.append(FORM_ENTRIES.month, month);
-      fd.append(FORM_ENTRIES.travelers, travelers); fd.append(FORM_ENTRIES.style, tripStyle);
+      fd.append(FORM_ENTRIES.email, email); fd.append(FORM_ENTRIES.style, tripStyle);
       fd.append(FORM_ENTRIES.destinations, dests.join(', ')); fd.append(FORM_ENTRIES.budget, budget);
       fd.append(FORM_ENTRIES.message, packageName ? `Package: ${packageName}\n${message}` : message);
       await fetch(GOOGLE_FORM_URL, { method: 'POST', mode: 'no-cors', body: fd });
@@ -160,27 +154,14 @@ const BookNow = () => {
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group">
+                  <div className="form-group" style={{ flex: '1 1 100%' }}>
                     <label className="form-label" htmlFor="bn-email">Email Address</label>
                     <input className="form-control" id="bn-email" type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="bn-month">Travel Month <span style={{color:'#ef4444'}}>*</span></label>
-                    <select className="form-control" id="bn-month" value={month} onChange={e => setMonth(e.target.value)} required>
-                      <option value="" disabled></option>
-                      {MONTHS.map(m => <option key={m}>{m}</option>)}
-                    </select>
                   </div>
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="bn-travelers">Total Travelers</label>
-                    <select className="form-control" id="bn-travelers" value={travelers} onChange={e => setTravelers(e.target.value)} required>
-                      {['1 Person','2 Persons (Couple)','3 – 4 Persons','5 – 8 Persons','9+ Group'].map(o => <option key={o}>{o}</option>)}
-                    </select>
-                  </div>
-                  <div className="form-group">
+                  <div className="form-group" style={{ flex: '1 1 100%' }}>
                     <label className="form-label" htmlFor="bn-style">Travel Style</label>
                     <select className="form-control" id="bn-style" value={tripStyle} onChange={e => setTripStyle(e.target.value)} required>
                       {['Honeymoon Special','Family Tour','Adventure Trek','Luxury Experience','Budget Explorer','Solo Traveler'].map(o => <option key={o}>{o}</option>)}

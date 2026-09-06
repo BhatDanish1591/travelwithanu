@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const WHATSAPP_NUMBER = '916005655257';
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScH8JUTH-eRcXFut3ZZk-Ah5mWDNdabgezpUsI8zAaeovh3vw/formResponse';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdFi_OF-UBAdvpIr8THeGgSFgJE6Zvy-PTrotvVYrTldGUkEQ/formResponse';
 const FORM_ENTRIES = {
-  name: 'entry.587932021',
-  phone: 'entry.1233575544',
-  email: 'entry.629928607',
-  month: 'entry.403656686',
-  travelers: 'entry.1650844921',
-  style: 'entry.1022965917',
-  destinations: 'entry.394910583',
-  budget: 'entry.1600048497',
-  message: 'entry.867743837',
+  name: 'entry.1374370582',
+  phone: 'entry.398642664',
+  email: 'entry.605254536',
+  style: 'entry.2024658045',
+  destinations: 'entry.507037177',
+  budget: 'entry.182973633',
+  message: 'entry.1997914130',
 };
 
 const Home = () => {
@@ -56,8 +54,6 @@ const Home = () => {
         fd.append(FORM_ENTRIES.name, name);
         fd.append(FORM_ENTRIES.phone, phone);
         fd.append(FORM_ENTRIES.email, email);
-        fd.append(FORM_ENTRIES.month, date);
-        fd.append(FORM_ENTRIES.travelers, travelers);
         fd.append(FORM_ENTRIES.style, pkg);
         fd.append(FORM_ENTRIES.destinations, 'Home Page Query');
         fd.append(FORM_ENTRIES.message, msg);
@@ -523,34 +519,16 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
-            <div className="form-group">
-              <label className="form-label" style={{ color: 'var(--green-900)' }}>Select Package</label>
-              <select className="form-control" id="planner-pkg" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required>
-                <option value="" disabled selected></option>
-                <option>Kashmir Highlights (5 Days)</option>
-                <option>Kashmir Escape (6 Days)</option>
-                <option>Kashmir Honeymoon (6 Days)</option>
-                <option>Kashmir Adventure (7 Days)</option>
-                <option>Custom Itinerary</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label className="form-label" style={{ color: 'var(--green-900)' }}>No. of Travellers</label>
-              <select className="form-control" id="planner-travelers" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required>
-                <option value="" disabled selected></option>
-                <option>1 Person</option>
-                <option>2 Persons (Couple)</option>
-                <option>3 - 4 Persons</option>
-                <option>5 - 8 Persons</option>
-                <option>9+ Persons</option>
-              </select>
-            </div>
-          </div>
-
           <div className="form-group" style={{ marginBottom: '16px' }}>
-            <label className="form-label" style={{ color: 'var(--green-900)' }}>Travel Date</label>
-            <input type="date" className="form-control" id="planner-date" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required />
+            <label className="form-label" style={{ color: 'var(--green-900)' }}>Select Package / Travel Style</label>
+            <select className="form-control" id="planner-pkg" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required>
+              <option value="" disabled selected></option>
+              <option>Kashmir Highlights (5 Days)</option>
+              <option>Kashmir Escape (6 Days)</option>
+              <option>Kashmir Honeymoon (6 Days)</option>
+              <option>Kashmir Adventure (7 Days)</option>
+              <option>Custom Itinerary</option>
+            </select>
           </div>
 
           <div className="form-group" style={{ marginBottom: '24px' }}>
