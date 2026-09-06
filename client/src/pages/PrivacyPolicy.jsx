@@ -52,11 +52,11 @@ const PrivacyPolicy = () => {
               },
               {
                 title: "6. Your Rights",
-                content: "You have the right to access, correct, or request deletion of your personal data at any time. To exercise these rights, please contact us at travelwithanu@gmail.com."
+                content: "You have the right to access, correct, or request deletion of your personal data at any time. To exercise these rights, please contact us at travelwithanutnt@gmail.com."
               },
               {
                 title: "7. Contact Us",
-                content: "Travel with Anu, Main market kunzer, Tangmarg J&K 193404. Email: travelwithanu@gmail.com | Phone: +91-6005655257"
+                content: "Travel with Anu, Main market kunzer, Tangmarg J&K 193404. Email: travelwithanutnt@gmail.com | Phone: +91-6005655257"
               }
             ].map((s, i) => (
               <div key={i} style={{ marginBottom: "32px" }}>

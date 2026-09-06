@@ -55,7 +55,7 @@ const CancellationPolicy = () => {
             {[
               {
                 title: "How to Cancel",
-                content: "To cancel your booking, please notify us in writing via email at travelwithanu@gmail.com or via WhatsApp at +91-6005655257. The cancellation date will be the date we receive your written notification. Verbal cancellations over a phone call are not accepted."
+                content: "To cancel your booking, please notify us in writing via email at travelwithanutnt@gmail.com or via WhatsApp at +91-6005655257. The cancellation date will be the date we receive your written notification. Verbal cancellations over a phone call are not accepted."
               },
               {
                 title: "Refund Processing",
@@ -75,7 +75,7 @@ const CancellationPolicy = () => {
               },
               {
                 title: "Contact for Cancellations",
-                content: "Email: travelwithanu@gmail.com | WhatsApp: +91-6005655257 | Office hours: 9 AM – 8 PM IST, Monday to Saturday"
+                content: "Email: travelwithanutnt@gmail.com | WhatsApp: +91-6005655257 | Office hours: 9 AM – 8 PM IST, Monday to Saturday"
               }
             ].map((s, i) => (
               <div key={i} style={{ marginBottom: "32px" }}>

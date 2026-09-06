@@ -1004,7 +1004,7 @@ const Home = () => {
             <div className="contact-icon">✉️</div>
             <div>
               <div className="contact-item-label">Email</div>
-              <div className="contact-item-value">travelwithanu@gmail.com</div>
+              <div className="contact-item-value">travelwithanutnt@gmail.com</div>
             </div>
           </div>
           <div className="contact-item">
