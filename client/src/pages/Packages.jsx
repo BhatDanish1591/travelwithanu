@@ -78,7 +78,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹9,500</span>
+                    <span className="pkg-price-amount" itemProp="offers">₹8,500</span>
                     <span className="pkg-price-per">per person · 4N5D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -312,8 +312,8 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹9,500</span>
-                    <span className="pkg-price-per">per person · 4N5D</span>
+                    <span className="pkg-price-amount" itemProp="offers">₹7,500</span>
+                    <span className="pkg-price-per">per person · 3N4D</span>
                   </div>
                   <div className="pkg-card-actions">
                     <Link to="/packages/kashmir-highlights" className="btn btn-outline btn-sm">View Package</Link>
