@@ -634,3 +634,6 @@
     padding: 24px 20px;
   }
 }
+
+.comparison-table-wrapper { overflow-x: auto; } .comparison-table th, .comparison-table td { min-width: 150px; }
+
