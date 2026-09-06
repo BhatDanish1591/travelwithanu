@@ -42,20 +42,20 @@ const Guides = () => {
         <div className="container">
           
           {/* Featured Guide Card */}
-          <article className="featured-guide-card reveal" itemScope itemType="https://schema.org/BlogPosting">
+          <article className="featured-guide-card reveal">
             <div className="featured-guide-img">
-              <img src="/images/dest_srinagar.jpg" alt="Srinagar Dal Lake Houseboats sunrise" itemProp="image" />
+              <img src="/images/dest_srinagar.jpg" alt="Srinagar Dal Lake Houseboats sunrise" />
             </div>
             <div className="featured-guide-body">
               <div className="guide-card-meta">
-                <span className="guide-card-cat" itemProp="articleSection">Destinations</span>
+                <span className="guide-card-cat">Destinations</span>
                 <span className="guide-card-dot">•</span>
                 <span className="guide-card-read">8 min read</span>
               </div>
-              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', color: 'var(--neutral-900)', marginBottom: '14px', lineHeight: 1.2 }} itemProp="headline">
+              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', color: 'var(--neutral-900)', marginBottom: '14px', lineHeight: 1.2 }}>
                 Best Places to Visit in Kashmir in 2025
               </h2>
-              <p style={{ color: 'var(--neutral-500)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '24px' }} itemProp="description">
+              <p style={{ color: 'var(--neutral-500)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '24px' }}>
                 A comprehensive, seasonal guide detailing the top 8 absolute must-visit locations across Kashmir. From classical spots like Srinagar, Gulmarg, and Pahalgam to remote valleys like Gurez and hidden waterfall picnics like Aharbal.
               </p>
               <Link to="/guides/kashmir-guide" className="btn btn-primary" style={{ alignSelf: 'flex-start' }}>Read Guide →</Link>

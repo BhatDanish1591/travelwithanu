@@ -190,7 +190,7 @@ const Home = () => {
       ]
         .filter(pkg => activePackageFilter === 'all' || pkg.types.includes(activePackageFilter))
         .map((pkg, idx) => (
-          <article key={pkg.id} className={`pkg-card reveal reveal-d${(idx % 4) + 1}`} itemScope itemType="https://schema.org/TouristTrip">
+          <article key={pkg.id} className={`pkg-card reveal reveal-d${(idx % 4) + 1}`}>
             <div className="pkg-card-img">
               <img src={pkg.img} alt={pkg.imgAlt} loading="lazy" />
               <span className="pkg-card-ribbon" style={pkg.ribbonStyle || {}}>{pkg.ribbon}</span>
@@ -198,7 +198,7 @@ const Home = () => {
             </div>
             <div className="pkg-card-body">
               <div className="pkg-card-type">{pkg.type}</div>
-              <h3 className="pkg-card-title" itemProp="name">{pkg.name}</h3>
+              <h3 className="pkg-card-title">{pkg.name}</h3>
               <div className="pkg-card-destinations">
                 {pkg.tags.map(t => <span key={t} className="pkg-dest-tag">{t}</span>)}
               </div>
@@ -215,7 +215,7 @@ const Home = () => {
               <div className="pkg-card-footer">
                 <div className="pkg-price">
                   <span className="pkg-price-from">Starting from</span>
-                  <span className="pkg-price-amount" itemProp="offers">₹{pkg.price.toLocaleString('en-IN')}</span>
+                  <span className="pkg-price-amount">₹{pkg.price.toLocaleString('en-IN')}</span>
                   <span className="pkg-price-per">{pkg.per}</span>
                 </div>
                 <div className="pkg-card-actions">
@@ -249,120 +249,120 @@ const Home = () => {
     <div className="destinations-grid">
 
       {/* Srinagar - AI generated image */}
-      <article className="dest-card reveal reveal-d1" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d1">
         <div className="dest-card-img">
-          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" itemProp="photo" />
+          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🌟 Most Popular</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Srinagar</h3>
-          <p className="dest-card-desc" itemProp="description">The crown of Kashmir — iconic Dal Lake, opulent houseboats, Mughal gardens and vibrant local bazaars in a breathtaking mountain setting.</p>
+          <h3 className="dest-card-name">Srinagar</h3>
+          <p className="dest-card-desc">The crown of Kashmir — iconic Dal Lake, opulent houseboats, Mughal gardens and vibrant local bazaars in a breathtaking mountain setting.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>March – November</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Gulmarg - AI generated image */}
-      <article className="dest-card reveal reveal-d2" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d2">
         <div className="dest-card-img">
-          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" itemProp="photo" />
+          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">❄️ Winter Paradise</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Gulmarg</h3>
-          <p className="dest-card-desc" itemProp="description">Asia's premier ski destination — a flower meadow in summer and a snowy paradise in winter with Asia's highest gondola cable car.</p>
+          <h3 className="dest-card-name">Gulmarg</h3>
+          <p className="dest-card-desc">Asia's premier ski destination — a flower meadow in summer and a snowy paradise in winter with Asia's highest gondola cable car.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>Dec–Feb (Snow) · Apr–Oct (Green)</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Pahalgam - AI generated image */}
-      <article className="dest-card reveal reveal-d3" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d3">
         <div className="dest-card-img">
-          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" itemProp="photo" />
+          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">💚 Valley of Shepherds</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Pahalgam</h3>
-          <p className="dest-card-desc" itemProp="description">Nestled in the Lidder River valley — famous for pine-clad hills, trout fishing, Betab Valley and the gateway to the Amarnath Yatra.</p>
+          <h3 className="dest-card-name">Pahalgam</h3>
+          <p className="dest-card-desc">Nestled in the Lidder River valley — famous for pine-clad hills, trout fishing, Betab Valley and the gateway to the Amarnath Yatra.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>April – September</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Sonamarg - AI generated image */}
-      <article className="dest-card reveal reveal-d4" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d4">
         <div className="dest-card-img">
-          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" itemProp="photo" />
+          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">✨ Meadow of Gold</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Sonamarg</h3>
-          <p className="dest-card-desc" itemProp="description">The "Golden Meadow" at 2,800m — surrounded by glaciers, crystal streams, wild ponies and some of the most dramatic peaks in the Himalayas.</p>
+          <h3 className="dest-card-name">Sonamarg</h3>
+          <p className="dest-card-desc">The "Golden Meadow" at 2,800m — surrounded by glaciers, crystal streams, wild ponies and some of the most dramatic peaks in the Himalayas.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Doodhpathri - AI generated image */}
-      <article className="dest-card reveal reveal-d5" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d5">
         <div className="dest-card-img">
-          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" itemProp="photo" />
+          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🥛 Hidden Gem</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Doodhpathri</h3>
-          <p className="dest-card-desc" itemProp="description">"Valley of Milk" — a secluded alpine meadow with milky white streams, dense fir forests, wildflowers and sweeping untouched landscapes.</p>
+          <h3 className="dest-card-name">Doodhpathri</h3>
+          <p className="dest-card-desc">"Valley of Milk" — a secluded alpine meadow with milky white streams, dense fir forests, wildflowers and sweeping untouched landscapes.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Yusmarg - AI generated image */}
-      <article className="dest-card reveal reveal-d6" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d6">
         <div className="dest-card-img">
-          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" itemProp="photo" />
+          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🌲 Forest Retreat</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Yusmarg</h3>
-          <p className="dest-card-desc" itemProp="description">A serene meadow surrounded by towering cedar and pine forests — the perfect off-the-beaten-path Kashmir experience for true nature lovers.</p>
+          <h3 className="dest-card-name">Yusmarg</h3>
+          <p className="dest-card-desc">A serene meadow surrounded by towering cedar and pine forests — the perfect off-the-beaten-path Kashmir experience for true nature lovers.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>May – October</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Gurez Valley - curated Unsplash */}
-      <article className="dest-card reveal reveal-d7" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d7">
         <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" itemProp="photo" />
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🏕️ Offbeat Escape</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Gurez Valley</h3>
-          <p className="dest-card-desc" itemProp="description">One of India's most breathtaking remote valleys — dramatic Himalayan scenery, the Kishanganga river and untouched Dard tribal culture.</p>
+          <h3 className="dest-card-name">Gurez Valley</h3>
+          <p className="dest-card-desc">One of India's most breathtaking remote valleys — dramatic Himalayan scenery, the Kishanganga river and untouched Dard tribal culture.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>June – September</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
       </article>
 
       {/* Aharbal - curated Unsplash */}
-      <article className="dest-card reveal reveal-d8" itemScope itemType="https://schema.org/TouristAttraction">
+      <article className="dest-card reveal reveal-d8">
         <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" itemProp="photo" />
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">💧 Niagara of Kashmir</span>
         </div>
         <div className="dest-card-body">
-          <h3 className="dest-card-name" itemProp="name">Aharbal</h3>
-          <p className="dest-card-desc" itemProp="description">Often called the "Niagara of Kashmir" — a stunning waterfall cascading through dense forest, perfect for picnics and nature walks.</p>
+          <h3 className="dest-card-name">Aharbal</h3>
+          <p className="dest-card-desc">Often called the "Niagara of Kashmir" — a stunning waterfall cascading through dense forest, perfect for picnics and nature walks.</p>
           <div className="dest-card-meta">📅 Best Time: <strong>April – October</strong></div>
           <a href="/packages" className="dest-card-btn">Explore Destination →</a>
         </div>
@@ -808,44 +808,44 @@ const Home = () => {
 
     <div className="testimonials-grid">
 
-      <blockquote className="testi-card reveal reveal-d1" itemScope itemType="https://schema.org/Review">
+      <blockquote className="testi-card reveal reveal-d1">
         <span className="testi-quote" aria-hidden="true">"</span>
-        <p className="testi-text" itemProp="reviewBody">We came for a honeymoon and left with a lifetime of memories. The houseboat on Dal Lake was beyond anything we imagined — peaceful, beautiful, and the sunrise was magical. Travel with Anu handled every detail perfectly.</p>
-        <div className="stars" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-          <meta itemProp="ratingValue" content="5" />★★★★★
+        <p className="testi-text">We came for a honeymoon and left with a lifetime of memories. The houseboat on Dal Lake was beyond anything we imagined — peaceful, beautiful, and the sunrise was magical. Travel with Anu handled every detail perfectly.</p>
+        <div className="stars">
+          <meta content="5" />★★★★★
         </div>
         <div className="testi-footer">
           <div className="testi-avatar" aria-hidden="true">RA</div>
           <div>
-            <div className="testi-name" itemProp="author">Rohan & Ananya Kapoor</div>
+            <div className="testi-name">Rohan & Ananya Kapoor</div>
             <div className="testi-meta">Mumbai, Maharashtra</div>
           </div>
         </div>
         <div className="testi-trip">💑 Honeymoon Trip</div>
       </blockquote>
 
-      <blockquote className="testi-card reveal reveal-d2" itemScope itemType="https://schema.org/Review">
+      <blockquote className="testi-card reveal reveal-d2">
         <span className="testi-quote" aria-hidden="true">"</span>
-        <p className="testi-text" itemProp="reviewBody">Took my family of four to Gulmarg and Pahalgam. My kids saw snow for the first time — their faces were priceless. Our guide Tariq was incredibly knowledgeable and made us feel safe the entire trip. Highly recommend!</p>
+        <p className="testi-text">Took my family of four to Gulmarg and Pahalgam. My kids saw snow for the first time — their faces were priceless. Our guide Tariq was incredibly knowledgeable and made us feel safe the entire trip. Highly recommend!</p>
         <div className="stars">★★★★★</div>
         <div className="testi-footer">
           <div className="testi-avatar" style={{ background: 'linear-gradient(135deg,var(--blue-600),var(--blue-400))' }} aria-hidden="true">PS</div>
           <div>
-            <div className="testi-name" itemProp="author">Priya Sharma</div>
+            <div className="testi-name">Priya Sharma</div>
             <div className="testi-meta">Bangalore, Karnataka</div>
           </div>
         </div>
         <div className="testi-trip">👨‍👩‍👧 Family Trip</div>
       </blockquote>
 
-      <blockquote className="testi-card reveal reveal-d3" itemScope itemType="https://schema.org/Review">
+      <blockquote className="testi-card reveal reveal-d3">
         <span className="testi-quote" aria-hidden="true">"</span>
-        <p className="testi-text" itemProp="reviewBody">The Gurez Valley trek was one of the most raw and beautiful experiences of my life. Travel with Anu sorted everything from transport to camping gear. As a solo traveler, I never felt alone or unsafe for a single moment.</p>
+        <p className="testi-text">The Gurez Valley trek was one of the most raw and beautiful experiences of my life. Travel with Anu sorted everything from transport to camping gear. As a solo traveler, I never felt alone or unsafe for a single moment.</p>
         <div className="stars">★★★★★</div>
         <div className="testi-footer">
           <div className="testi-avatar" style={{ background: 'linear-gradient(135deg,#ea580c,#f59e0b)' }} aria-hidden="true">DM</div>
           <div>
-            <div className="testi-name" itemProp="author">Daniel Matthews</div>
+            <div className="testi-name">Daniel Matthews</div>
             <div className="testi-meta">London, UK</div>
           </div>
         </div>
@@ -969,34 +969,34 @@ const Home = () => {
       <p className="section-subtitle">Everything you need to know before planning your Kashmir trip.</p>
     </div>
 
-    <div className="faq-grid" itemScope itemType="https://schema.org/FAQPage">
-      <div className={`faq-item ${openFaq.includes(0) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(0)} aria-expanded={openFaq.includes(0)}><span itemProp="name">When is the best time to visit Kashmir?</span><span className="faq-icon">+</span></button>
+    <div className="faq-grid">
+      <div className={`faq-item ${openFaq.includes(0) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(0)} aria-expanded={openFaq.includes(0)}><span>When is the best time to visit Kashmir?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Kashmir is beautiful year-round. March–May offers famous tulip blooms and pleasant weather. June–September has lush green valleys perfect for trekking. October–November brings stunning autumn foliage. December–February transforms Kashmir into a winter wonderland, ideal for skiing in Gulmarg.</p></div>
       </div>
 
-      <div className={`faq-item ${openFaq.includes(1) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(1)} aria-expanded={openFaq.includes(1)}><span itemProp="name">Is Kashmir safe for tourists?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(1) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(1)} aria-expanded={openFaq.includes(1)}><span>Is Kashmir safe for tourists?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Yes, Kashmir is very welcoming to tourists. Millions of visitors travel to Kashmir safely every year. Tourist areas including Srinagar, Gulmarg, Pahalgam and Sonamarg are well-monitored and hospitable. Our local guides are with you throughout the journey, making your trip safe and comfortable.</p></div>
       </div>
 
-      <div className={`faq-item ${openFaq.includes(2) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(2)} aria-expanded={openFaq.includes(2)}><span itemProp="name">What is the Kashmir trip budget for 5 days?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(2) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(2)} aria-expanded={openFaq.includes(2)}><span>What is the Kashmir trip budget for 5 days?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">A 5-day Kashmir trip costs ₹12,000–₹18,000 per person on a budget, ₹18,000–₹35,000 for mid-range and ₹40,000+ for luxury. This typically includes accommodation, houseboat stay, Shikara ride, private transfers, guide, and most meals. Costs vary by travel dates, group size and comfort level.</p></div>
       </div>
 
-      <div className={`faq-item ${openFaq.includes(3) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(3)} aria-expanded={openFaq.includes(3)}><span itemProp="name">Do I need a special permit to visit Kashmir?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(3) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(3)} aria-expanded={openFaq.includes(3)}><span>Do I need a special permit to visit Kashmir?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Indian nationals don't need any special permit for most parts of Kashmir. Some areas like Gurez Valley require a Protected Area Permit (PAP) which we arrange for you. International visitors need a valid Indian visa. Our team handles all necessary permits as part of your package.</p></div>
       </div>
 
-      <div className={`faq-item ${openFaq.includes(4) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(4)} aria-expanded={openFaq.includes(4)}><span itemProp="name">Can I customize my Kashmir itinerary?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(4) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(4)} aria-expanded={openFaq.includes(4)}><span>Can I customize my Kashmir itinerary?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Absolutely! Every itinerary at Travel with Anu is fully customizable. Choose your destinations, duration, accommodation type, activities, travel dates and budget. Use our Trip Planner above for instant suggestions, or reach out via WhatsApp for a fully personalized Kashmir trip design.</p></div>
       </div>
 
-      <div className={`faq-item ${openFaq.includes(5) ? 'open' : ''}`} itemScope itemType="https://schema.org/Question">
-        <button className="faq-question" onClick={() => toggleFaq(5)} aria-expanded={openFaq.includes(5)}><span itemProp="name">What is included in Travel with Anu packages?</span><span className="faq-icon">+</span></button>
+      <div className={`faq-item ${openFaq.includes(5) ? 'open' : ''}`}>
+        <button className="faq-question" onClick={() => toggleFaq(5)} aria-expanded={openFaq.includes(5)}><span>What is included in Travel with Anu packages?</span><span className="faq-icon">+</span></button>
         <div className="faq-answer"><p className="faq-answer-text">Standard packages include hotel accommodation, a houseboat stay in Srinagar, Shikara ride, all inter-destination transfers in private vehicles, a local guide, selected meals (usually breakfast and dinner), and all sightseeing per the itinerary. Flights are not included but we assist with booking.</p></div>
       </div>
     </div>

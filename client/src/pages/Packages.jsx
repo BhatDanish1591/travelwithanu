@@ -51,7 +51,7 @@ const Packages = () => {
           <div className="packages-grid" id="inner-packages-grid">
             
             {/* Package 1: Highlights */}
-            <article className="pkg-card reveal" data-type="family" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="family" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/dest_srinagar.jpg" alt="Kashmir Highlights tour – Dal Lake Srinagar" loading="lazy" />
                 <span className="pkg-card-ribbon">⭐ Most Booked</span>
@@ -59,7 +59,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Classic Kashmir Itinerary</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Highlights</h3>
+                <h3 className="pkg-card-title">Kashmir Highlights</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
                   <span className="pkg-dest-tag">Gulmarg</span>
@@ -78,7 +78,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹8,500</span>
+                    <span className="pkg-price-amount">₹8,500</span>
                     <span className="pkg-price-per">per person · 4N5D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -90,7 +90,7 @@ const Packages = () => {
             </article>
 
             {/* Package 1.5: Amarnath Yatra */}
-            <article className="pkg-card reveal" data-type="adventure family" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('adventure family') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="adventure family" style={{ display: isVisible('adventure family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/dest_pahalgam.jpg" alt="Amarnath Yatra 2026 tour" loading="lazy" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #ea580c, #f59e0b)' }}>🕉️ Pilgrimage</span>
@@ -98,7 +98,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Amarnath Pilgrimage</div>
-                <h3 className="pkg-card-title" itemProp="name">Amarnath Yatra 2026</h3>
+                <h3 className="pkg-card-title">Amarnath Yatra 2026</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Baltal</span>
                   <span className="pkg-dest-tag">Pahalgam</span>
@@ -117,7 +117,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹18,500</span>
+                    <span className="pkg-price-amount">₹18,500</span>
                     <span className="pkg-price-per">per person</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -129,7 +129,7 @@ const Packages = () => {
             </article>
 
             {/* Package 2: Escape */}
-            <article className="pkg-card reveal" data-type="family luxury" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('family luxury') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="family luxury" style={{ display: isVisible('family luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/package_escape.jpg" alt="Kashmir Escape tour" loading="lazy" />
                 <span className="pkg-card-ribbon">🌟 Editor's Choice</span>
@@ -137,7 +137,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Premium Kashmir Tour</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Escape</h3>
+                <h3 className="pkg-card-title">Kashmir Escape</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
                   <span className="pkg-dest-tag">Gulmarg</span>
@@ -157,7 +157,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹10,500</span>
+                    <span className="pkg-price-amount">₹10,500</span>
                     <span className="pkg-price-per">per person · 5N6D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -169,7 +169,7 @@ const Packages = () => {
             </article>
 
             {/* Package 3: Honeymoon */}
-            <article className="pkg-card reveal" data-type="honeymoon luxury" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('honeymoon luxury') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="honeymoon luxury" style={{ display: isVisible('honeymoon luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/package_honeymoon.jpg" alt="Kashmir Honeymoon tour" loading="lazy" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #e91e8c, #f43f5e)' }}>💖 Romantic Stays</span>
@@ -177,7 +177,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Kashmir Honeymoon Package</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Honeymoon</h3>
+                <h3 className="pkg-card-title">Kashmir Honeymoon</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Romantic Houseboat</span>
                   <span className="pkg-dest-tag">Gulmarg</span>
@@ -196,7 +196,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹23,000</span>
+                    <span className="pkg-price-amount">₹23,000</span>
                     <span className="pkg-price-per">per couple</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -208,7 +208,7 @@ const Packages = () => {
             </article>
 
             {/* Package 4: Adventure */}
-            <article className="pkg-card reveal" data-type="adventure" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('adventure') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="adventure" style={{ display: isVisible('adventure') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/package_adventure.jpg" alt="Kashmir Adventure tour" loading="lazy" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #ea580c, #f59e0b)' }}>🏔️ Trekking</span>
@@ -216,7 +216,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Kashmir Adventure Tour</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Adventure</h3>
+                <h3 className="pkg-card-title">Kashmir Adventure</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gurez Valley</span>
                   <span className="pkg-dest-tag">Sonamarg Trekking</span>
@@ -235,7 +235,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹12,000</span>
+                    <span className="pkg-price-amount">₹12,000</span>
                     <span className="pkg-price-per">per person · 6N7D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -247,7 +247,7 @@ const Packages = () => {
             </article>
 
             {/* Package 5: Winter Wonderland */}
-            <article className="pkg-card reveal" data-type="luxury" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('luxury') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="luxury" style={{ display: isVisible('luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/dest_gulmarg.jpg" alt="Winter snow in Gulmarg" loading="lazy" />
                 <span className="pkg-card-ribbon">❄️ Season Special</span>
@@ -255,7 +255,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Kashmir Winter Tour</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Winter Magic</h3>
+                <h3 className="pkg-card-title">Kashmir Winter Magic</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gulmarg Snow</span>
                   <span className="pkg-dest-tag">Houseboat Room</span>
@@ -274,7 +274,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹9,500</span>
+                    <span className="pkg-price-amount">₹9,500</span>
                     <span className="pkg-price-per">per person · 4N5D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -286,7 +286,7 @@ const Packages = () => {
             </article>
 
             {/* Package 6: Budget Special */}
-            <article className="pkg-card reveal" data-type="budget" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('budget') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="budget" style={{ display: isVisible('budget') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/dest_pahalgam.jpg" alt="Pahalgam pine valley" loading="lazy" />
                 <span className="pkg-card-ribbon">💰 Pocket Friendly</span>
@@ -294,7 +294,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Budget Kashmir Tour</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Budget Explorer</h3>
+                <h3 className="pkg-card-title">Kashmir Budget Explorer</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar Stay</span>
                   <span className="pkg-dest-tag">Pahalgam Day-trip</span>
@@ -312,7 +312,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹7,500</span>
+                    <span className="pkg-price-amount">₹7,500</span>
                     <span className="pkg-price-per">per person · 3N4D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -324,7 +324,7 @@ const Packages = () => {
             </article>
 
             {/* Package 7: Family Special */}
-            <article className="pkg-card reveal" data-type="family" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="family" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/dest_gulmarg.jpg" alt="Scenic snow mountains in Gulmarg" loading="lazy" />
                 <span className="pkg-card-ribbon">👨‍👩‍👧 Family First</span>
@@ -332,7 +332,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Kashmir Family Tour</div>
-                <h3 className="pkg-card-title" itemProp="name">Kashmir Family Delight</h3>
+                <h3 className="pkg-card-title">Kashmir Family Delight</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Srinagar</span>
                   <span className="pkg-dest-tag">Pahalgam</span>
@@ -352,7 +352,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹12,000</span>
+                    <span className="pkg-price-amount">₹12,000</span>
                     <span className="pkg-price-per">per person · 6N7D</span>
                   </div>
                   <div className="pkg-card-actions">
@@ -364,7 +364,7 @@ const Packages = () => {
             </article>
 
             {/* Package 8: Gurez Valley Offbeat */}
-            <article className="pkg-card reveal" data-type="adventure budget" itemScope itemType="https://schema.org/TouristTrip" style={{ display: isVisible('adventure budget') ? 'flex' : 'none' }}>
+            <article className="pkg-card reveal" data-type="adventure budget" style={{ display: isVisible('adventure budget') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
                 <img src="/images/package_adventure.jpg" alt="Gurez high altitude river valley" loading="lazy" />
                 <span className="pkg-card-ribbon">⛺ Backpacker choice</span>
@@ -372,7 +372,7 @@ const Packages = () => {
               </div>
               <div className="pkg-card-body">
                 <div className="pkg-card-type">Offbeat Kashmir Trek</div>
-                <h3 className="pkg-card-title" itemProp="name">Gurez Offbeat Explorer</h3>
+                <h3 className="pkg-card-title">Gurez Offbeat Explorer</h3>
                 <div className="pkg-card-destinations">
                   <span className="pkg-dest-tag">Gurez Dawar</span>
                   <span className="pkg-dest-tag">Kishanganga river</span>
@@ -391,7 +391,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹10,500</span>
+                    <span className="pkg-price-amount">₹10,500</span>
                     <span className="pkg-price-per">per person · 5N6D</span>
                   </div>
                   <div className="pkg-card-actions">

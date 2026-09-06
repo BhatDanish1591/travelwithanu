@@ -34,15 +34,15 @@ const Destinations = () => {
 
           <div className="destinations-grid">
             {/* Srinagar */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_srinagar.jpg" alt="Houseboats in Srinagar" itemProp="photo" />
+                <img src="/images/dest_srinagar.jpg" alt="Houseboats in Srinagar" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">🌟 Popular Crown</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Srinagar</h3>
-                <p className="dest-card-desc" itemProp="description">The summer capital nestled along the Jhelum. Known for stunning Mughal gardens, historical wooden mosques, and iconic Shikara stays on Dal Lake.</p>
+                <h3 className="dest-card-name">Srinagar</h3>
+                <p className="dest-card-desc">The summer capital nestled along the Jhelum. Known for stunning Mughal gardens, historical wooden mosques, and iconic Shikara stays on Dal Lake.</p>
                 <div className="dest-card-meta">📅 Best Time: March – Nov</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 1,585 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -58,15 +58,15 @@ const Destinations = () => {
             </article>
 
             {/* Gulmarg */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_gulmarg.jpg" alt="Gulmarg gondola and snow slopes" itemProp="photo" />
+                <img src="/images/dest_gulmarg.jpg" alt="Gulmarg gondola and snow slopes" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">❄️ Winter Skiing</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Gulmarg</h3>
-                <p className="dest-card-desc" itemProp="description">The meadow of flowers transforms into Asia's premier ski resort in winter. Home to the legendary Gondola lift climbing up to Mt. Apharwat.</p>
+                <h3 className="dest-card-name">Gulmarg</h3>
+                <p className="dest-card-desc">The meadow of flowers transforms into Asia's premier ski resort in winter. Home to the legendary Gondola lift climbing up to Mt. Apharwat.</p>
                 <div className="dest-card-meta">📅 Best Time: Dec – Feb / Apr – Sep</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,650 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -82,15 +82,15 @@ const Destinations = () => {
             </article>
 
             {/* Pahalgam */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_pahalgam.jpg" alt="Pahalgam Lidder valley" itemProp="photo" />
+                <img src="/images/dest_pahalgam.jpg" alt="Pahalgam Lidder valley" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">🌲 Valley of Shepherds</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Pahalgam</h3>
-                <p className="dest-card-desc" itemProp="description">A majestic valley of pine forests and the pristine Lidder River. The base camp for treks and the spiritual Amarnath Yatra pilgrimage.</p>
+                <h3 className="dest-card-name">Pahalgam</h3>
+                <p className="dest-card-desc">A majestic valley of pine forests and the pristine Lidder River. The base camp for treks and the spiritual Amarnath Yatra pilgrimage.</p>
                 <div className="dest-card-meta">📅 Best Time: Apr – Oct</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,740 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -106,15 +106,15 @@ const Destinations = () => {
             </article>
 
             {/* Sonamarg */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_sonamarg.jpg" alt="Sonamarg glacier meadow" itemProp="photo" />
+                <img src="/images/dest_sonamarg.jpg" alt="Sonamarg glacier meadow" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">✨ Meadow of Gold</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Sonamarg</h3>
-                <p className="dest-card-desc" itemProp="description">The gateway to Ladakh. Surrounded by glacier streams, alpine lakes, and dramatic snowy mountain ridges. Excellent for high-altitude trekking.</p>
+                <h3 className="dest-card-name">Sonamarg</h3>
+                <p className="dest-card-desc">The gateway to Ladakh. Surrounded by glacier streams, alpine lakes, and dramatic snowy mountain ridges. Excellent for high-altitude trekking.</p>
                 <div className="dest-card-meta">📅 Best Time: May – Oct</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,730 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -130,15 +130,15 @@ const Destinations = () => {
             </article>
 
             {/* Doodhpathri */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_doodhpathri.jpg" alt="Doodhpathri valley of milk" itemProp="photo" />
+                <img src="/images/dest_doodhpathri.jpg" alt="Doodhpathri valley of milk" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">🥛 Milky Meadow</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Doodhpathri</h3>
-                <p className="dest-card-desc" itemProp="description">An untouched meadow where clear waters flow rapidly over pebbles, resembling milk. Offers tranquility away from usual tourist trails.</p>
+                <h3 className="dest-card-name">Doodhpathri</h3>
+                <p className="dest-card-desc">An untouched meadow where clear waters flow rapidly over pebbles, resembling milk. Offers tranquility away from usual tourist trails.</p>
                 <div className="dest-card-meta">📅 Best Time: May – Sep</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,730 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -154,15 +154,15 @@ const Destinations = () => {
             </article>
 
             {/* Yusmarg */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="/images/dest_yusmarg.jpg" alt="Yusmarg pine forest meadow" itemProp="photo" />
+                <img src="/images/dest_yusmarg.jpg" alt="Yusmarg pine forest meadow" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">🌲 Secluded Peace</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Yusmarg</h3>
-                <p className="dest-card-desc" itemProp="description">The "Meadow of Jesus". A quiet paradise filled with pine forest trails, mountain streams, and the majestic peaks of Tatakooti and Sunset.</p>
+                <h3 className="dest-card-name">Yusmarg</h3>
+                <p className="dest-card-desc">The "Meadow of Jesus". A quiet paradise filled with pine forest trails, mountain streams, and the majestic peaks of Tatakooti and Sunset.</p>
                 <div className="dest-card-meta">📅 Best Time: May – Oct</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,396 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -178,15 +178,15 @@ const Destinations = () => {
             </article>
 
             {/* Gurez Valley */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85" alt="Gurez valley remote mountains" itemProp="photo" />
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85" alt="Gurez valley remote mountains" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">🏕️ Raw Wilds</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Gurez Valley</h3>
-                <p className="dest-card-desc" itemProp="description">A high-altitude valley of absolute serenity. Famous for Habba Khatoon peak, the Kishanganga river, and unique Shina-speaking culture.</p>
+                <h3 className="dest-card-name">Gurez Valley</h3>
+                <p className="dest-card-desc">A high-altitude valley of absolute serenity. Famous for Habba Khatoon peak, the Kishanganga river, and unique Shina-speaking culture.</p>
                 <div className="dest-card-meta">📅 Best Time: June – Sep</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,400 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>
@@ -202,15 +202,15 @@ const Destinations = () => {
             </article>
 
             {/* Aharbal */}
-            <article className="dest-card reveal" itemScope itemType="https://schema.org/TouristAttraction">
+            <article className="dest-card reveal">
               <div className="dest-card-img">
-                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85" alt="Aharbal waterfall" itemProp="photo" />
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85" alt="Aharbal waterfall" />
                 <div className="dest-card-overlay"></div>
                 <span className="dest-card-badge">💧 Cascading Falls</span>
               </div>
               <div className="dest-card-body">
-                <h3 className="dest-card-name" itemProp="name">Aharbal</h3>
-                <p className="dest-card-desc" itemProp="description">The "Niagara of Kashmir" where the Veshu River plunges 25 meters down. A pine-surrounded canyon perfect for day trips and photography.</p>
+                <h3 className="dest-card-name">Aharbal</h3>
+                <p className="dest-card-desc">The "Niagara of Kashmir" where the Veshu River plunges 25 meters down. A pine-surrounded canyon perfect for day trips and photography.</p>
                 <div className="dest-card-meta">📅 Best Time: Apr – Oct</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--neutral-500)', marginBottom: '12px' }}>📈 Altitude: 2,260 m</div>
                 <ul style={{ fontSize: '0.85rem', marginBottom: '18px', paddingLeft: '16px', color: 'var(--neutral-600)' }}>

@@ -46,7 +46,7 @@ const GuideDetail = () => {
         <div className="article-container">
           
           {/* Article Content */}
-          <article className="guide-article-body" itemProp="mainEntityOfPage" itemScope itemType="https://schema.org/BlogPosting">
+          <article className="guide-article-body">
 
             <p>
               Kashmir, often described as 'Paradise on Earth', is a destination that captivates every traveler's heart. With its alpine meadows, roaring river streams, dense pine forests, and historic culture, the Kashmir valley remains one of the world's most spectacular tourist regions. As travel resumes at full scale, 2025 brings new opportunities to explore both classic highlights and untouched valleys.
@@ -167,7 +167,7 @@ const GuideDetail = () => {
 
           <div className="packages-grid">
             {/* Tour 1 */}
-            <article className="pkg-card reveal" data-type="family" itemScope itemType="https://schema.org/TouristTrip">
+            <article className="pkg-card reveal" data-type="family">
               <div className="pkg-card-img">
                 <img src="/images/dest_srinagar.jpg" alt="Kashmir Highlights Tour" />
                 <span className="pkg-card-ribbon">⭐ Best Seller</span>
@@ -195,7 +195,7 @@ const GuideDetail = () => {
             </article>
 
             {/* Tour 2 */}
-            <article className="pkg-card reveal" style={{ transitionDelay: '0.05s' }} data-type="family" itemScope itemType="https://schema.org/TouristTrip">
+            <article className="pkg-card reveal" style={{ transitionDelay: '0.05s' }} data-type="family">
               <div className="pkg-card-img">
                 <img src="/images/package_escape.jpg" alt="Kashmir Escape Tour" />
                 <span className="pkg-card-ribbon">🌟 Best Value</span>
@@ -224,7 +224,7 @@ const GuideDetail = () => {
             </article>
 
             {/* Tour 3 */}
-            <article className="pkg-card reveal" style={{ transitionDelay: '0.1s' }} data-type="honeymoon" itemScope itemType="https://schema.org/TouristTrip">
+            <article className="pkg-card reveal" style={{ transitionDelay: '0.1s' }} data-type="honeymoon">
               <div className="pkg-card-img">
                 <img src="/images/package_honeymoon.jpg" alt="Kashmir Honeymoon Tour" />
                 <span className="pkg-card-ribbon">💖 Special Honeymoon</span>
