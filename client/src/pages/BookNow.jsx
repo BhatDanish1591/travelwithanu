@@ -4,15 +4,15 @@ import { useSearchParams, Link } from 'react-router-dom';
 const WHATSAPP_NUMBER = '916005655257';
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScH8JUTH-eRcXFut3ZZk-Ah5mWDNdabgezpUsI8zAaeovh3vw/formResponse';
 const FORM_ENTRIES = {
-  name: 'entry.377689001',
-  phone: 'entry.1075946897',
-  email: 'entry.456220714',
-  month: 'entry.1171905381',
-  travelers: 'entry.818741328',
-  style: 'entry.917885087',
-  destinations: 'entry.1121926050',
-  budget: 'entry.118958278',
-  message: 'entry.806400053',
+  name: 'entry.587932021',
+  phone: 'entry.1233575544',
+  email: 'entry.629928607',
+  month: 'entry.403656686',
+  travelers: 'entry.1650844921',
+  style: 'entry.1022965917',
+  destinations: 'entry.394910583',
+  budget: 'entry.1600048497',
+  message: 'entry.867743837',
 };
 
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
