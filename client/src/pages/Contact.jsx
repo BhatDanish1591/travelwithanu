@@ -201,7 +201,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group">
-                    <label className="form-label">Destinations of Interest</label>
+                    <div className="form-label">Destinations of Interest</div>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '10px', marginTop: '8px' }}>
                       {['🏛️ Srinagar','⛷️ Gulmarg','🌿 Pahalgam','🏔️ Sonamarg','🥛 Doodhpathri','🏕️ Gurez Valley'].map((d, i) => (
                         <label key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#f8fafc', border: '1.5px solid #e2e8f0', borderRadius: '10px', padding: '8px 12px', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 600, color: '#334155', transition: 'all 0.2s' }}>

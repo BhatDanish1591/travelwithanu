@@ -504,23 +504,23 @@ const Home = () => {
         <h3 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '24px', color: 'var(--green-900)' }}>Plan Your Kashmir Journey</h3>
         <form id="planner-form" onSubmit={handlePlannerSubmit}>
           <div className="form-group" style={{ marginBottom: '16px' }}>
-            <label className="form-label" style={{ color: 'var(--green-900)' }}>Full Name</label>
+            <label className="form-label" htmlFor="planner-name" style={{ color: 'var(--green-900)' }}>Full Name</label>
             <input type="text" className="form-control" id="planner-name" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required />
           </div>
 
           <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
             <div className="form-group">
-              <label className="form-label" style={{ color: 'var(--green-900)' }}>Phone Number</label>
+              <label className="form-label" htmlFor="planner-phone" style={{ color: 'var(--green-900)' }}>Phone Number</label>
               <input type="tel" className="form-control" id="planner-phone" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required />
             </div>
             <div className="form-group">
-              <label className="form-label" style={{ color: 'var(--green-900)' }}>Email Address</label>
+              <label className="form-label" htmlFor="planner-email" style={{ color: 'var(--green-900)' }}>Email Address</label>
               <input type="email" className="form-control" id="planner-email" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required />
             </div>
           </div>
 
           <div className="form-group" style={{ marginBottom: '16px' }}>
-            <label className="form-label" style={{ color: 'var(--green-900)' }}>Select Package / Travel Style</label>
+            <label className="form-label" htmlFor="planner-pkg" style={{ color: 'var(--green-900)' }}>Select Package / Travel Style</label>
             <select className="form-control" id="planner-pkg" style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1' }} required>
               <option value="" disabled selected></option>
               <option>Kashmir Highlights (5 Days)</option>
@@ -532,7 +532,7 @@ const Home = () => {
           </div>
 
           <div className="form-group" style={{ marginBottom: '24px' }}>
-            <label className="form-label" style={{ color: 'var(--green-900)' }}>Your Message</label>
+            <label className="form-label" htmlFor="planner-msg" style={{ color: 'var(--green-900)' }}>Your Message</label>
             <textarea className="form-control" id="planner-msg" rows={3} style={{ backgroundColor: '#f8fafc', border: '1px solid #cbd5e1', resize: 'vertical' }} required></textarea>
           </div>
 

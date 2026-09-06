@@ -216,7 +216,7 @@ const AmarnathBooking = () => {
                 {/* Step 3 */}
                 <div className="bn-step-label" style={{ marginTop:'28px' }}>Step 3 — Route &amp; Travelers</div>
                 <div className="form-group">
-                  <label className="form-label">Preferred Route</label>
+                  <div className="form-label">Preferred Route</div>
                   <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginTop:'8px' }}>
                     {ROUTES.map(r => (
                       <div key={r.id} onClick={() => setRoute(r.id)}
