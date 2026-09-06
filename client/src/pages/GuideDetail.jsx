@@ -243,7 +243,7 @@ const GuideDetail = () => {
                 </div>
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
-                    <span className="pkg-price-amount">₹24,999</span>
+                    <span className="pkg-price-amount">₹23,000</span>
                     <span className="pkg-price-per">per couple</span>
                   </div>
                   <Link to="/book-now" className="btn btn-primary btn-sm">Book Now</Link>

@@ -196,7 +196,7 @@ const Packages = () => {
                 <div className="pkg-card-footer">
                   <div className="pkg-price">
                     <span className="pkg-price-from">Starting from</span>
-                    <span className="pkg-price-amount" itemProp="offers">₹25,000</span>
+                    <span className="pkg-price-amount" itemProp="offers">₹23,000</span>
                     <span className="pkg-price-per">per couple</span>
                   </div>
                   <div className="pkg-card-actions">
