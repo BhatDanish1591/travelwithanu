@@ -35,7 +35,7 @@ const Header = () => {
             <li><Link to="/destinations">Destinations</Link></li>
             <li><Link to="/packages">Packages</Link></li>
             <li><Link to="/things-to-do">Experiences</Link></li>
-            <li><Link to="/guides">Travel Guides</Link></li>
+            <li><Link to="/guides">Blog & Guides</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
@@ -66,7 +66,7 @@ const Header = () => {
         <Link to="/destinations" className="mobile-link">🏔️ Destinations</Link>
         <Link to="/packages" className="mobile-link">📦 Kashmir Packages</Link>
         <Link to="/things-to-do" className="mobile-link">✨ Experiences</Link>
-        <Link to="/guides" className="mobile-link">📖 Travel Guides</Link>
+        <Link to="/guides" className="mobile-link">📖 Blog & Guides</Link>
         <Link to="/about" className="mobile-link">👥 About Us</Link>
         <Link to="/contact" className="mobile-link">📞 Contact Us</Link>
         <Link to="/amarnath-yatra" className="mobile-link">🕉️ Amarnath Yatra 2026</Link>

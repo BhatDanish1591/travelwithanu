@@ -76,6 +76,36 @@ const Guides = () => {
 
           {/* Articles Grid */}
           <div className="guides-grid" id="blog-grid">
+
+            {/* SEO Blog 1 */}
+            <article className="guide-card reveal" data-category="planning" style={{ display: isVisible('planning') ? 'block' : 'none' }}>
+              <div className="guide-card-img"><img src="/images/dest_gulmarg.jpg" alt="Gulmarg winter packing" /></div>
+              <div className="guide-card-body">
+                <div className="guide-card-meta">
+                  <span className="guide-card-cat">Planning</span>
+                  <span className="guide-card-dot">·</span>
+                  <span className="guide-card-read">5 min read</span>
+                </div>
+                <h3 className="guide-card-title">How to Pack for a Gulmarg Winter Trip</h3>
+                <p className="guide-card-desc">Essential packing list for surviving and enjoying the sub-zero temperatures and heavy snowfall in Gulmarg.</p>
+                <Link to="/guides/gulmarg-packing-guide" className="guide-read-btn">Read Guide →</Link>
+              </div>
+            </article>
+
+            {/* SEO Blog 2 */}
+            <article className="guide-card reveal" data-category="budget" style={{ display: isVisible('budget') ? 'block' : 'none' }}>
+              <div className="guide-card-img"><img src="/images/dest_pahalgam.jpg" alt="Pahalgam taxi rates" /></div>
+              <div className="guide-card-body">
+                <div className="guide-card-meta">
+                  <span className="guide-card-cat">Budget</span>
+                  <span className="guide-card-dot">·</span>
+                  <span className="guide-card-read">4 min read</span>
+                </div>
+                <h3 className="guide-card-title">Current Taxi Rates in Pahalgam 2026</h3>
+                <p className="guide-card-desc">An updated, transparent guide on union taxi rates for Aru, Betaab Valley, and Chandanwari sightseeing.</p>
+                <Link to="/guides/pahalgam-taxi-rates" className="guide-read-btn">Read Guide →</Link>
+              </div>
+            </article>
             
             {/* Guide 1 */}
             <article className="guide-card reveal" data-category="destinations" style={{ display: isVisible('destinations') ? 'block' : 'none' }}>

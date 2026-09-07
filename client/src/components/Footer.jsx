@@ -31,7 +31,7 @@ const Footer = () => {
                 <li><Link to="/packages">Kashmir Packages</Link></li>
                 <li><Link to="/destinations">Destinations</Link></li>
                 <li><Link to="/things-to-do">Experiences</Link></li>
-                <li><Link to="/guides">Travel Guides</Link></li>
+                <li><Link to="/guides">Blog & Guides</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/amarnath-yatra">Amarnath Yatra Package</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
