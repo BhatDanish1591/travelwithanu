@@ -30,7 +30,7 @@ const seoMap = {
   '/amarnath-yatra': { title: 'Amarnath Yatra 2026 Packages & Helicopter Booking | Travel with Anu', desc: 'Book your Amarnath Yatra 2026 packages via Baltal or Pahalgam. Helicopter tickets, registration assistance, and premium stays.' },
   '/amarnath-yatra/booking': { title: 'Book Amarnath Yatra 2026 | Travel with Anu', desc: 'Secure your Amarnath Yatra 2026 booking with helicopter tickets and VIP darshan.' },
   '/about': { title: 'About Travel with Anu | Your Trusted Kashmir Travel Experts', desc: 'Learn about Travel with Anu, a local Srinagar-based travel agency with 15+ years of experience in crafting unforgettable Kashmir holidays.' },
-  '/places-to-visit': { title: 'Best Places to Visit in Kashmir | Srinagar, Gulmarg, Pahalgam', desc: 'Discover the top tourist destinations in Kashmir. From the floating gardens of Dal Lake to the snow-capped peaks of Gulmarg and Sonamarg.' },
+  '/destinations': { title: 'Best Places to Visit in Kashmir | Srinagar, Gulmarg, Pahalgam', desc: 'Discover the top tourist destinations in Kashmir. From the floating gardens of Dal Lake to the snow-capped peaks of Gulmarg and Sonamarg.' },
   '/things-to-do': { title: 'Top Things to Do in Kashmir | Shikara Rides, Skiing & Trekking', desc: 'Curated activities in Kashmir: Shikara rides on Dal Lake, Gondola in Gulmarg, trekking in Sonamarg, and white water rafting in Pahalgam.' },
   '/contact': { title: 'Contact Us | Plan Your Kashmir Tour | Travel with Anu', desc: 'Get in touch to plan your custom Kashmir holiday. We respond within 2-4 hours with a personalized day-by-day itinerary and quote.' },
   '/book-now': { title: 'Book Your Kashmir Tour | Travel with Anu', desc: 'Book your customized Kashmir tour package today. Secure your dream holiday with a small advance token payment.' },
@@ -89,7 +89,7 @@ function App() {
             <Route path="/amarnath-yatra" element={<AmarnathYatra />} />
             <Route path="/amarnath-yatra/booking" element={<AmarnathBooking />} />
             <Route path="/about" element={<About />} />
-            <Route path="/places-to-visit" element={<Destinations />} />
+            <Route path="/destinations" element={<Destinations />} />
             <Route path="/things-to-do" element={<Experiences />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/guides" element={<Guides />} />

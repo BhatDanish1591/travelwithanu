@@ -32,7 +32,7 @@ const Header = () => {
           
           <ul className="nav-links" role="list">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/places-to-visit">Destinations</Link></li>
+            <li><Link to="/destinations">Destinations</Link></li>
             <li><Link to="/packages">Packages</Link></li>
             <li><Link to="/things-to-do">Experiences</Link></li>
             <li><Link to="/guides">Travel Guides</Link></li>
@@ -63,7 +63,7 @@ const Header = () => {
 
       <nav className={`nav-mobile ${mobileOpen ? 'open' : ''}`} id="mobile-menu" role="navigation" aria-hidden={!mobileOpen}>
         <Link to="/" className="mobile-link">🏠 Home</Link>
-        <Link to="/places-to-visit" className="mobile-link">🏔️ Destinations</Link>
+        <Link to="/destinations" className="mobile-link">🏔️ Destinations</Link>
         <Link to="/packages" className="mobile-link">📦 Kashmir Packages</Link>
         <Link to="/things-to-do" className="mobile-link">✨ Experiences</Link>
         <Link to="/guides" className="mobile-link">📖 Travel Guides</Link>

@@ -717,7 +717,7 @@ const Home = () => {
             <img src="/images/dest_srinagar.jpg" alt="Srinagar" className="map-popup-img" />
             <div className="map-popup-name">🌸 Srinagar</div>
             <div className="map-popup-desc">Dal Lake · Houseboats · Mughal Gardens · Shopping</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -728,7 +728,7 @@ const Home = () => {
             <img src="/images/dest_gulmarg.jpg" alt="Gulmarg" className="map-popup-img" />
             <div className="map-popup-name">❄️ Gulmarg</div>
             <div className="map-popup-desc">Skiing · Gondola · Snow Meadows</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -739,7 +739,7 @@ const Home = () => {
             <img src="/images/dest_sonamarg.jpg" alt="Sonamarg" className="map-popup-img" />
             <div className="map-popup-name">✨ Sonamarg</div>
             <div className="map-popup-desc">Thajiwas Glacier · Zero Point · Trekking</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -750,7 +750,7 @@ const Home = () => {
             <img src="/images/dest_pahalgam.jpg" alt="Pahalgam" className="map-popup-img" />
             <div className="map-popup-name">💚 Pahalgam</div>
             <div className="map-popup-desc">Betab Valley · Chandanwari · Lidder River</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -761,7 +761,7 @@ const Home = () => {
             <img src="/images/dest_doodhpathri.jpg" alt="Doodhpathri" className="map-popup-img" />
             <div className="map-popup-name">🥛 Doodhpathri</div>
             <div className="map-popup-desc">Milky Streams · Alpine Meadows · Wildflowers</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -772,7 +772,7 @@ const Home = () => {
             <img src="/images/dest_yusmarg.jpg" alt="Yusmarg" className="map-popup-img" />
             <div className="map-popup-name">🌲 Yusmarg</div>
             <div className="map-popup-desc">Pine Forest · Doodhganga River · Ponies</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
@@ -783,7 +783,7 @@ const Home = () => {
             <img src="/images/package_escape.jpg" alt="Gurez Valley" className="map-popup-img" />
             <div className="map-popup-name">🏕️ Gurez Valley</div>
             <div className="map-popup-desc">Remote · Tribal Culture · Kishanganga River</div>
-            <a href="/places-to-visit" className="map-popup-link">Explore →</a>
+            <a href="/destinations" className="map-popup-link">Explore →</a>
           </div>
         </div>
 
