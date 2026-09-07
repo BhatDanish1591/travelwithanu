@@ -192,7 +192,7 @@ const Home = () => {
         .map((pkg, idx) => (
           <article key={pkg.id} className={`pkg-card reveal reveal-d${(idx % 4) + 1}`}>
             <div className="pkg-card-img">
-              <img src={pkg.img} alt={pkg.imgAlt} loading="lazy" />
+              <img src={pkg.img} alt={pkg.imgAlt} loading="lazy" width="600" height="400" />
               <span className="pkg-card-ribbon" style={pkg.ribbonStyle || {}}>{pkg.ribbon}</span>
               <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
             </div>
@@ -251,7 +251,7 @@ const Home = () => {
       {/* Srinagar - AI generated image */}
       <article className="dest-card reveal reveal-d1">
         <div className="dest-card-img">
-          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" />
+          <img src="images/hotel_srinagar.jpg" alt="The Grand Lalit Srinagar luxury hotel with mountain views" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🌟 Most Popular</span>
         </div>
@@ -266,7 +266,7 @@ const Home = () => {
       {/* Gulmarg - AI generated image */}
       <article className="dest-card reveal reveal-d2">
         <div className="dest-card-img">
-          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" />
+          <img src="images/hero_new.jpg" alt="The Khyber Himalayan Resort Gulmarg snow-covered view" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">❄️ Winter Paradise</span>
         </div>
@@ -281,7 +281,7 @@ const Home = () => {
       {/* Pahalgam - AI generated image */}
       <article className="dest-card reveal reveal-d3">
         <div className="dest-card-img">
-          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" />
+          <img src="images/hotel_pahalgam.jpg" alt="Heevan Hotel Pahalgam near Lidder River" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">💚 Valley of Shepherds</span>
         </div>
@@ -296,7 +296,7 @@ const Home = () => {
       {/* Sonamarg - AI generated image */}
       <article className="dest-card reveal reveal-d4">
         <div className="dest-card-img">
-          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" />
+          <img src="images/hotel_sonmarg.jpg" alt="Four Points by Sheraton Sonamarg with surrounding peaks" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">✨ Meadow of Gold</span>
         </div>
@@ -311,7 +311,7 @@ const Home = () => {
       {/* Doodhpathri - AI generated image */}
       <article className="dest-card reveal reveal-d5">
         <div className="dest-card-img">
-          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" />
+          <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri Kashmir – milky white stream through wildflower alpine meadow" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🥛 Hidden Gem</span>
         </div>
@@ -326,7 +326,7 @@ const Home = () => {
       {/* Yusmarg - AI generated image */}
       <article className="dest-card reveal reveal-d6">
         <div className="dest-card-img">
-          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" />
+          <img src="images/dest_yusmarg.jpg" alt="Yusmarg Kashmir – pine forest meadow with wild ponies and mountain ridges" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🌲 Forest Retreat</span>
         </div>
@@ -341,7 +341,7 @@ const Home = () => {
       {/* Gurez Valley - curated Unsplash */}
       <article className="dest-card reveal reveal-d7">
         <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85&fit=crop" alt="Gurez Valley Kashmir – remote mountain valley with Kishanganga river" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">🏕️ Offbeat Escape</span>
         </div>
@@ -356,7 +356,7 @@ const Home = () => {
       {/* Aharbal - curated Unsplash */}
       <article className="dest-card reveal reveal-d8">
         <div className="dest-card-img">
-          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=700&q=85&fit=crop" alt="Aharbal waterfall Kashmir – cascading waterfall in dense lush forest" loading="lazy" width="600" height="400" />
           <div className="dest-card-overlay"></div>
           <span className="dest-card-badge">💧 Niagara of Kashmir</span>
         </div>
@@ -592,7 +592,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d1">
         <div className="guide-card-img">
-          <img src="images/dest_srinagar.jpg" alt="Best places to visit in Kashmir – Srinagar Dal Lake travel guide" loading="lazy" />
+          <img src="images/dest_srinagar.jpg" alt="Best places to visit in Kashmir – Srinagar Dal Lake travel guide" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -608,7 +608,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d2">
         <div className="guide-card-img">
-          <img src="images/dest_gulmarg.jpg" alt="Best time to visit Kashmir – Gulmarg snow winter guide" loading="lazy" />
+          <img src="images/dest_gulmarg.jpg" alt="Best time to visit Kashmir – Gulmarg snow winter guide" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -624,7 +624,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d3">
         <div className="guide-card-img">
-          <img src="images/package_honeymoon.jpg" alt="Kashmir honeymoon guide – romantic trip planning for couples" loading="lazy" />
+          <img src="images/package_honeymoon.jpg" alt="Kashmir honeymoon guide – romantic trip planning for couples" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -640,7 +640,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d4">
         <div className="guide-card-img">
-          <img src="images/dest_doodhpathri.jpg" alt="Kashmir in winter – snow adventures and cold weather travel tips" loading="lazy" />
+          <img src="images/dest_doodhpathri.jpg" alt="Kashmir in winter – snow adventures and cold weather travel tips" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -656,7 +656,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d5">
         <div className="guide-card-img">
-          <img src="images/dest_pahalgam.jpg" alt="Kashmir family trip guide – Pahalgam Betab Valley with kids" loading="lazy" />
+          <img src="images/dest_pahalgam.jpg" alt="Kashmir family trip guide – Pahalgam Betab Valley with kids" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -672,7 +672,7 @@ const Home = () => {
 
       <article className="guide-card reveal reveal-d6">
         <div className="guide-card-img">
-          <img src="images/dest_sonamarg.jpg" alt="Kashmir travel budget guide – cost breakdown for trip planning" loading="lazy" />
+          <img src="images/dest_sonamarg.jpg" alt="Kashmir travel budget guide – cost breakdown for trip planning" loading="lazy" width="600" height="400" />
         </div>
         <div className="guide-card-body">
           <div className="guide-card-meta">
@@ -870,62 +870,62 @@ const Home = () => {
     <div className="gallery-masonry reveal" role="list" aria-label="Kashmir photo gallery">
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Dal Lake houseboats at sunrise">
-        <img src="images/dest_srinagar.jpg" alt="Dal Lake Srinagar houseboats and mountains at golden sunrise" loading="lazy" />
+        <img src="images/dest_srinagar.jpg" alt="Dal Lake Srinagar houseboats and mountains at golden sunrise" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Dal Lake, Srinagar</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Gulmarg snow landscape">
-        <img src="images/dest_gulmarg.jpg" alt="Gulmarg snow-covered winter meadow with gondola and Himalayan peaks" loading="lazy" />
+        <img src="images/dest_gulmarg.jpg" alt="Gulmarg snow-covered winter meadow with gondola and Himalayan peaks" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Gulmarg in Winter</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Pahalgam green valley">
-        <img src="images/dest_pahalgam.jpg" alt="Pahalgam Lidder river valley lush green forest and mountains" loading="lazy" />
+        <img src="images/dest_pahalgam.jpg" alt="Pahalgam Lidder river valley lush green forest and mountains" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Pahalgam Valley</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Sonamarg golden meadow">
-        <img src="images/dest_sonamarg.jpg" alt="Sonamarg golden meadow with glacier and Himalayan peaks in evening light" loading="lazy" />
+        <img src="images/dest_sonamarg.jpg" alt="Sonamarg golden meadow with glacier and Himalayan peaks in evening light" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Sonamarg, Meadow of Gold</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Doodhpathri milky stream">
-        <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri milky white stream and wildflower alpine meadow" loading="lazy" />
+        <img src="images/dest_doodhpathri.jpg" alt="Doodhpathri milky white stream and wildflower alpine meadow" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Doodhpathri, Valley of Milk</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Yusmarg pine forest">
-        <img src="images/dest_yusmarg.jpg" alt="Yusmarg alpine meadow with pine forest and wild ponies" loading="lazy" />
+        <img src="images/dest_yusmarg.jpg" alt="Yusmarg alpine meadow with pine forest and wild ponies" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Yusmarg Forest Meadow</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Kashmir Shikara ride">
-        <img src="images/hero_dal_lake.jpg" alt="Traditional Shikara ride on Dal Lake Kashmir with flower garlands" loading="lazy" />
+        <img src="images/hero_dal_lake.jpg" alt="Traditional Shikara ride on Dal Lake Kashmir with flower garlands" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Shikara Ride, Dal Lake</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Kashmir honeymoon sunset">
-        <img src="images/package_honeymoon.jpg" alt="Romantic Kashmir sunset on Dal Lake – honeymoon Shikara ride" loading="lazy" />
+        <img src="images/package_honeymoon.jpg" alt="Romantic Kashmir sunset on Dal Lake – honeymoon Shikara ride" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Romantic Kashmir Sunset</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Himalayan trekking adventure">
-        <img src="images/package_adventure.jpg" alt="Himalayan mountain trekking trail in Kashmir alpine meadows" loading="lazy" />
+        <img src="images/package_adventure.jpg" alt="Himalayan mountain trekking trail in Kashmir alpine meadows" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Himalayan Trekking</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Sonamarg glacier panorama">
-        <img src="images/package_escape.jpg" alt="Sonamarg glacier panorama mountain road Kashmir" loading="lazy" />
+        <img src="images/package_escape.jpg" alt="Sonamarg glacier panorama mountain road Kashmir" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Sonamarg Glacier View</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Kashmir mountain waterfall">
-        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&q=85&fit=crop" alt="Stunning mountain waterfall in Kashmir lush green forest" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&q=85&fit=crop" alt="Stunning mountain waterfall in Kashmir lush green forest" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Aharbal Waterfall</div></div>
       </div>
 
       <div className="gallery-item" role="listitem" tabIndex="0" aria-label="Himalayan mountain peaks">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=85&fit=crop" alt="Dramatic Himalayan mountain peaks and alpine landscape" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=85&fit=crop" alt="Dramatic Himalayan mountain peaks and alpine landscape" loading="lazy" width="600" height="400" />
         <div className="gallery-item-overlay"><div className="gallery-item-caption">Himalayan Peaks</div></div>
       </div>
 

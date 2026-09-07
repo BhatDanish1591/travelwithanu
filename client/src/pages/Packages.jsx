@@ -53,7 +53,7 @@ const Packages = () => {
             {/* Package 1: Highlights */}
             <article className="pkg-card reveal" data-type="family" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/dest_srinagar.jpg" alt="Kashmir Highlights tour – Dal Lake Srinagar" loading="lazy" />
+                <img src="/images/dest_srinagar.jpg" alt="Kashmir Highlights tour – Dal Lake Srinagar" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">⭐ Most Booked</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -92,7 +92,7 @@ const Packages = () => {
             {/* Package 1.5: Amarnath Yatra */}
             <article className="pkg-card reveal" data-type="adventure family" style={{ display: isVisible('adventure family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/dest_pahalgam.jpg" alt="Amarnath Yatra 2026 tour" loading="lazy" />
+                <img src="/images/dest_pahalgam.jpg" alt="Amarnath Yatra 2026 tour" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #ea580c, #f59e0b)' }}>🕉️ Pilgrimage</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -131,7 +131,7 @@ const Packages = () => {
             {/* Package 2: Escape */}
             <article className="pkg-card reveal" data-type="family luxury" style={{ display: isVisible('family luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/package_escape.jpg" alt="Kashmir Escape tour" loading="lazy" />
+                <img src="/images/package_escape.jpg" alt="Kashmir Escape tour" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">🌟 Editor's Choice</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -171,7 +171,7 @@ const Packages = () => {
             {/* Package 3: Honeymoon */}
             <article className="pkg-card reveal" data-type="honeymoon luxury" style={{ display: isVisible('honeymoon luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/package_honeymoon.jpg" alt="Kashmir Honeymoon tour" loading="lazy" />
+                <img src="/images/package_honeymoon.jpg" alt="Kashmir Honeymoon tour" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #e91e8c, #f43f5e)' }}>💖 Romantic Stays</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -210,7 +210,7 @@ const Packages = () => {
             {/* Package 4: Adventure */}
             <article className="pkg-card reveal" data-type="adventure" style={{ display: isVisible('adventure') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/package_adventure.jpg" alt="Kashmir Adventure tour" loading="lazy" />
+                <img src="/images/package_adventure.jpg" alt="Kashmir Adventure tour" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon" style={{ background: 'linear-gradient(135deg, #ea580c, #f59e0b)' }}>🏔️ Trekking</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -249,7 +249,7 @@ const Packages = () => {
             {/* Package 5: Winter Wonderland */}
             <article className="pkg-card reveal" data-type="luxury" style={{ display: isVisible('luxury') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/dest_gulmarg.jpg" alt="Winter snow in Gulmarg" loading="lazy" />
+                <img src="/images/dest_gulmarg.jpg" alt="Winter snow in Gulmarg" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">❄️ Season Special</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -288,7 +288,7 @@ const Packages = () => {
             {/* Package 6: Budget Special */}
             <article className="pkg-card reveal" data-type="budget" style={{ display: isVisible('budget') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/dest_pahalgam.jpg" alt="Pahalgam pine valley" loading="lazy" />
+                <img src="/images/dest_pahalgam.jpg" alt="Pahalgam pine valley" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">💰 Pocket Friendly</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -326,7 +326,7 @@ const Packages = () => {
             {/* Package 7: Family Special */}
             <article className="pkg-card reveal" data-type="family" style={{ display: isVisible('family') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/dest_gulmarg.jpg" alt="Scenic snow mountains in Gulmarg" loading="lazy" />
+                <img src="/images/dest_gulmarg.jpg" alt="Scenic snow mountains in Gulmarg" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">👨‍👩‍👧 Family First</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>
@@ -366,7 +366,7 @@ const Packages = () => {
             {/* Package 8: Gurez Valley Offbeat */}
             <article className="pkg-card reveal" data-type="adventure budget" style={{ display: isVisible('adventure budget') ? 'flex' : 'none' }}>
               <div className="pkg-card-img">
-                <img src="/images/package_adventure.jpg" alt="Gurez high altitude river valley" loading="lazy" />
+                <img src="/images/package_adventure.jpg" alt="Gurez high altitude river valley" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">⛺ Backpacker choice</span>
                 <button className="pkg-card-fav" aria-label="Save to wishlist"><span>🤍</span></button>
               </div>

@@ -102,7 +102,7 @@ const PackageHighlights = () => {
               </div>
             </div>
             <div className="overview-img">
-              <img src="/images/hero_dal_lake.jpg" alt="Dal Lake Shikara" loading="lazy" />
+              <img src="/images/hero_dal_lake.jpg" alt="Dal Lake Shikara" loading="lazy" width="600" height="400" />
             </div>
           </div>
         </div>
@@ -229,23 +229,23 @@ const PackageHighlights = () => {
           </div>
           <div className="yatra-gallery reveal">
             <div className="yatra-gallery-item">
-              <img src="/images/dest_srinagar.jpg" alt="Houseboats Srinagar" loading="lazy" />
+              <img src="/images/dest_srinagar.jpg" alt="Houseboats Srinagar" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Houseboats on Dal Lake</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_gulmarg.jpg" alt="Gulmarg Snow" loading="lazy" />
+              <img src="/images/dest_gulmarg.jpg" alt="Gulmarg Snow" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Snowy Peaks of Gulmarg</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_pahalgam.jpg" alt="Pahalgam Valley" loading="lazy" />
+              <img src="/images/dest_pahalgam.jpg" alt="Pahalgam Valley" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Valleys of Pahalgam</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_sonamarg.jpg" alt="Sonamarg Meadows" loading="lazy" />
+              <img src="/images/dest_sonamarg.jpg" alt="Sonamarg Meadows" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Sonamarg Meadows</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/package_honeymoon.jpg" alt="Romantic Houseboat Dal Lake" loading="lazy" />
+              <img src="/images/package_honeymoon.jpg" alt="Romantic Houseboat Dal Lake" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Romantic Shikara Rides</div>
             </div>
           </div>

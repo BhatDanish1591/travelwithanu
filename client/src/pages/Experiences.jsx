@@ -87,7 +87,7 @@ const Experiences = () => {
             {/* Experience 1 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/dest_srinagar.jpg" alt="Shikara ride Dal Lake" loading="lazy" />
+                <img src="/images/dest_srinagar.jpg" alt="Shikara ride Dal Lake" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">1-2 Hours</span>
               </div>
               <div className="pkg-card-body">
@@ -113,7 +113,7 @@ const Experiences = () => {
             {/* Experience 2 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/dest_gulmarg.jpg" alt="Snow activities Gulmarg" loading="lazy" />
+                <img src="/images/dest_gulmarg.jpg" alt="Snow activities Gulmarg" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">Full Day</span>
               </div>
               <div className="pkg-card-body">
@@ -139,7 +139,7 @@ const Experiences = () => {
             {/* Experience 3 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/package_adventure.jpg" alt="Mountain trekking" loading="lazy" />
+                <img src="/images/package_adventure.jpg" alt="Mountain trekking" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">1 - 7 Days</span>
               </div>
               <div className="pkg-card-body">
@@ -165,7 +165,7 @@ const Experiences = () => {
             {/* Experience 4 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/dest_sonamarg.jpg" alt="Camping Sonamarg" loading="lazy" />
+                <img src="/images/dest_sonamarg.jpg" alt="Camping Sonamarg" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">Overnight</span>
               </div>
               <div className="pkg-card-body">
@@ -191,7 +191,7 @@ const Experiences = () => {
             {/* Experience 5 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/dest_doodhpathri.jpg" alt="Jeep Safari Doodhpathri" loading="lazy" />
+                <img src="/images/dest_doodhpathri.jpg" alt="Jeep Safari Doodhpathri" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">Full Day</span>
               </div>
               <div className="pkg-card-body">
@@ -217,7 +217,7 @@ const Experiences = () => {
             {/* Experience 6 */}
             <article className="pkg-card reveal">
               <div className="pkg-card-img" style={{ height: '240px' }}>
-                <img src="/images/package_honeymoon.jpg" alt="Kashmiri Cuisine tour" loading="lazy" />
+                <img src="/images/package_honeymoon.jpg" alt="Kashmiri Cuisine tour" loading="lazy" width="600" height="400" />
                 <span className="pkg-card-ribbon">3-4 Hours</span>
               </div>
               <div className="pkg-card-body">
