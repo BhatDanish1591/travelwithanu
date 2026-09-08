@@ -67,10 +67,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-bottom">
           <span>&copy; 2026 Travel with Anu. All rights reserved. Made with ❤️ in Kashmir.</span>
+          <span style={{ color: 'var(--neutral-500)', textAlign: 'center' }}>developed by photonexes technology</span>
           <div className="footer-bottom-links">
             <Link to="/privacy-policy">Privacy</Link>
             <Link to="/terms-conditions">Terms</Link>
-            <span style={{ marginLeft: '10px', color: 'var(--neutral-500)' }}>developed by photonexes technology</span>
           </div>
         </div>
       </div>
