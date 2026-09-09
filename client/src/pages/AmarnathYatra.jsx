@@ -276,24 +276,24 @@ export default function AmarnathYatra() {
           </div>
           <div className="yatra-gallery reveal">
             <div className="yatra-gallery-item">
-              <img src="/images/dest_pahalgam.jpg" alt="Holy Amarnath Cave – Ice Shivalingam" loading="lazy" width="600" height="400" />
-              <div className="yatra-gallery-item-overlay">Holy Amarnath Cave – Ice Shivalingam</div>
+              <img src="/images/amarnath_cave_lingam.jpg" alt="Holy Amarnath Cave - Ice Shivalingam" loading="lazy" width="600" height="400" />
+              <div className="yatra-gallery-item-overlay">Holy Amarnath Cave - Ice Shivalingam</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/amarnath_valley.jpg" alt="Amarnath Yatra Valley Route" loading="lazy" width="600" height="400" />
+              <img src="/images/amarnath_wide_valley.jpg" alt="Amarnath Yatra Valley Route" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Scenic Valley Route</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_sonamarg.jpg" alt="Helicopter to Panjtarni from Baltal" loading="lazy" width="600" height="400" />
-              <div className="yatra-gallery-item-overlay">Helicopter – Baltal to Panjtarni</div>
+              <img src="/images/amarnath_helicopter.jpg" alt="Helicopter to Panjtarni from Baltal" loading="lazy" width="600" height="400" />
+              <div className="yatra-gallery-item-overlay">Helicopter - Baltal to Panjtarni</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_gulmarg.jpg" alt="Pilgrims trekking to Amarnath Cave" loading="lazy" width="600" height="400" />
+              <img src="/images/amarnath_trek_path.jpg" alt="Pilgrims trekking to Amarnath Cave" loading="lazy" width="600" height="400" />
               <div className="yatra-gallery-item-overlay">Pilgrims on the Sacred Trek</div>
             </div>
             <div className="yatra-gallery-item">
-              <img src="/images/dest_srinagar.jpg" alt="Himalayan peaks near Amarnath" loading="lazy" width="600" height="400" />
-              <div className="yatra-gallery-item-overlay">Majestic Himalayan Peaks</div>
+              <img src="/images/amarnath_base_camp.jpg" alt="Baltal Base Camp Tents" loading="lazy" width="600" height="400" />
+              <div className="yatra-gallery-item-overlay">Baltal Base Camp</div>
             </div>
           </div>
         </div>
