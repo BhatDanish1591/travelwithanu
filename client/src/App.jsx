@@ -19,6 +19,7 @@ import BookNow from './pages/BookNow';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import CancellationPolicy from './pages/CancellationPolicy';
+import SeoLanding from './pages/SeoLanding';
 
 // Assets
 import './assets/styles.css';
@@ -98,6 +99,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+            <Route path="/best-travel-agency-in-kashmir" element={<SeoLanding />} />
           </Routes>
         </main>
 

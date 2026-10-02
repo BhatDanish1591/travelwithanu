@@ -58,6 +58,7 @@ const Footer = () => {
                 <li><Link to="/amarnath-yatra">Amarnath Yatra Package</Link></li>
                 <li><Link to="/packages">Gulmarg Snow Tour</Link></li>
                 <li><Link to="/packages">Pahalgam Valley Tour</Link></li>
+                <li><Link to="/best-travel-agency-in-kashmir">Best Travel Agency in Kashmir</Link></li>
               </ul>
             </div>
           </div>
