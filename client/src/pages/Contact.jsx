@@ -247,6 +247,29 @@ const Contact = () => {
       </section>
 
 
+      {/* Google Maps Embed */}
+      <section className="section-py" style={{ paddingTop: '40px', paddingBottom: '40px' }} aria-label="Our Location on Google Maps">
+        <div className="container reveal">
+          <div className="text-center" style={{ marginBottom: '32px' }}>
+            <span className="section-label">📍 Find Us</span>
+            <h2 className="section-title gradient-title">Visit Travel with Anu Office</h2>
+            <p className="section-subtitle">Main Market Kunzer, Tangmarg 193404, Baramulla, Jammu & Kashmir</p>
+          </div>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)', border: '2px solid #e2e8f0' }}>
+            <iframe
+              title="Travel with Anu Office Location - Main Market Kunzer, Tangmarg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.977392!2d74.635!3d34.0583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1853a15555555%3A0x0!2sKunzer%2C%20Tangmarg!5e0!3m2!1sen!2sin!4v1"
+              width="100%"
+              height="400"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="section-py bg-alt" aria-labelledby="works-heading">
         <div className="container">

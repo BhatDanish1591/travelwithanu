@@ -36,9 +36,17 @@
     {
       "@context": "https://schema.org",
       "@type": "TravelAgency",
+      "@id": "https://www.travelwithanu.in/#organization",
       "name": "Travel with Anu",
+      "alternateName": ["TravelWithAnu", "Travel With Anu Kashmir", "Travel with Anu Tours"],
       "image": "https://www.travelwithanu.in/images/logo.png",
-      "description": "Premium travel agency in Tangmarg, Kashmir offering customized tour packages, honeymoon trips, and Amarnath Yatra bookings.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.travelwithanu.in/images/logo.png",
+        "width": 300,
+        "height": 300
+      },
+      "description": "Travel with Anu is a top-rated local travel agency based in Tangmarg, Kashmir, offering customized tour packages, honeymoon trips, family vacations, adventure treks, and Amarnath Yatra bookings since 2009.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Main Market Kunzer",
@@ -47,19 +55,85 @@
         "postalCode": "193404",
         "addressCountry": "IN"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0583,
+        "longitude": 74.6350
+      },
       "telephone": "+91-6005655257",
       "email": "travelwithanutnt@gmail.com",
       "url": "https://www.travelwithanu.in/",
+      "sameAs": [
+        "https://www.instagram.com/travel_with__anu",
+        "https://www.travelwithanu.in/about",
+        "https://www.travelwithanu.in/contact"
+      ],
       "priceRange": "$$",
-      "areaServed": "Jammu and Kashmir",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Bank Transfer",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Jammu and Kashmir"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Anu",
+        "jobTitle": "Founder & Lead Tour Planner"
+      },
+      "foundingDate": "2009",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Srinagar, Jammu and Kashmir, India"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 5,
+        "maxValue": 20
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.0",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Kashmir Tour Packages",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kashmir Honeymoon Packages" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kashmir Family Tours" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Amarnath Yatra Booking" } }
+          { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Kashmir Budget Explorer", "description": "5-day budget-friendly Kashmir tour covering Srinagar, Gulmarg, and Pahalgam starting at INR 7500 per person." } },
+          { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Kashmir Highlights Tour", "description": "5-day premium Kashmir tour covering Dal Lake, Gulmarg, Pahalgam, and Sonamarg starting at INR 8500 per person." } },
+          { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Kashmir Honeymoon Package", "description": "6-day romantic honeymoon package with luxury stays in Srinagar, Gulmarg, and Pahalgam starting at INR 23000 per person." } },
+          { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Amarnath Yatra Package", "description": "Complete Amarnath Yatra pilgrimage package with helicopter booking, accommodation, and transport." } },
+          { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Kashmir Family Tour", "description": "Customized family vacation packages in Kashmir with kid-friendly activities and comfortable stays." } }
         ]
+      },
+      "hasMap": "https://maps.google.com/?q=34.0583,74.6350"
+    }
+    </script>
+
+    <!-- JSON-LD WebSite Schema for Sitelinks Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Travel with Anu",
+      "alternateName": "TravelWithAnu",
+      "url": "https://www.travelwithanu.in/",
+      "publisher": {
+        "@id": "https://www.travelwithanu.in/#organization"
       }
     }
     </script>
